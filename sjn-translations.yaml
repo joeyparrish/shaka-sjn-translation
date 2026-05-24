@@ -22,282 +22,329 @@
 translations:
  - key: AD_DURATION
    english: "Ad duration"
-   sjn-literal: "time for break for money"
-   sjn-roman: "lû an hastië an mirian"
-   sjn: "    "
+   sjn:
+     literal: "time for break for money"
+     roman: "lû an hastië an mirian"
+     tengwar: "    "
 
  - key: AD_PROGRESS
    english: "Ad [AD_ON] of [NUM_ADS]"
-   sjn-literal: "break for money [A] / [B]"
-   sjn-roman: "hastië an mirian [A] / [B]"
-   sjn: "   [AD_ON] / [NUM_ADS]"
+   sjn:
+     literal: "break for money [A] / [B]"
+     roman: "hastië an mirian [A] / [B]"
+     tengwar: "   [AD_ON] / [NUM_ADS]"
 
  - key: AD_STATISTICS
    english: "Ad statistics"
-   sjn-literal: "break for money tidings"
-   sjn-roman: "hastië an mirian siniath"
-   sjn: "   "
+   sjn:
+     literal: "break for money tidings"
+     roman: "hastië an mirian siniath"
+     tengwar: "   "
 
  - key: AD_TIME
    english: "Ad: [AD_TIME]"
-   sjn-literal: "break for money: [A]"
-   sjn-roman: "hastië an mirian: [A]"
-   sjn: "  : [AD_TIME]"
+   sjn:
+     literal: "break for money: [A]"
+     roman: "hastië an mirian: [A]"
+     tengwar: "  : [AD_TIME]"
 
  - key: AIRPLAY
    english: "AirPlay"
-   sjn-literal: "heavens-make-play"
-   sjn-roman: "menelnortho"
-   sjn: ""
+   sjn:
+     literal: "heavens-make-play"
+     roman: "menelnortho"
+     tengwar: ""
 
  - key: AUTO_QUALITY
    english: "Auto"
-   sjn-literal: "adapt/make fit"
-   sjn-roman: "cammo"
-   sjn: ""
+   sjn:
+     literal: "adapt/make fit"
+     roman: "cammo"
+     tengwar: ""
 
  - key: BACK
    english: "Back"
-   sjn-literal: "return"
-   sjn-roman: "dan"
-   sjn: ""
+   sjn:
+     literal: "return"
+     roman: "dan"
+     tengwar: ""
 
  - key: CAPTIONS
    english: "Captions"
-   sjn-literal: "words written"
-   sjn-roman: "pith teithiel"
-   sjn: " "
+   sjn:
+     literal: "words written"
+     roman: "pith teithiel"
+     tengwar: " "
 
  - key: CAST
    english: "Cast..."
-   sjn-literal: "throw"
-   sjn-roman: "hanto"
-   sjn: ""
+   sjn:
+     literal: "throw"
+     roman: "hanto"
+     tengwar: ""
 
  - key: CHAPTERS
    english: Chapters
-   sjn-literal: "events"
-   sjn-roman: "tylme"
-   sjn: ""
+   sjn:
+     literal: "events"
+     roman: "tylme"
+     tengwar: ""
 
  - key: DOWNLOAD_VIDEO_FRAME
    english: Save video frame
-   sjn-literal: "keep mind-picture"
-   sjn-roman: "garo fanwos"
-   sjn: " "
+   sjn:
+     literal: "keep mind-picture"
+     roman: "garo fanwos"
+     tengwar: " "
 
  - key: ENTER_LOOP_MODE
    english: "Loop the current video"
-   sjn-literal: "enter repeating"
-   sjn-roman: "minno enquetië"
-   sjn: " "
+   sjn:
+     literal: "enter repeating"
+     roman: "minno enquetië"
+     tengwar: " "
 
  - key: ENTER_PICTURE_IN_PICTURE
    english: "Enter Picture-in-Picture"
-   sjn-literal: "enter mind-picture within mind-picture"
-   sjn-roman: "minno fanwos bir fanwos"
-   sjn: "   "
+   sjn:
+     literal: "enter mind-picture within mind-picture"
+     roman: "minno fanwos bir fanwos"
+     tengwar: "   "
 
  - key: EXIT_FULL_SCREEN
    english: "Exit full screen"
-   sjn-literal: "escape mind-picture full"
-   sjn-roman: "uthro fanwos panta"
-   sjn: "  "
+   sjn:
+     literal: "escape mind-picture full"
+     roman: "uthro fanwos panta"
+     tengwar: "  "
 
  - key: EXIT_LOOP_MODE
    english: "Stop looping the current video"
-   sjn-literal: "escape repeating"
-   sjn-roman: "uthro enquetië"
-   sjn: " "
+   sjn:
+     literal: "escape repeating"
+     roman: "uthro enquetië"
+     tengwar: " "
 
  - key: EXIT_PICTURE_IN_PICTURE
    english: "Exit Picture-in-Picture"
-   sjn-literal: "escape mind-picture within mind-picture"
-   sjn-roman: "uthro fanwos bir fanwos"
-   sjn: "   "
+   sjn:
+     literal: "escape mind-picture within mind-picture"
+     roman: "uthro fanwos bir fanwos"
+     tengwar: "   "
 
  - key: FAST_FORWARD
    english: "Fast-forward"
-   sjn-literal: "make-run fast"
-   sjn-roman: "northo lim"
-   sjn: " "
+   sjn:
+     literal: "make-run fast"
+     roman: "northo lim"
+     tengwar: " "
 
  - key: FULL_SCREEN
    english: "Full screen"
-   sjn-literal: "mind-picture full"
-   sjn-roman: "fanwos panta"
-   sjn: " "
+   sjn:
+     literal: "mind-picture full"
+     roman: "fanwos panta"
+     tengwar: " "
 
  - key: LANGUAGE
    english: "Language"
-   sjn-literal: "language"
-   sjn-roman: "lambë"
-   sjn: ""
+   sjn:
+     literal: "language"
+     roman: "lambë"
+     tengwar: ""
 
  - key: LIVE
    english: "Live"
-   sjn-literal: "freshest"
-   sjn-roman: "cîrwain"
-   sjn: ""
+   sjn:
+     literal: "freshest"
+     roman: "cîrwain"
+     tengwar: ""
 
  - key: LOOP
    english: "Loop"
-   sjn-literal: "repeat"
-   sjn-roman: "enqueto"
-   sjn: ""
+   sjn:
+     literal: "repeat"
+     roman: "enqueto"
+     tengwar: ""
 
  - key: MORE_SETTINGS
    english: "More settings"
-   sjn-literal: "more+choices"
-   sjn-roman: "galainc"
-   sjn: ""
+   sjn:
+     literal: "more+choices"
+     roman: "galainc"
+     tengwar: ""
 
  - key: MULTIPLE_LANGUAGES
    english: "Multiple languages"
-   sjn-literal: "language without count"
-   sjn-roman: "lambë arnoediad"
-   sjn: " "
+   sjn:
+     literal: "language without count"
+     roman: "lambë arnoediad"
+     tengwar: " "
 
  - key: MUTE
    english: "Mute"
-   sjn-literal: "silence"
-   sjn-roman: "dîn"
-   sjn: ""
+   sjn:
+     literal: "silence"
+     roman: "dîn"
+     tengwar: ""
 
  - key: NOT_APPLICABLE
    english: "Not applicable"
-   sjn-literal: "not important"
-   sjn-roman: "la bâl"
-   sjn: " "
+   sjn:
+     literal: "not important"
+     roman: "la bâl"
+     tengwar: " "
 
  - key: "OFF"
    english: "Off"
-   sjn-literal: "nothing"
-   sjn-roman: "unt"
-   sjn: ""
+   sjn:
+     literal: "nothing"
+     roman: "unt"
+     tengwar: ""
 
  - key: "ON"
    english: "On"
-   sjn-literal: "active"
-   sjn-roman: "carweg"
-   sjn: ""
+   sjn:
+     literal: "active"
+     roman: "carweg"
+     tengwar: ""
 
  - key: PAUSE
    english: "Pause"
-   sjn-literal: "tarry/wait/pause"
-   sjn-roman: "hasto"
-   sjn: ""
+   sjn:
+     literal: "tarry/wait/pause"
+     roman: "hasto"
+     tengwar: ""
 
  - key: PICTURE_IN_PICTURE
    english: "Picture-in-picture"
-   sjn-literal: "mind-picture within mind-picture"
-   sjn-roman: "fanwos bir fanwos"
-   sjn: "  "
+   sjn:
+     literal: "mind-picture within mind-picture"
+     roman: "fanwos bir fanwos"
+     tengwar: "  "
 
  - key: PLAY
    english: "Play"
-   sjn-literal: "make-run"
-   sjn-roman: "northo"
-   sjn: ""
+   sjn:
+     literal: "make-run"
+     roman: "northo"
+     tengwar: ""
 
  - key: PLAYBACK_RATE
    english: "Playback speed"
-   sjn-literal: "speed"
-   sjn-roman: "lintië"
-   sjn: ""
+   sjn:
+     literal: "speed"
+     roman: "lintië"
+     tengwar: ""
 
  - key: QUALITY
    english: Quality
-   sjn-literal: "brilliance"
-   sjn-roman: "aglar"
-   sjn: ""
+   sjn:
+     literal: "brilliance"
+     roman: "aglar"
+     tengwar: ""
 
  - key: RECENTER_VR
    english: Recenter
-   sjn-literal: "center"
-   sjn-roman: "ened"
-   sjn: ""
+   sjn:
+     literal: "center"
+     roman: "ened"
+     tengwar: ""
 
  - key: REPLAY
    english: "Replay"
-   sjn-literal: "make-run again"
-   sjn-roman: "adnortho"
-   sjn: ""
+   sjn:
+     literal: "make-run again"
+     roman: "adnortho"
+     tengwar: ""
 
  - key: RESOLUTION
    english: "Resolution"
-   sjn-literal: "value/preciousness"
-   sjn-roman: "meiras"
-   sjn: ""
+   sjn:
+     literal: "value/preciousness"
+     roman: "meiras"
+     tengwar: ""
 
  - key: REWIND
    english: "Rewind"
-   sjn-literal: "make-run backwards"
-   sjn-roman: "northo abont"
-   sjn: " "
+   sjn:
+     literal: "make-run backwards"
+     roman: "northo abont"
+     tengwar: " "
 
  - key: SEEK
    english: "Seek"
-   sjn-literal: "time"
-   sjn-roman: "lû"
-   sjn: ""
+   sjn:
+     literal: "time"
+     roman: "lû"
+     tengwar: ""
 
  - key: SKIP_AD
    english: "Skip Ad"
-   sjn-literal: "leap across break for money"
-   sjn-roman: "cabo thar hastië an mirian"
-   sjn: "    "
+   sjn:
+     literal: "leap across break for money"
+     roman: "cabo thar hastië an mirian"
+     tengwar: "    "
 
  - key: SKIP_TO_LIVE
    english: "Skip ahead to live"
-   sjn-literal: "leap to freshest"
-   sjn-roman: "cabo na cîrwain"
-   sjn: "  "
+   sjn:
+     literal: "leap to freshest"
+     roman: "cabo na cîrwain"
+     tengwar: "  "
 
  - key: STATISTICS
    english: "Statistics"
-   sjn-literal: "interrogate numbers"
-   sjn-roman: "cetho neth"
-   sjn: " "
+   sjn:
+     literal: "interrogate numbers"
+     roman: "cetho neth"
+     tengwar: " "
 
  - key: SUBTITLE_FORCED
    english: "Forced"
-   sjn-literal: "words written firm/abiding"
-   sjn-roman: "pith teithiel taug"
-   sjn: "  "
+   sjn:
+     literal: "words written firm/abiding"
+     roman: "pith teithiel taug"
+     tengwar: "  "
 
  - key: SURROUND
    english: Surround
-   sjn-literal: "surround"
-   sjn-roman: "ostao"
-   sjn: ""
+   sjn:
+     literal: "surround"
+     roman: "ostao"
+     tengwar: ""
 
  - key: TOGGLE_STEREOSCOPIC
    english: Toggle stereoscopic
-   sjn-literal: "double-seeing"
-   sjn-roman: "at-tírad"
-   sjn: ""
+   sjn:
+     literal: "double-seeing"
+     roman: "at-tírad"
+     tengwar: ""
 
  - key: UNDETERMINED_LANGUAGE
    english: "Undetermined"
-   sjn-literal: "not known"
-   sjn-roman: "la sinnen"
-   sjn: " "
+   sjn:
+     literal: "not known"
+     roman: "la sinnen"
+     tengwar: " "
 
  - key: UNMUTE
    english: "Unmute"
-   sjn-literal: "noise/sound"
-   sjn-roman: "lhôn"
-   sjn: ""
+   sjn:
+     literal: "noise/sound"
+     roman: "lhôn"
+     tengwar: ""
 
  - key: UNRECOGNIZED_LANGUAGE
    english: "Unrecognized"
-   sjn-literal: "not known"
-   sjn-roman: "la sinnen"
-   sjn: " "
+   sjn:
+     literal: "not known"
+     roman: "la sinnen"
+     tengwar: " "
 
  - key: VOLUME
    english: "Volume"
-   sjn-literal: "loud(ness)"
-   sjn-roman: "brui"
-   sjn: ""
+   sjn:
+     literal: "loud(ness)"
+     roman: "brui"
+     tengwar: ""

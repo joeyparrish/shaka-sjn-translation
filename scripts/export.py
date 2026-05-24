@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #
-# Copyright 2024 Google LLC
+# Copyright 2026 Joey Parrish
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,19 +14,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Sync sjn translations from sjn-translations.yaml to sjn.json
+"""Export sjn translations from sjn-translations.yaml to sjn.json.
 
-sjn-translations.yaml tracks the original strings, their nearest translatable
-equivalents, the romanized Sindarin, and the Tengwar-encoded Sindarin.  All
-translation work for sjn happens there, and this script updates sjn.json
-accordingly.
+sjn-translations.yaml is the working file: it tracks the English source, the
+literal back-translation, the romanized Sindarin, the Tengwar-encoded form,
+and (per the schema in elvish-translation-tools) per-element provenance.
+This script reads it and writes the locale file shaka-player consumes.
 """
 
 import json
 import os
 import yaml
 
-base_path = os.path.dirname(__file__)
+base_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 source_path = os.path.join(base_path, "sjn-translations.yaml")
 destination_path = os.path.join(base_path, "sjn.json")
 
@@ -35,7 +35,7 @@ with open(source_path) as f:
 
 destination = {}
 for item in source["translations"]:
-  destination[item["key"]] = item["sjn"]
+  destination[item["key"]] = item["sjn"]["tengwar"]
 
 with open(destination_path, "w") as f:
   f.write(json.dumps(destination, ensure_ascii=False, indent=2) + '\n')
