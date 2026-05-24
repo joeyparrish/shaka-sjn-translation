@@ -21,9 +21,11 @@ Shaka Player UI.
 - `translator-intent.md` -- inferred reasoning behind each translation
   choice, including defenses of entries that look wrong on the surface
   but are grammatically derivable from attested roots.
-- `proposed-yaml-structure.md` -- forward-compatible schema for the
-  YAML that records per-element provenance, so future maintainers can
-  defend or critique a choice without re-deriving the reasoning.
+- `applying-schema.md` -- how this project applies the general
+  translation schema (defined in the framework repo's
+  `references/translation-schema.md`): which fields the build pipeline
+  requires, the migration plan from the current flat YAML, and
+  project-specific decisions.
 
 ## Status
 
