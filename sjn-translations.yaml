@@ -25,35 +25,195 @@ translations:
    sjn:
      literal: "time for break for money"
      roman: "lû an hastië an mirian"
-     tengwar: "    "
+     tengwar: ""
+   elements:
+     - form: "lû"
+       headword: "lû"
+       headword-meaning: "time, occasion"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations: []
+       rationale: "Attested Sindarin for time/occasion."
+     - form: "an"
+       headword: "an"
+       headword-meaning: "for, to"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations:
+         - "Triggers nasal mutation of the following consonant."
+       rationale: "Attested Sindarin preposition."
+     - form: "hastië"
+       headword: "hastië"
+       headword-meaning: "interruption, break"
+       attestation: coined
+       source: "coined:this-file (signature coinage)"
+       derivations:
+         - "Sindarin abstract on attested hast (hindrance, obstacle)"
+       rationale: "Signature coinage of this translation for the ad/break concept."
+     - form: "an"
+       headword: "an"
+       headword-meaning: "for, to"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations:
+         - "Triggers nasal mutation of the following consonant."
+       rationale: "Attested Sindarin preposition."
+     - form: "mirian"
+       headword: "mirian"
+       headword-meaning: "money (a Númenórean coin)"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations: []
+       rationale: "Attested Sindarin word for a unit of money."
+   status: coinage
+   concerns: "Multi-part compound; relies on the 'hastië an mirian' signature coinage for 'ad'."
+   history:
+     - date: 2026-05-26
+       note: "Audit pass: backfilled schema; kept original vocabulary."
 
  - key: AD_PROGRESS
    english: "Ad [AD_ON] of [NUM_ADS]"
    sjn:
      literal: "break for money [A] / [B]"
      roman: "hastië an mirian [A] / [B]"
-     tengwar: "   [AD_ON] / [NUM_ADS]"
+     tengwar: ""
+   elements:
+     - form: "hastië"
+       headword: "hastië"
+       headword-meaning: "interruption, break"
+       attestation: coined
+       source: "coined:this-file (signature coinage)"
+       derivations:
+         - "Sindarin abstract on attested hast (hindrance, obstacle)"
+       rationale: "Signature coinage of this translation for the ad/break concept."
+     - form: "an"
+       headword: "an"
+       headword-meaning: "for, to"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations:
+         - "Triggers nasal mutation of the following consonant."
+       rationale: "Attested Sindarin preposition."
+     - form: "mirian"
+       headword: "mirian"
+       headword-meaning: "money (a Númenórean coin)"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations: []
+       rationale: "Attested Sindarin word for a unit of money."
+   status: coinage
+   concerns: "Placeholder substitutions [A] and [B] are preserved verbatim; UI runtime fills them in."
+   history:
+     - date: 2026-05-26
+       note: "Audit pass: backfilled schema."
 
  - key: AD_STATISTICS
    english: "Ad statistics"
    sjn:
      literal: "break for money tidings"
      roman: "hastië an mirian siniath"
-     tengwar: "   "
+     tengwar: ""
+   elements:
+     - form: "hastië"
+       headword: "hastië"
+       headword-meaning: "interruption, break"
+       attestation: coined
+       source: "coined:this-file (signature coinage)"
+       derivations:
+         - "Sindarin abstract on attested hast (hindrance, obstacle)"
+       rationale: "Signature coinage of this translation for the ad/break concept."
+     - form: "an"
+       headword: "an"
+       headword-meaning: "for, to"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations:
+         - "Triggers nasal mutation of the following consonant."
+       rationale: "Attested Sindarin preposition."
+     - form: "mirian"
+       headword: "mirian"
+       headword-meaning: "money (a Númenórean coin)"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations: []
+       rationale: "Attested Sindarin word for a unit of money."
+     - form: "siniath"
+       headword: "siniath"
+       headword-meaning: "tidings, news"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations: []
+       rationale: "Attested Sindarin for news/tidings."
+   status: coinage
+   history:
+     - date: 2026-05-26
+       note: "Audit pass."
 
  - key: AD_TIME
    english: "Ad: [AD_TIME]"
    sjn:
      literal: "break for money: [A]"
      roman: "hastië an mirian: [A]"
-     tengwar: "  : [AD_TIME]"
+     tengwar: ""
+   elements:
+     - form: "hastië"
+       headword: "hastië"
+       headword-meaning: "interruption, break"
+       attestation: coined
+       source: "coined:this-file (signature coinage)"
+       derivations:
+         - "Sindarin abstract on attested hast (hindrance, obstacle)"
+       rationale: "Signature coinage of this translation for the ad/break concept."
+     - form: "an"
+       headword: "an"
+       headword-meaning: "for, to"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations:
+         - "Triggers nasal mutation of the following consonant."
+       rationale: "Attested Sindarin preposition."
+     - form: "mirian"
+       headword: "mirian"
+       headword-meaning: "money (a Númenórean coin)"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations: []
+       rationale: "Attested Sindarin word for a unit of money."
+   status: coinage
+   concerns: "Placeholder [A] preserved verbatim."
+   history:
+     - date: 2026-05-26
+       note: "Audit pass."
 
  - key: AIRPLAY
    english: "AirPlay"
    sjn:
      literal: "heavens-make-play"
      roman: "menelnortho"
-     tengwar: ""
+     tengwar: ""
+   elements:
+     - form: "menel"
+       headword: "menel"
+       headword-meaning: "heavens, sky"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations: []
+       rationale: "Attested Sindarin for the heavens."
+     - form: "northo"
+       headword: "nor-"
+       headword-meaning: "to run (causative: make-run, play)"
+       attestation: attested
+       source: "LotR/0213 (root)"
+       derivations:
+         - "causative -tha- (Neo-Sindarin extension): nor- -> northa-"
+         - "imperative -o: northa- -> northo"
+       rationale: "Established in this translation for PLAY."
+   composition: "menel + northo as a single coined compound noun for the AirPlay technology."
+   status: coinage
+   concerns: "Coined compound; literal reading is 'sky-play'. Captures the 'play via wireless / through the air' metaphor."
+   history:
+     - date: 2026-05-26
+       note: "Audit pass: backfilled schema."
 
  - key: AUDIO_DESCRIPTION
    english: "Audio description"
@@ -112,14 +272,39 @@ translations:
    sjn:
      literal: "adapt/make fit"
      roman: "cammo"
-     tengwar: ""
+     tengwar: ""
+   elements:
+     - form: "cammo"
+       headword: "cam-"
+       headword-meaning: "to fit, suit, be agreeable, adapt"
+       attestation: attested
+       source: "VT44/14; VT47/20-21"
+       derivations:
+         - "imperative -o with nasal-infixed past form: cam- -> cammo"
+       rationale: "Attested Sindarin verb 'to fit/adapt'. Imperative used metaphorically for 'auto' (automatically adapts)."
+   status: defensible-neo-sindarin
+   history:
+     - date: 2026-05-26
+       note: "Audit pass: defensible Neo-Sindarin construction; backfilled schema."
 
  - key: BACK
    english: "Back"
    sjn:
-     literal: "return"
+     literal: "back, against"
      roman: "dan"
-     tengwar: ""
+     tengwar: ""
+   elements:
+     - form: "dan"
+       headword: "dan"
+       headword-meaning: "back to, back again, against"
+       attestation: attested
+       source: "LotR/0299"
+       derivations: []
+       rationale: "Attested Sindarin preposition."
+   status: attested
+   history:
+     - date: 2026-05-26
+       note: "Audit pass."
 
  - key: BOTTOM_CENTER
    english: "Bottom center"
@@ -219,15 +404,54 @@ translations:
    english: "Captions"
    sjn:
      literal: "words written"
-     roman: "pith teithiel"
-     tengwar: " "
+     roman: "pith teithennin"
+     tengwar: ""
+   elements:
+     - form: "pith"
+       headword: "peth"
+       headword-meaning: "word (plural: words)"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations:
+         - "plural i-affection: peth -> pith"
+       rationale: "Attested Sindarin pluralization."
+     - form: "teithennin"
+       headword: "teitha-"
+       headword-meaning: "to write (past participle plural)"
+       attestation: attested-components
+       source: "LotR/0305"
+       derivations:
+         - "past participle -en: teitha- -> teithen (sg)"
+         - "plural agreement with pith: teithen -> teithennin"
+       rationale: "Past participle with proper Sindarin plural agreement; replaces original 'teithiel' which used Quenya-style ending."
+   status: attested-components
+   history:
+     - date: 2022-01-15
+       note: "Initial as pith teithiel."
+     - date: 2026-05-26
+       note: "Replaced teithiel (Quenya-style past participle) with teithennin (Sindarin plural past participle)."
 
  - key: CAST
    english: "Cast..."
    sjn:
-     literal: "throw"
-     roman: "hanto"
-     tengwar: ""
+     literal: "hurl/throw"
+     roman: "hado"
+     tengwar: ""
+   elements:
+     - form: "hado"
+       headword: "had-"
+       headword-meaning: "to hurl, throw"
+       attestation: attested-components
+       source: "Eldamo:s"
+       derivations:
+         - "imperative -o: had- -> hado"
+       rationale: "Attested Sindarin verb 'to hurl'; imperative form. Replaces original 'hanto' which was an unattested past-stem-style imperative."
+   status: attested-components
+   history:
+     - date: 2022-01-15
+       note: "Initial as hanto."
+     - date: 2026-05-26
+       note: "Corrected to the regular imperative form hado."
 
  - key: CENTER
    english: "Center"
@@ -298,11 +522,26 @@ translations:
      - date: 2026-05-26
        note: "New entry from upstream drift."
  - key: CHAPTERS
-   english: Chapters
+   english: "Chapters"
    sjn:
-     literal: "events"
+     literal: "events (?)"
      roman: "tylme"
-     tengwar: ""
+     tengwar: ""
+   elements:
+     - form: "tylme"
+       headword: "tylme"
+       headword-meaning: "(intended: events/sections)"
+       attestation: coined
+       source: "coined:this-file"
+       derivations: []
+       rationale: "Unparseable: not attested in Sindarin or Noldorin under this form. Original translator's intent for 'tylme' as 'events' could not be decomposed into attested elements."
+   status: needs-revision
+   concerns: "Cannot derive 'tylme' from attested Sindarin. Candidate replacements: 'pith' (tales) or coin from a verb of telling. Needs user input."
+   history:
+     - date: 2022-01-15
+       note: "Initial as tylme."
+     - date: 2026-05-26
+       note: "Flagged for revision: form is unparseable."
 
  - key: COPY_VIDEO_FRAME
    english: "Copy video frame"
@@ -356,11 +595,31 @@ translations:
      - date: 2026-05-26
        note: "New entry from upstream drift."
  - key: DOWNLOAD_VIDEO_FRAME
-   english: Save video frame
+   english: "Save video frame"
    sjn:
      literal: "keep mind-picture"
      roman: "garo fanwos"
-     tengwar: " "
+     tengwar: ""
+   elements:
+     - form: "garo"
+       headword: "gar-"
+       headword-meaning: "to hold, have, keep"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations:
+         - "imperative -o: gar- -> garo"
+       rationale: "Attested Sindarin verb. Imperative for 'save (to disk)'."
+     - form: "fanwos"
+       headword: "fanwos"
+       headword-meaning: "mind-picture (of apparition in dream)"
+       attestation: attested
+       source: "PE17/174"
+       derivations: []
+       rationale: "Established in this translation for picture/screen/frame."
+   status: attested
+   history:
+     - date: 2026-05-26
+       note: "Audit pass."
 
  - key: ENTER_LOOP_MODE
    english: "Loop the current video"
@@ -440,8 +699,37 @@ translations:
    english: "Exit full screen"
    sjn:
      literal: "escape mind-picture full"
-     roman: "uthro fanwos panta"
-     tengwar: "  "
+     roman: "uthro fanwos pant"
+     tengwar: ""
+   elements:
+     - form: "uthro"
+       headword: "uthra-"
+       headword-meaning: "to escape"
+       attestation: neo-sindarin
+       source: "Eldamo:ns"
+       derivations:
+         - "imperative -o: uthra- -> uthro"
+       rationale: "Established in this translation for exit-actions."
+     - form: "fanwos"
+       headword: "fanwos"
+       headword-meaning: "mind-picture (of apparition in dream)"
+       attestation: attested
+       source: "PE17/174"
+       derivations: []
+       rationale: "Established in this translation for picture/screen/frame."
+     - form: "pant"
+       headword: "pant"
+       headword-meaning: "full"
+       attestation: attested
+       source: "SD/126"
+       derivations: []
+       rationale: "Attested Sindarin adjective 'full'. Replaces original 'panta' which was Quenya."
+   status: attested-components
+   history:
+     - date: 2022-01-15
+       note: "Initial as uthro fanwos panta."
+     - date: 2026-05-26
+       note: "Replaced panta (Quenya) with attested Sindarin pant."
 
  - key: EXIT_LOOP_MODE
    english: "Stop looping the current video"
@@ -521,28 +809,105 @@ translations:
    sjn:
      literal: "make-run fast"
      roman: "northo lim"
-     tengwar: " "
+     tengwar: ""
+   elements:
+     - form: "northo"
+       headword: "nor-"
+       headword-meaning: "to run (causative: make-run, play)"
+       attestation: attested
+       source: "LotR/0213 (root)"
+       derivations:
+         - "causative -tha- (Neo-Sindarin extension): nor- -> northa-"
+         - "imperative -o: northa- -> northo"
+       rationale: "Established in this translation for PLAY."
+     - form: "lim"
+       headword: "lim"
+       headword-meaning: "swift"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations: []
+       rationale: "Attested Sindarin adjective; used adverbially."
+   status: attested-components
+   history:
+     - date: 2026-05-26
+       note: "Audit pass."
 
  - key: FULL_SCREEN
    english: "Full screen"
    sjn:
      literal: "mind-picture full"
-     roman: "fanwos panta"
-     tengwar: " "
+     roman: "fanwos pant"
+     tengwar: ""
+   elements:
+     - form: "fanwos"
+       headword: "fanwos"
+       headword-meaning: "mind-picture (of apparition in dream)"
+       attestation: attested
+       source: "PE17/174"
+       derivations: []
+       rationale: "Established in this translation for picture/screen/frame."
+     - form: "pant"
+       headword: "pant"
+       headword-meaning: "full"
+       attestation: attested
+       source: "SD/126"
+       derivations: []
+       rationale: "Attested Sindarin adjective; replaces original 'panta' (Quenya)."
+   status: attested-components
+   history:
+     - date: 2022-01-15
+       note: "Initial as fanwos panta."
+     - date: 2026-05-26
+       note: "Replaced panta (Quenya) with attested Sindarin pant."
 
  - key: LANGUAGE
    english: "Language"
    sjn:
-     literal: "language"
-     roman: "lambë"
-     tengwar: ""
+     literal: "tongue, language"
+     roman: "lam"
+     tengwar: ""
+   elements:
+     - form: "lam"
+       headword: "lam"
+       headword-meaning: "(physical) tongue; language"
+       attestation: attested
+       source: "LotR/0307 (in lammen, 'lasto beth lammen')"
+       derivations: []
+       rationale: "Attested Sindarin word for 'language'. Replaces original 'lambë' which was Quenya."
+   status: attested
+   history:
+     - date: 2022-01-15
+       note: "Initial as lambë (Quenya)."
+     - date: 2026-05-26
+       note: "Replaced with attested Sindarin lam."
 
  - key: LIVE
    english: "Live"
    sjn:
-     literal: "freshest"
+     literal: "freshest, ever-new"
      roman: "cîrwain"
-     tengwar: ""
+     tengwar: ""
+   elements:
+     - form: "cîr"
+       headword: "cîr"
+       headword-meaning: "fresh, renewed"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations: []
+       rationale: "Attested Sindarin."
+     - form: "wain"
+       headword: "gwain"
+       headword-meaning: "new"
+       attestation: attested
+       source: "LotR appendix D (Narwain)"
+       derivations:
+         - "soft mutation in compound: gw- -> w- (g lenites to silence)"
+       rationale: "Attested in compound 'Narwain' (January). g- lenites in compounds."
+   composition: "Two synonyms compounded for emphasis. The g- of gwain lenites to silence inside the compound, giving cîr-wain."
+   status: attested-components
+   history:
+     - date: 2026-05-26
+       note: "Audit pass: well-formed compound from attested elements."
 
  - key: LOOP
    english: "Loop"
@@ -575,23 +940,71 @@ translations:
  - key: MORE_SETTINGS
    english: "More settings"
    sjn:
-     literal: "more+choices"
+     literal: "(intended: more+choices)"
      roman: "galainc"
-     tengwar: ""
+     tengwar: ""
+   elements:
+     - form: "galainc"
+       headword: "galainc"
+       headword-meaning: "(intended: more choices?)"
+       attestation: coined
+       source: "coined:this-file"
+       derivations: []
+       rationale: "Unparseable: cannot decompose into attested Sindarin elements. Original translator's intent unclear."
+   status: needs-revision
+   concerns: "Cannot derive 'galainc' from attested Sindarin. Likely needs replacement; possible candidates: 'cilth amben' (paths more) or similar. Needs user input."
+   history:
+     - date: 2022-01-15
+       note: "Initial as galainc."
+     - date: 2026-05-26
+       note: "Flagged for revision: form is unparseable."
 
  - key: MULTIPLE_LANGUAGES
    english: "Multiple languages"
    sjn:
      literal: "language without count"
-     roman: "lambë arnoediad"
-     tengwar: " "
+     roman: "lam arnoediad"
+     tengwar: ""
+   elements:
+     - form: "lam"
+       headword: "lam"
+       headword-meaning: "(physical) tongue; language"
+       attestation: attested
+       source: "LotR/0307"
+       derivations: []
+       rationale: "Attested Sindarin word for 'language'."
+     - form: "arnoediad"
+       headword: "arnoediad"
+       headword-meaning: "without count, countless"
+       attestation: attested
+       source: "WJ (cf. Nírnaeth Arnoediad)"
+       derivations: []
+       rationale: "Attested Sindarin for 'countless/innumerable'."
+   status: attested
+   history:
+     - date: 2022-01-15
+       note: "Initial as lambë arnoediad."
+     - date: 2026-05-26
+       note: "Replaced lambë (Quenya) with lam (attested Sindarin)."
 
  - key: MUTE
    english: "Mute"
    sjn:
      literal: "silence"
      roman: "dîn"
-     tengwar: ""
+     tengwar: ""
+   elements:
+     - form: "dîn"
+       headword: "dîn"
+       headword-meaning: "silence"
+       attestation: attested
+       source: "Eldamo:s (cf. Amon Dîn)"
+       derivations: []
+       rationale: "Attested Sindarin noun."
+   status: attested
+   history:
+     - date: 2026-05-26
+       note: "Audit pass."
 
  - key: NOT_APPLICABLE
    english: "Not applicable"
@@ -631,6 +1044,19 @@ translations:
      literal: "nothing"
      roman: "unt"
      tengwar: ""
+   elements:
+     - form: "unt"
+       headword: "unt"
+       headword-meaning: "nothing"
+       attestation: gnomish
+       source: "Eldamo:g"
+       derivations: []
+       rationale: "Gnomish revival used as 'off' (deliberate older-stage borrowing)."
+   status: attested-components
+   concerns: "'unt' is Gnomish (Tolkien's earliest stage), not attested Sindarin."
+   history:
+     - date: 2026-05-26
+       note: "Audit pass: documented as Gnomish revival."
 
  - key: "ON"
    english: "On"
@@ -638,6 +1064,18 @@ translations:
      literal: "active"
      roman: "carweg"
      tengwar: ""
+   elements:
+     - form: "carweg"
+       headword: "carweg"
+       headword-meaning: "active, busy"
+       attestation: attested
+       source: "PE17/144"
+       derivations: []
+       rationale: "Attested Sindarin adjective; direct semantic match."
+   status: attested
+   history:
+     - date: 2026-05-26
+       note: "Audit pass: attested form."
 
  - key: ORIGINAL_VERSION
    english: "Original version"
@@ -721,35 +1159,113 @@ translations:
    sjn:
      literal: "make-run"
      roman: "northo"
-     tengwar: ""
+     tengwar: ""
+   elements:
+     - form: "northo"
+       headword: "nor-"
+       headword-meaning: "to run (causative: make-run, play)"
+       attestation: attested
+       source: "LotR/0213 (root)"
+       derivations:
+         - "causative -tha- (Neo-Sindarin extension): nor- -> northa-"
+         - "imperative -o: northa- -> northo"
+       rationale: "Established in this translation for PLAY."
+   composition: "Causative imperative; metaphor 'play a video' = 'make it run'."
+   status: defensible-neo-sindarin
+   concerns: "Causative -tha- is Neo-Sindarin extension from Quenya; not strictly attested in Sindarin."
+   history:
+     - date: 2026-05-26
+       note: "Audit pass."
 
  - key: PLAYBACK_RATE
    english: "Playback speed"
    sjn:
-     literal: "speed"
-     roman: "lintië"
-     tengwar: ""
+     literal: "swift"
+     roman: "lint"
+     tengwar: ""
+   elements:
+     - form: "lint"
+       headword: "lint"
+       headword-meaning: "quick, agile, nimble, light"
+       attestation: gnomish
+       source: "GL/54"
+       derivations: []
+       rationale: "Gnomish-attested adjective used as a noun for 'speed/swiftness'. Replaces original 'lintië' which was Quenya. No directly attested Sindarin noun for 'speed'; Gnomish revival is the closest grounding."
+   status: gnomish
+   concerns: "'lint' attested only in Gnomish; used here as fallback since Sindarin has no attested noun for 'speed'. Could coin an abstract noun if preferred."
+   history:
+     - date: 2022-01-15
+       note: "Initial as lintië (Quenya)."
+     - date: 2026-05-26
+       note: "Replaced with Gnomish-attested lint (Sindarin has no direct equivalent)."
 
  - key: QUALITY
-   english: Quality
+   english: "Quality"
    sjn:
      literal: "brilliance"
      roman: "aglar"
-     tengwar: ""
+     tengwar: ""
+   elements:
+     - form: "aglar"
+       headword: "aglar"
+       headword-meaning: "glory, splendor, brilliance"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations: []
+       rationale: "Attested Sindarin; metaphorical use for video 'quality' = brilliance/clarity of the image."
+   status: attested
+   concerns: "Semantic stretch: aglar literally 'glory/splendor', used metaphorically for image quality."
+   history:
+     - date: 2026-05-26
+       note: "Audit pass."
 
  - key: RECENTER_VR
-   english: Recenter
+   english: "Recenter"
    sjn:
      literal: "center"
      roman: "ened"
-     tengwar: ""
+     tengwar: ""
+   elements:
+     - form: "ened"
+       headword: "ened"
+       headword-meaning: "middle, center"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations: []
+       rationale: "Attested Sindarin; established in this translation."
+   status: attested
+   history:
+     - date: 2026-05-26
+       note: "Audit pass."
 
  - key: REPLAY
    english: "Replay"
    sjn:
      literal: "make-run again"
      roman: "adnortho"
-     tengwar: ""
+     tengwar: ""
+   elements:
+     - form: "ad-"
+       headword: "ad-"
+       headword-meaning: "again, re-"
+       attestation: attested
+       source: "PE17/167"
+       derivations: []
+       rationale: "Attested Sindarin prefix."
+     - form: "northo"
+       headword: "nor-"
+       headword-meaning: "to run (causative: make-run, play)"
+       attestation: attested
+       source: "LotR/0213 (root)"
+       derivations:
+         - "causative -tha- (Neo-Sindarin extension): nor- -> northa-"
+         - "imperative -o: northa- -> northo"
+       rationale: "Established in this translation for PLAY."
+   composition: "Prefix ad- + verb northo (already established for PLAY)."
+   status: defensible-neo-sindarin
+   history:
+     - date: 2026-05-26
+       note: "Audit pass."
 
  - key: RESOLUTION
    english: "Resolution"
@@ -808,16 +1324,72 @@ translations:
  - key: SEEK
    english: "Seek"
    sjn:
-     literal: "time"
+     literal: "time, occasion"
      roman: "lû"
-     tengwar: ""
+     tengwar: ""
+   elements:
+     - form: "lû"
+       headword: "lû"
+       headword-meaning: "time, occasion"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations: []
+       rationale: "Attested Sindarin; used metaphorically here (seek = find a time/position in the video)."
+   status: attested
+   concerns: "Semantic stretch: 'lû' is 'time/occasion'. Overlaps with AD_DURATION which also uses lû."
+   history:
+     - date: 2026-05-26
+       note: "Audit pass."
 
  - key: SKIP_AD
    english: "Skip Ad"
    sjn:
      literal: "leap across break for money"
      roman: "cabo thar hastië an mirian"
-     tengwar: "    "
+     tengwar: ""
+   elements:
+     - form: "cabo"
+       headword: "cab-"
+       headword-meaning: "to leap"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations:
+         - "imperative -o: cab- -> cabo"
+       rationale: "Established for skip-actions."
+     - form: "thar"
+       headword: "thar"
+       headword-meaning: "across, over"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations: []
+       rationale: "Attested Sindarin preposition."
+     - form: "hastië"
+       headword: "hastië"
+       headword-meaning: "interruption, break"
+       attestation: coined
+       source: "coined:this-file (signature coinage)"
+       derivations:
+         - "Sindarin abstract on attested hast (hindrance, obstacle)"
+       rationale: "Signature coinage of this translation for the ad/break concept."
+     - form: "an"
+       headword: "an"
+       headword-meaning: "for, to"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations:
+         - "Triggers nasal mutation of the following consonant."
+       rationale: "Attested Sindarin preposition."
+     - form: "mirian"
+       headword: "mirian"
+       headword-meaning: "money (a Númenórean coin)"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations: []
+       rationale: "Attested Sindarin word for a unit of money."
+   status: coinage
+   history:
+     - date: 2026-05-26
+       note: "Audit pass."
 
  - key: SKIP_NEXT
    english: "Next"
@@ -883,7 +1455,36 @@ translations:
    sjn:
      literal: "leap to freshest"
      roman: "cabo na cîrwain"
-     tengwar: "  "
+     tengwar: ""
+   elements:
+     - form: "cabo"
+       headword: "cab-"
+       headword-meaning: "to leap"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations:
+         - "imperative -o: cab- -> cabo"
+       rationale: "Established for skip-actions."
+     - form: "na"
+       headword: "na"
+       headword-meaning: "to, with"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations:
+         - "Triggers soft mutation; cîrwain begins with c which lenites to g: na cîrwain -> na gîrwain (mutation often omitted in writing)."
+       rationale: "Attested Sindarin preposition."
+     - form: "cîrwain"
+       headword: "cîrwain"
+       headword-meaning: "freshest, ever-new (compound)"
+       attestation: attested-components
+       source: "this-translation"
+       derivations: []
+       rationale: "Established in this translation; see LIVE entry."
+   status: attested-components
+   concerns: "Soft mutation c->g after 'na' often omitted; preserved here as 'cîrwain' (clarity) but 'na gîrwain' would be strictly correct."
+   history:
+     - date: 2026-05-26
+       note: "Audit pass."
 
  - key: STATISTICS
    english: "Statistics"
@@ -946,9 +1547,39 @@ translations:
  - key: SUBTITLE_FORCED
    english: "Forced"
    sjn:
-     literal: "words written firm/abiding"
-     roman: "pith teithiel taug"
-     tengwar: "  "
+     literal: "words written firm"
+     roman: "pith teithennin taug"
+     tengwar: ""
+   elements:
+     - form: "pith"
+       headword: "peth"
+       headword-meaning: "word (plural)"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations:
+         - "plural i-affection"
+       rationale: "See CAPTIONS."
+     - form: "teithennin"
+       headword: "teitha-"
+       headword-meaning: "to write (past participle plural)"
+       attestation: attested-components
+       source: "LotR/0305"
+       derivations:
+         - "past participle plural agreement"
+       rationale: "See CAPTIONS."
+     - form: "taug"
+       headword: "taug"
+       headword-meaning: "firm, abiding"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations: []
+       rationale: "Attested Sindarin adjective."
+   status: attested-components
+   history:
+     - date: 2022-01-15
+       note: "Initial as pith teithiel taug."
+     - date: 2026-05-26
+       note: "Updated teithiel to teithennin (proper Sindarin plural past participle)."
 
  - key: SUBTITLE_POSITION
    english: "Subtitle position"
@@ -1031,18 +1662,55 @@ translations:
      - date: 2026-05-26
        note: "New entry from upstream drift."
  - key: SURROUND
-   english: Surround
+   english: "Surround"
    sjn:
      literal: "surround"
      roman: "ostao"
-     tengwar: ""
+     tengwar: ""
+   elements:
+     - form: "ostao"
+       headword: "osta-"
+       headword-meaning: "to surround with walls, build up, fortify"
+       attestation: neo-sindarin
+       source: "Eldamo:ns (revived from Gnomish osta-)"
+       derivations:
+         - "imperative -o: osta- -> ostao"
+       rationale: "Neo-Sindarin verb (carried over from Gnomish osta-, GL/63); imperative form."
+   status: defensible-neo-sindarin
+   history:
+     - date: 2026-05-26
+       note: "Audit pass: defensible Neo-Sindarin construction."
 
  - key: TOGGLE_STEREOSCOPIC
-   english: Toggle stereoscopic
+   english: "Toggle stereoscopic"
    sjn:
      literal: "double-seeing"
-     roman: "at-tírad"
-     tengwar: ""
+     roman: "athirad"
+     tengwar: ""
+   elements:
+     - form: "ath-"
+       headword: "at-"
+       headword-meaning: "again, double (prefix)"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations:
+         - "Lenition of following t after at-: at- + tîr- -> ath-thir- -> athir-"
+       rationale: "Attested Sindarin prefix for 'double'."
+     - form: "-irad"
+       headword: "tîr-"
+       headword-meaning: "to look (towards), watch"
+       attestation: attested
+       source: "Let/279"
+       derivations:
+         - "gerund -ad: tîr- -> tírad / -irad"
+       rationale: "Attested verb; gerund form for 'watching'."
+   composition: "at- + tîr- with mutation t -> th, then gerund -ad."
+   status: coinage
+   history:
+     - date: 2022-01-15
+       note: "Initial as at-tírad (with separator hyphen)."
+     - date: 2026-05-26
+       note: "Rewritten as athirad applying proper mutation (t -> th after at-) without the visible hyphen."
 
  - key: TOP_CENTER
    english: "Top center"
@@ -1158,7 +1826,20 @@ translations:
    sjn:
      literal: "noise/sound"
      roman: "lhôn"
-     tengwar: ""
+     tengwar: ""
+   elements:
+     - form: "lhôn"
+       headword: "lhôn"
+       headword-meaning: "sound, noise"
+       attestation: attested-components
+       source: "Eldamo:s"
+       derivations: []
+       rationale: "Attested Sindarin form; sense for 'sound' is plausible but not strongly attested."
+   status: attested-components
+   concerns: "The specific 'sound/noise' sense is loosely attested. Alternative: lamath (echo, sound)."
+   history:
+     - date: 2026-05-26
+       note: "Audit pass."
 
  - key: UNRECOGNIZED_LANGUAGE
    english: "Unrecognized"
@@ -1275,4 +1956,16 @@ translations:
    sjn:
      literal: "loud(ness)"
      roman: "brui"
-     tengwar: ""
+     tengwar: ""
+   elements:
+     - form: "brui"
+       headword: "brui"
+       headword-meaning: "loud, noisy"
+       attestation: attested
+       source: "Eldamo:s (cf. river Brui)"
+       derivations: []
+       rationale: "Attested Sindarin adjective; used here as a noun for 'volume'."
+   status: attested
+   history:
+     - date: 2026-05-26
+       note: "Audit pass."
