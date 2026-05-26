@@ -1,23 +1,11 @@
 # Shaka Player Sindarin (Elvish) Translations
-# Copyright 2022 Google LLC
+# Copyright 2026 Joey Parrish
 # SPDX-License-Identifier: Apache-2.0
 
-# This documents the manual translation of our UI into Sindarin.
-# This file is not consumed automatically.
+# This documents the manual translation of Shaka Player's UI into Sindarin.
 
-# To edit this file, install the "Tengwar Telcontar" font linked below and use
-# an editor that will pick that up automatically for the correct character set.
-# For example, gedit does a good job of this.
-
-# References:
-#  - Font: http://freetengwar.sourceforge.net/tengtelc.html
-#  - Transliteration: https://www.tecendil.com/?mode=sindarin
-#  - Dictionary: https://www.jrrvf.com/hisweloke/sindar/
-#  - Dictionary: https://www.elfdict.com/w/run/s?include_old=1
-#  - Grammar: https://www.elvish.org/gwaith/sindarin_intro.htm
-#  - Grammar: https://eldamo.org/content/grammar-indexes/grammars-s.html
-#  - Imperative ending: -o
-#  - Thesaurus: https://www.thesaurus.com/
+# These translations were rebuilt with and following the schema from
+# https://github.com/joeyparrish/elvish-translation-tools
 
 translations:
  - key: AD_DURATION
