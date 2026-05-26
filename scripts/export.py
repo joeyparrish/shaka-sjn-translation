@@ -40,6 +40,12 @@ with open(source_path) as f:
   source = yaml.safe_load(f)
 
 destination = {}
+
+# Add one items to the top of the dictionary to serve as a kind of comment
+# pointing back to this repo and its sibling.
+destination["__translation_source__"] = "https://github.com/joeyparrish/shaka-sjn-translation/blob/main/sjn-translations.yaml"
+destination["__translation_tools__"] = "https://github.com/joeyparrish/elvish-translation-tools"
+
 for item in source["translations"]:
   destination[item["key"]] = item["sjn"]["tengwar"]
 

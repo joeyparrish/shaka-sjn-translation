@@ -1,4 +1,6 @@
 {
+  "__translation_source__": "https://github.com/joeyparrish/shaka-sjn-translation/blob/main/sjn-translations.yaml",
+  "__translation_tools__": "https://github.com/joeyparrish/elvish-translation-tools",
   "AD_DURATION": "\ue022\ue02c\ue04c \ue010\ue040 \ue028\ue025\ue040\ue000\ue02e\ue044\ue02e\ue046 \ue010\ue040 \ue011\ue020\ue044\ue02e\ue044\ue010\ue040",
   "AD_PROGRESS": "\ue028\ue025\ue040\ue000\ue02e\ue044\ue02e\ue046 \ue010\ue040 \ue011\ue020\ue044\ue02e\ue044\ue010\ue040 [AD_ON] / [NUM_ADS]",
   "AD_STATISTICS": "\ue028\ue025\ue040\ue000\ue02e\ue044\ue02e\ue046 \ue010\ue040 \ue011\ue020\ue044\ue02e\ue044\ue010\ue040 \ue024\ue010\ue044\ue02e\ue044\ue008\ue040",
