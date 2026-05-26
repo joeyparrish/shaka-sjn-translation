@@ -100,16 +100,76 @@ translations:
  - key: ENTER_LOOP_MODE
    english: "Loop the current video"
    sjn:
-     literal: "enter repeating"
-     roman: "minno enquetië"
-     tengwar: " "
+     literal: "enter cyclic-playing"
+     roman: "minno osnorthad"
+     tengwar: ""
+   elements:
+     - form: "minno"
+       headword: "minna-"
+       headword-meaning: "to enter"
+       attestation: attested
+       source: "LotR/0305 (Gandalf at the Door of Moria); PE17/041; PE23/143"
+       derivations:
+         - "imperative -o: minna- -> minno"
+       rationale: "Attested Sindarin imperative for 'enter'."
+     - form: "osnorthad"
+       headword: "osnortha-"
+       headword-meaning: "(gerund) cyclic-playing"
+       attestation: coined
+       source: "coined:this-file"
+       derivations:
+         - "gerund -ad: osnortha- -> osnorthad"
+       rationale: "Gerund form of the coined osnortha- 'play cyclically'. See LOOP entry."
+   status: coinage
+   concerns: "osnorthad rests on attested components (os-, nor-, -tha-, -ad) but the compound is new."
+   history:
+     - date: 2022-01-15
+       note: "Initial 'minno enquetië'."
+     - date: 2026-05-26
+       note: "Updated to use Sindarin coinage 'osnorthad' (gerund of osnortha-) instead of Quenya 'enquetië'."
 
  - key: ENTER_PICTURE_IN_PICTURE
    english: "Enter Picture-in-Picture"
    sjn:
-     literal: "enter mind-picture within mind-picture"
-     roman: "minno fanwos bir fanwos"
-     tengwar: "   "
+     literal: "enter mind-picture in mind-picture"
+     roman: "minno fanwos mi fanwos"
+     tengwar: ""
+   elements:
+     - form: "minno"
+       headword: "minna-"
+       headword-meaning: "to enter"
+       attestation: attested
+       source: "LotR/0305"
+       derivations:
+         - "imperative -o: minna- -> minno"
+       rationale: "Attested Sindarin imperative 'enter'."
+     - form: "fanwos"
+       headword: "fanwos"
+       headword-meaning: "mind-picture"
+       attestation: attested
+       source: "PE17/174"
+       derivations: []
+       rationale: "See PICTURE_IN_PICTURE."
+     - form: "mi"
+       headword: "mi"
+       headword-meaning: "in"
+       attestation: attested
+       source: "PE22/165"
+       derivations: []
+       rationale: "Attested Sindarin preposition 'in'."
+     - form: "fanwos"
+       headword: "fanwos"
+       headword-meaning: "mind-picture"
+       attestation: attested
+       source: "PE17/174"
+       derivations: []
+       rationale: "Second occurrence."
+   status: attested
+   history:
+     - date: 2022-01-15
+       note: "Initial 'minno fanwos bir fanwos'."
+     - date: 2026-05-26
+       note: "Replaced 'bir' with attested 'mi'."
 
  - key: EXIT_FULL_SCREEN
    english: "Exit full screen"
@@ -121,16 +181,75 @@ translations:
  - key: EXIT_LOOP_MODE
    english: "Stop looping the current video"
    sjn:
-     literal: "escape repeating"
-     roman: "uthro enquetië"
-     tengwar: " "
+     literal: "escape cyclic-playing"
+     roman: "uthro osnorthad"
+     tengwar: ""
+   elements:
+     - form: "uthro"
+       headword: "uthra-"
+       headword-meaning: "to escape"
+       attestation: neo-sindarin
+       source: "Eldamo:ns"
+       derivations:
+         - "imperative -o: uthra- -> uthro"
+       rationale: "Already established in this translation for exit-actions."
+     - form: "osnorthad"
+       headword: "osnortha-"
+       headword-meaning: "(gerund) cyclic-playing"
+       attestation: coined
+       source: "coined:this-file"
+       derivations:
+         - "gerund -ad: osnortha- -> osnorthad"
+       rationale: "See LOOP and ENTER_LOOP_MODE entries."
+   status: coinage
+   history:
+     - date: 2022-01-15
+       note: "Initial 'uthro enquetië'."
+     - date: 2026-05-26
+       note: "Updated to use Sindarin coinage 'osnorthad' instead of Quenya 'enquetië'."
 
  - key: EXIT_PICTURE_IN_PICTURE
    english: "Exit Picture-in-Picture"
    sjn:
-     literal: "escape mind-picture within mind-picture"
-     roman: "uthro fanwos bir fanwos"
-     tengwar: "   "
+     literal: "escape mind-picture in mind-picture"
+     roman: "uthro fanwos mi fanwos"
+     tengwar: ""
+   elements:
+     - form: "uthro"
+       headword: "uthra-"
+       headword-meaning: "to escape"
+       attestation: neo-sindarin
+       source: "Eldamo:ns"
+       derivations:
+         - "imperative -o: uthra- -> uthro"
+       rationale: "Already established in this translation for exit-actions."
+     - form: "fanwos"
+       headword: "fanwos"
+       headword-meaning: "mind-picture"
+       attestation: attested
+       source: "PE17/174"
+       derivations: []
+       rationale: "See PICTURE_IN_PICTURE."
+     - form: "mi"
+       headword: "mi"
+       headword-meaning: "in"
+       attestation: attested
+       source: "PE22/165"
+       derivations: []
+       rationale: "Attested Sindarin preposition 'in'."
+     - form: "fanwos"
+       headword: "fanwos"
+       headword-meaning: "mind-picture"
+       attestation: attested
+       source: "PE17/174"
+       derivations: []
+       rationale: "Second occurrence."
+   status: attested
+   history:
+     - date: 2022-01-15
+       note: "Initial 'uthro fanwos bir fanwos'."
+     - date: 2026-05-26
+       note: "Replaced 'bir' with attested 'mi'."
 
  - key: FAST_FORWARD
    english: "Fast-forward"
@@ -163,9 +282,30 @@ translations:
  - key: LOOP
    english: "Loop"
    sjn:
-     literal: "repeat"
-     roman: "enqueto"
-     tengwar: ""
+     literal: "play cyclically"
+     roman: "osnortho"
+     tengwar: ""
+   elements:
+     - form: "osnortho"
+       headword: "osnortha-"
+       headword-meaning: "(causative) to make-run-around, play cyclically"
+       attestation: coined
+       source: "coined:this-file (os- + nor- + causative -tha-)"
+       derivations:
+         - "os- prefix (Sindarin 'about, around'): os- + nor- -> osnor-"
+         - "causative -tha- (Neo-Sindarin extension from Quenya): osnor- -> osnortha-"
+         - "imperative -o: osnortha- -> osnortho"
+       rationale: |
+         Coined compound from attested elements. 'Play cyclically' captures
+         looping. Replaces Quenya 'enquet-' which is also deprecated in
+         Eldamo's Quenya entries.
+   status: coinage
+   concerns: "Coined verb compound; every element is attested but the combination is new."
+   history:
+     - date: 2022-01-15
+       note: "Initial 'enqueto' (Quenya 'enquet-' with Sindarin imperative ending)."
+     - date: 2026-05-26
+       note: "Replaced Quenya 'enquet-' family with Sindarin coinage based on os- + nor- + causative -tha-."
 
  - key: MORE_SETTINGS
    english: "More settings"
@@ -191,37 +331,105 @@ translations:
  - key: NOT_APPLICABLE
    english: "Not applicable"
    sjn:
-     literal: "not important"
-     roman: "la bâl"
-     tengwar: " "
+     literal: "not important / not worthy"
+     roman: "úvall"
+     tengwar: ""
+   elements:
+     - form: "ú"
+       headword: "ú-"
+       headword-meaning: "no, not, negative; impossible"
+       attestation: attested
+       source: "LotR/1061"
+       derivations: []
+       rationale: "Attested Sindarin negation prefix; triggers soft mutation of the following consonant."
+     - form: "vall"
+       headword: "ball"
+       headword-meaning: "worthy, important"
+       attestation: neo-sindarin
+       source: "Eldamo:ns (Elaran, reformulated from Gnomish bâl)"
+       derivations:
+         - "soft mutation after ú-: b -> v: ball -> vall"
+       rationale: |
+         Neo-Sindarin reformulation of Gnomish 'bâl' (which is deprecated in
+         Eldamo). Lenition b -> v applies after the negative prefix ú-.
+   composition: "Negative prefix + adjective; the prefix triggers soft mutation of the adjective's initial b."
+   status: defensible-neo-sindarin
+   history:
+     - date: 2022-01-15
+       note: "Initial 'la bâl' (Quenya negation + Gnomish word)."
+     - date: 2026-05-26
+       note: "Replaced with Sindarin construction: ú- (attested) + ball (Neo-Sindarin reformulation, Eldamo:ns by Elaran) with soft mutation b->v -> úvall. Original bâl now deprecated."
 
  - key: "OFF"
    english: "Off"
    sjn:
      literal: "nothing"
      roman: "unt"
-     tengwar: ""
+     tengwar: ""
 
  - key: "ON"
    english: "On"
    sjn:
      literal: "active"
      roman: "carweg"
-     tengwar: ""
+     tengwar: ""
 
  - key: PAUSE
    english: "Pause"
    sjn:
-     literal: "tarry/wait/pause"
-     roman: "hasto"
-     tengwar: ""
+     literal: "halt"
+     roman: "daro"
+     tengwar: ""
+   elements:
+     - form: "daro"
+       headword: "dar-"
+       headword-meaning: "to halt, stop"
+       attestation: attested
+       source: "LotR/0339 (Haldir's 'Daro!' at the Lothlorien border); Ety/DAR"
+       derivations:
+         - "imperative -o: dar- -> daro"
+       rationale: "Attested in-canon imperative for 'halt!'."
+   status: attested
+   history:
+     - date: 2022-01-15
+       note: "Initial translation as 'hasto'."
+     - date: 2026-05-26
+       note: "Replaced 'hasto' (Noldorin 'hack through', root SYAD) with attested Sindarin 'daro'."
 
  - key: PICTURE_IN_PICTURE
    english: "Picture-in-picture"
    sjn:
-     literal: "mind-picture within mind-picture"
-     roman: "fanwos bir fanwos"
-     tengwar: "  "
+     literal: "mind-picture in mind-picture"
+     roman: "fanwos mi fanwos"
+     tengwar: ""
+   elements:
+     - form: "fanwos"
+       headword: "fanwos"
+       headword-meaning: "mind-picture (of apparition in dream)"
+       attestation: attested
+       source: "PE17/174"
+       derivations: []
+       rationale: "Already established in this translation for picture/screen/frame."
+     - form: "mi"
+       headword: "mi"
+       headword-meaning: "in"
+       attestation: attested
+       source: "PE22/165"
+       derivations: []
+       rationale: "Attested Sindarin preposition 'in'. Replaces Gnomish 'bir'."
+     - form: "fanwos"
+       headword: "fanwos"
+       headword-meaning: "mind-picture"
+       attestation: attested
+       source: "PE17/174"
+       derivations: []
+       rationale: "Second occurrence."
+   status: attested
+   history:
+     - date: 2022-01-15
+       note: "Initial 'fanwos bir fanwos'."
+     - date: 2026-05-26
+       note: "Replaced 'bir' (Gnomish) with attested Sindarin 'mi' (in)."
 
  - key: PLAY
    english: "Play"
@@ -261,16 +469,56 @@ translations:
  - key: RESOLUTION
    english: "Resolution"
    sjn:
-     literal: "value/preciousness"
+     literal: "value, preciousness"
      roman: "meiras"
-     tengwar: ""
+     tengwar: ""
+   elements:
+     - form: "meiras"
+       headword: "meiras"
+       headword-meaning: "value, preciousness"
+       attestation: neo-sindarin
+       source: "Eldamo:ns (Paul Strack), based on GL/50"
+       derivations: []
+       rationale: |
+         Neo-Sindarin neologism by Paul Strack for 'value, preciousness'.
+         Used here metaphorically for display resolution (the level of detail
+         or 'preciousness' of the image).
+   status: defensible-neo-sindarin
+   history:
+     - date: 2022-01-15
+       note: "Initial 'meiras'."
+     - date: 2026-05-26
+       note: "Documenting as deliberate Neo-Sindarin neologism (Paul Strack); confirmed not deprecated in Eldamo."
 
  - key: REWIND
    english: "Rewind"
    sjn:
-     literal: "make-run backwards"
-     roman: "northo abont"
-     tengwar: " "
+     literal: "play back"
+     roman: "northo dan"
+     tengwar: ""
+   elements:
+     - form: "northo"
+       headword: "nor-"
+       headword-meaning: "to run (causative: to make run, play)"
+       attestation: attested
+       source: "LotR/0213 (root nor-)"
+       derivations:
+         - "causative -tha- extension (Neo-Sindarin): nor- -> northa-"
+         - "imperative -o: northa- -> northo"
+       rationale: "Already established in this translation for PLAY."
+     - form: "dan"
+       headword: "dan"
+       headword-meaning: "back, back again, back upon"
+       attestation: attested
+       source: "LotR/0299"
+       derivations: []
+       rationale: "Attested Sindarin preposition meaning 'back/against/again'. Replaces Gnomish 'abont'."
+   status: attested-components
+   history:
+     - date: 2022-01-15
+       note: "Initial 'northo abont'."
+     - date: 2026-05-26
+       note: "Replaced 'abont' (Gnomish 'backwards') with attested Sindarin 'dan' (back/against)."
 
  - key: SEEK
    english: "Seek"
@@ -296,9 +544,32 @@ translations:
  - key: STATISTICS
    english: "Statistics"
    sjn:
-     literal: "interrogate numbers"
-     roman: "cetho neth"
-     tengwar: " "
+     literal: "interrogate counting"
+     roman: "cetho nediad"
+     tengwar: ""
+   elements:
+     - form: "cetho"
+       headword: "ceth-"
+       headword-meaning: "to examine, search, interrogate"
+       attestation: neo-sindarin
+       source: "Eldamo:ns (Fiona Jallings)"
+       derivations:
+         - "imperative -o: ceth- -> cetho"
+       rationale: "Neo-Sindarin verb for inquiry."
+     - form: "nediad"
+       headword: "nedia-"
+       headword-meaning: "to count, number"
+       attestation: attested
+       source: "WJ/028"
+       derivations:
+         - "gerund -ad: nedia- -> nediad"
+       rationale: "Attested Sindarin gerund 'counting'; replaces 'neth' which means 'girl, sister' in Sindarin."
+   status: attested-components
+   history:
+     - date: 2022-01-15
+       note: "Initial 'cetho neth'."
+     - date: 2026-05-26
+       note: "Replaced 'neth' (Sindarin 'girl, sister') with attested 'nediad' (gerund of 'to count')."
 
  - key: SUBTITLE_FORCED
    english: "Forced"
@@ -325,8 +596,35 @@ translations:
    english: "Undetermined"
    sjn:
      literal: "not known"
-     roman: "la sinnen"
-     tengwar: " "
+     roman: "úhinnen"
+     tengwar: ""
+   elements:
+     - form: "ú"
+       headword: "ú-"
+       headword-meaning: "no, not, negative; impossible"
+       attestation: attested
+       source: "LotR/1061"
+       derivations: []
+       rationale: "Attested Sindarin negation prefix; triggers soft mutation."
+     - form: "hinnen"
+       headword: "sinnen"
+       headword-meaning: "known (past participle)"
+       attestation: neo-sindarin
+       source: "Eldamo:ns (Fiona Jallings)"
+       derivations:
+         - "soft mutation after ú-: s -> h: sinnen -> hinnen"
+       rationale: "Neo-Sindarin past participle for 'known'. Soft mutation s->h applies after ú-."
+   composition: "Negative prefix + past participle; the prefix triggers soft mutation of the following s to h."
+   status: defensible-neo-sindarin
+   concerns: |
+     English distinction between 'undetermined' and 'unrecognized' does not have a
+     natural counterpart in Sindarin; UNDETERMINED_LANGUAGE and UNRECOGNIZED_LANGUAGE
+     both translate to 'úhinnen'. The two keys produce the same Tengwar by design.
+   history:
+     - date: 2022-01-15
+       note: "Initial 'la sinnen' (Quenya negation + Neo-Sindarin word)."
+     - date: 2026-05-26
+       note: "Replaced Quenya 'la' with attested Sindarin 'ú-', applying soft mutation s->h -> úhinnen."
 
  - key: UNMUTE
    english: "Unmute"
@@ -339,8 +637,35 @@ translations:
    english: "Unrecognized"
    sjn:
      literal: "not known"
-     roman: "la sinnen"
-     tengwar: " "
+     roman: "úhinnen"
+     tengwar: ""
+   elements:
+     - form: "ú"
+       headword: "ú-"
+       headword-meaning: "no, not, negative; impossible"
+       attestation: attested
+       source: "LotR/1061"
+       derivations: []
+       rationale: "Attested Sindarin negation prefix; triggers soft mutation."
+     - form: "hinnen"
+       headword: "sinnen"
+       headword-meaning: "known (past participle)"
+       attestation: neo-sindarin
+       source: "Eldamo:ns (Fiona Jallings)"
+       derivations:
+         - "soft mutation after ú-: s -> h: sinnen -> hinnen"
+       rationale: "Neo-Sindarin past participle for 'known'. Soft mutation s->h applies after ú-."
+   composition: "Negative prefix + past participle; the prefix triggers soft mutation of the following s to h."
+   status: defensible-neo-sindarin
+   concerns: |
+     Collapses to the same Sindarin as UNDETERMINED_LANGUAGE -- Sindarin has no
+     natural distinction between 'undetermined' (not yet decided) and
+     'unrecognized' (cannot identify). Both render as 'úhinnen'.
+   history:
+     - date: 2022-01-15
+       note: "Initial 'la sinnen'."
+     - date: 2026-05-26
+       note: "Same fix as UNDETERMINED_LANGUAGE: la -> ú-, s->h lenition -> úhinnen."
 
  - key: VOLUME
    english: "Volume"
