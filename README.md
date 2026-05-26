@@ -71,5 +71,5 @@ output). To preview the Tengwar in a font-aware terminal, pipe through
 
 [Sindarin]: https://en.wikipedia.org/wiki/Sindarin
 [Shaka Player]: https://github.com/shaka-project/shaka-player
-[elvish-translation-tools]: https://github.com/joeyparrish/elvish-translation-tools)
+[elvish-translation-tools]: https://github.com/joeyparrish/elvish-translation-tools
 [PR #10082]: https://github.com/shaka-project/shaka-player/pull/10082
