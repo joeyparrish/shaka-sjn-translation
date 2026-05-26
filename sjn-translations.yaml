@@ -1191,7 +1191,7 @@ translations:
        source: "GL/54"
        derivations: []
        rationale: "Gnomish-attested adjective used as a noun for 'speed/swiftness'. Replaces original 'lintië' which was Quenya. No directly attested Sindarin noun for 'speed'; Gnomish revival is the closest grounding."
-   status: gnomish
+   status: defensible-neo-sindarin
    concerns: "'lint' attested only in Gnomish; used here as fallback since Sindarin has no attested noun for 'speed'. Could coin an abstract noun if preferred."
    history:
      - date: 2022-01-15
