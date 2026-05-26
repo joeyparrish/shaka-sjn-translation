@@ -20,6 +20,12 @@ sjn-translations.yaml is the working file: it tracks the English source, the
 literal back-translation, the romanized Sindarin, the Tengwar-encoded form,
 and (per the schema in elvish-translation-tools) per-element provenance.
 This script reads it and writes the locale file shaka-player consumes.
+
+The Tengwar field uses CSUR Private Use Area codepoints (U+E000-U+E0AE).
+We emit them as \\uXXXX escape sequences in the JSON output (json.dumps
+default ensure_ascii=True) so the file is reviewable in any editor and
+diff-friendly. JSON parsers (including shaka-player's) decode the
+escapes transparently at load time.
 """
 
 import json
@@ -38,4 +44,7 @@ for item in source["translations"]:
   destination[item["key"]] = item["sjn"]["tengwar"]
 
 with open(destination_path, "w") as f:
-  f.write(json.dumps(destination, ensure_ascii=False, indent=2) + '\n')
+  # ensure_ascii=True emits Tengwar PUA codepoints as \uXXXX escapes
+  # for reviewability. Set to False if you ever need the literal-byte
+  # form (e.g. piping into a font-aware preview).
+  f.write(json.dumps(destination, ensure_ascii=True, indent=2) + '\n')

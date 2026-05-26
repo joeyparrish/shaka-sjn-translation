@@ -7,23 +7,43 @@ existing flat file to the structured form.
 
 ## What the build pipeline requires
 
-`sync-sjn.py` reads `sjn-translations.yaml` and writes `sjn.json`. The
-only field it consumes is the Tengwar-encoded form per key. Under the
-schema, that is `sjn.tengwar`.
-
-`sync-sjn.py` needs a one-line change to match:
-
-```python
-# Before:
-destination[item["key"]] = item["sjn"]
-
-# After:
-destination[item["key"]] = item["sjn"]["tengwar"]
-```
+`scripts/export.py` reads `sjn-translations.yaml` and writes `sjn.json`.
+The only field it consumes is the Tengwar-encoded form per key, at
+`sjn.tengwar`.
 
 Everything else in each entry (`sjn.roman`, `sjn.literal`, `elements`,
 `composition`, `status`, `concerns`, `history`) is for human use and
 ignored by the build.
+
+## Tengwar encoding: escape sequences end-to-end
+
+The Tengwar CSUR codepoints (U+E000-U+E0AE) are stored as `\uXXXX`
+escape sequences in both `sjn-translations.yaml` and the generated
+`sjn.json`, not as literal PUA characters:
+
+```yaml
+sjn:
+  tengwar: ""
+```
+
+```json
+"PLAY": ""
+```
+
+YAML and JSON both decode these escapes to the same in-memory string
+the consumer would see if literal characters were stored. The escape
+form is reviewable in any editor (GitHub diff view, plain terminals,
+file pickers) and diff-friendly. It also survives tools that might
+silently corrupt PUA characters.
+
+To produce escape-encoded Tengwar, use
+`elvish-translation-tools/scripts/transliterate.py` (escape is the
+default output). To preview the Tengwar in a font-aware terminal,
+pipe through `elvish-translation-tools/scripts/preview.py`.
+
+`export.py` uses `json.dumps(..., ensure_ascii=True)` to keep the
+escape form through the build. If you ever need raw bytes for testing
+in a font-aware tool, flip to `ensure_ascii=False`.
 
 ## Migration from the current shape
 
@@ -51,18 +71,14 @@ provenance:
   status: ...
 ```
 
-The migration can run in two phases:
+The migration ran in two phases:
 
-1. **Mechanical**: lift the three existing fields into the `sjn` map.
-   Renames only:
-   - `sjn-roman`  -> `sjn.roman`
-   - `sjn-literal` -> `sjn.literal`
-   - `sjn` -> `sjn.tengwar`
-   Update `sync-sjn.py` in the same commit. All entries still build.
-2. **Provenance backfill**: add `elements`, `status`, etc., per entry,
-   as part of normal review work (or driven by the skill when invoked).
-   This can be done incrementally; entries without `elements` are valid
-   under the schema, just less documented.
+1. **Mechanical** (done): lifted the three existing fields into the
+   `sjn` map. `sync-sjn.py` was renamed to `scripts/export.py` and
+   updated to read `item["sjn"]["tengwar"]`. All entries still build.
+2. **Provenance backfill** (in progress): adding `elements`, `status`,
+   etc., per entry as part of revision and translation work. Entries
+   without `elements` are valid under the schema, just less documented.
 
 ## Project-specific decisions
 
