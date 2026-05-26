@@ -39,5 +39,5 @@ upstream.
 ## Related
 
 The general Sindarin/Quenya translation framework lives in the sibling
-repo `elvish-translation-tools/` (Eldamo extracts, grammar references,
-mutation tables, lookup tools).
+repo [elvish-translation-tools](https://github.com/joeyparrish/elvish-translation-tools)
+(Eldamo extracts, grammar references, mutation tables, lookup tools).
