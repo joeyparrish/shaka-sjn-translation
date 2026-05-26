@@ -25,7 +25,7 @@ translations:
    sjn:
      literal: "time for break for money"
      roman: "lû an hastië an mirian"
-     tengwar: ""
+     tengwar: "\uE022\uE02C\uE04C \uE010\uE040 \uE028\uE025\uE040\uE000\uE02E\uE044\uE02E\uE046 \uE010\uE040 \uE011\uE020\uE044\uE02E\uE044\uE010\uE040"
    elements:
      - form: "lû"
        headword: "lû"
@@ -74,9 +74,9 @@ translations:
  - key: AD_PROGRESS
    english: "Ad [AD_ON] of [NUM_ADS]"
    sjn:
-     literal: "break for money [A] / [B]"
-     roman: "hastië an mirian [A] / [B]"
-     tengwar: ""
+     literal: "break for money [AD_ON] / [NUM_ADS]"
+     roman: "hastië an mirian [AD_ON] / [NUM_ADS]"
+     tengwar: "\uE028\uE025\uE040\uE000\uE02E\uE044\uE02E\uE046 \uE010\uE040 \uE011\uE020\uE044\uE02E\uE044\uE010\uE040 [AD_ON] / [NUM_ADS]"
    elements:
      - form: "hastië"
        headword: "hastië"
@@ -102,7 +102,7 @@ translations:
        derivations: []
        rationale: "Attested Sindarin word for a unit of money."
    status: coinage
-   concerns: "Placeholder substitutions [A] and [B] are preserved verbatim; UI runtime fills them in."
+   concerns: "Placeholder substitutions [AD_ON] and [B] are preserved verbatim; UI runtime fills them in."
    history:
      - date: 2026-05-26
        note: "Audit pass: backfilled schema."
@@ -112,7 +112,7 @@ translations:
    sjn:
      literal: "break for money tidings"
      roman: "hastië an mirian siniath"
-     tengwar: ""
+     tengwar: "\uE028\uE025\uE040\uE000\uE02E\uE044\uE02E\uE046 \uE010\uE040 \uE011\uE020\uE044\uE02E\uE044\uE010\uE040 \uE024\uE010\uE044\uE02E\uE044\uE008\uE040"
    elements:
      - form: "hastië"
        headword: "hastië"
@@ -152,9 +152,9 @@ translations:
  - key: AD_TIME
    english: "Ad: [AD_TIME]"
    sjn:
-     literal: "break for money: [A]"
-     roman: "hastië an mirian: [A]"
-     tengwar: ""
+     literal: "break for money: [AD_TIME]"
+     roman: "hastië an mirian: [AD_TIME]"
+     tengwar: "\uE028\uE025\uE040\uE000\uE02E\uE044\uE02E\uE046 \uE010\uE040 \uE011\uE020\uE044\uE02E\uE044\uE010\uE040: [AD_TIME]"
    elements:
      - form: "hastië"
        headword: "hastië"
@@ -180,7 +180,7 @@ translations:
        derivations: []
        rationale: "Attested Sindarin word for a unit of money."
    status: coinage
-   concerns: "Placeholder [A] preserved verbatim."
+   concerns: "Placeholder [AD_TIME] preserved verbatim."
    history:
      - date: 2026-05-26
        note: "Audit pass."
@@ -190,7 +190,7 @@ translations:
    sjn:
      literal: "heavens-make-play"
      roman: "menelnortho"
-     tengwar: ""
+     tengwar: "\uE011\uE010\uE046\uE022\uE046\uE010\uE020\uE04A\uE008\uE02E\uE04A"
    elements:
      - form: "menel"
        headword: "menel"
@@ -220,7 +220,7 @@ translations:
    sjn:
      literal: "voice-tidings"
      roman: "siniath glim"
-     tengwar: ""
+     tengwar: "\uE024\uE010\uE044\uE02E\uE044\uE008\uE040 \uE007\uE022\uE011\uE044"
    elements:
      - form: "siniath"
        headword: "siniath"
@@ -245,7 +245,7 @@ translations:
    sjn:
      literal: "auto generated"
      roman: "cammo enias"
-     tengwar: ""
+     tengwar: "\uE003\uE011\uE050\uE040\uE02E\uE04A \uE010\uE046\uE02E\uE044\uE025\uE040"
    elements:
      - form: "cammo"
        headword: "cam-"
@@ -272,7 +272,7 @@ translations:
    sjn:
      literal: "adapt/make fit"
      roman: "cammo"
-     tengwar: ""
+     tengwar: "\uE003\uE011\uE050\uE040\uE02E\uE04A"
    elements:
      - form: "cammo"
        headword: "cam-"
@@ -292,7 +292,7 @@ translations:
    sjn:
      literal: "back, against"
      roman: "dan"
-     tengwar: ""
+     tengwar: "\uE004\uE010\uE040"
    elements:
      - form: "dan"
        headword: "dan"
@@ -311,7 +311,7 @@ translations:
    sjn:
      literal: "down center"
      roman: "dad ened"
-     tengwar: ""
+     tengwar: "\uE004\uE004\uE040 \uE010\uE046\uE004\uE046"
    elements:
      - form: "dad"
        headword: "dad"
@@ -336,7 +336,7 @@ translations:
    sjn:
      literal: "down left-side"
      roman: "dad harvo"
-     tengwar: ""
+     tengwar: "\uE004\uE004\uE040 \uE028\uE020\uE040\uE00D\uE02E\uE04A"
    elements:
      - form: "dad"
        headword: "dad"
@@ -361,7 +361,7 @@ translations:
    sjn:
      literal: "down right-side"
      roman: "dad forvo"
-     tengwar: ""
+     tengwar: "\uE004\uE004\uE040 \uE009\uE020\uE04A\uE00D\uE02E\uE04A"
    elements:
      - form: "dad"
        headword: "dad"
@@ -386,7 +386,7 @@ translations:
    sjn:
      literal: "wait!"
      roman: "dartho"
-     tengwar: ""
+     tengwar: "\uE004\uE020\uE040\uE008\uE02E\uE04A"
    elements:
      - form: "dartho"
        headword: "dartha-"
@@ -405,7 +405,7 @@ translations:
    sjn:
      literal: "words written"
      roman: "pith teithennin"
-     tengwar: ""
+     tengwar: "\uE001\uE008\uE044 \uE000\uE016\uE046\uE008\uE010\uE050\uE046\uE010\uE044"
    elements:
      - form: "pith"
        headword: "peth"
@@ -436,7 +436,7 @@ translations:
    sjn:
      literal: "hurl/throw"
      roman: "hado"
-     tengwar: ""
+     tengwar: "\uE028\uE004\uE040\uE02E\uE04A"
    elements:
      - form: "hado"
        headword: "had-"
@@ -458,7 +458,7 @@ translations:
    sjn:
      literal: "middle"
      roman: "ened"
-     tengwar: ""
+     tengwar: "\uE010\uE046\uE004\uE046"
    elements:
      - form: "ened"
        headword: "ened"
@@ -476,7 +476,7 @@ translations:
    sjn:
      literal: "middle left-side"
      roman: "ened harvo"
-     tengwar: ""
+     tengwar: "\uE010\uE046\uE004\uE046 \uE028\uE020\uE040\uE00D\uE02E\uE04A"
    elements:
      - form: "ened"
        headword: "ened"
@@ -501,7 +501,7 @@ translations:
    sjn:
      literal: "middle right-side"
      roman: "ened forvo"
-     tengwar: ""
+     tengwar: "\uE010\uE046\uE004\uE046 \uE009\uE020\uE04A\uE00D\uE02E\uE04A"
    elements:
      - form: "ened"
        headword: "ened"
@@ -548,7 +548,7 @@ translations:
    sjn:
      literal: "grasp mind-picture"
      roman: "mabo fanwos"
-     tengwar: ""
+     tengwar: "\uE011\uE005\uE040\uE02E\uE04A \uE009\uE010\uE040\uE015\uE025\uE04A"
    elements:
      - form: "mabo"
        headword: "mab-"
@@ -577,7 +577,7 @@ translations:
    sjn:
      literal: "first"
      roman: "minui"
-     tengwar: ""
+     tengwar: "\uE011\uE010\uE044\uE016\uE04C"
    elements:
      - form: "minui"
        headword: "minui"
@@ -599,7 +599,7 @@ translations:
    sjn:
      literal: "keep mind-picture"
      roman: "garo fanwos"
-     tengwar: ""
+     tengwar: "\uE007\uE020\uE040\uE02E\uE04A \uE009\uE010\uE040\uE015\uE025\uE04A"
    elements:
      - form: "garo"
        headword: "gar-"
@@ -626,7 +626,7 @@ translations:
    sjn:
      literal: "enter cyclic-playing"
      roman: "minno osnorthad"
-     tengwar: ""
+     tengwar: "\uE011\uE010\uE050\uE044\uE02E\uE04A \uE025\uE04A\uE010\uE020\uE04A\uE008\uE004\uE040"
    elements:
      - form: "minno"
        headword: "minna-"
@@ -657,7 +657,7 @@ translations:
    sjn:
      literal: "enter mind-picture in mind-picture"
      roman: "minno fanwos mi fanwos"
-     tengwar: ""
+     tengwar: "\uE011\uE010\uE050\uE044\uE02E\uE04A \uE009\uE010\uE040\uE015\uE025\uE04A \uE011\uE02E\uE044 \uE009\uE010\uE040\uE015\uE025\uE04A"
    elements:
      - form: "minno"
        headword: "minna-"
@@ -700,7 +700,7 @@ translations:
    sjn:
      literal: "escape mind-picture full"
      roman: "uthro fanwos pant"
-     tengwar: ""
+     tengwar: "\uE008\uE04C\uE020\uE02E\uE04A \uE009\uE010\uE040\uE015\uE025\uE04A \uE001\uE000\uE050\uE040"
    elements:
      - form: "uthro"
        headword: "uthra-"
@@ -736,7 +736,7 @@ translations:
    sjn:
      literal: "escape cyclic-playing"
      roman: "uthro osnorthad"
-     tengwar: ""
+     tengwar: "\uE008\uE04C\uE020\uE02E\uE04A \uE025\uE04A\uE010\uE020\uE04A\uE008\uE004\uE040"
    elements:
      - form: "uthro"
        headword: "uthra-"
@@ -766,7 +766,7 @@ translations:
    sjn:
      literal: "escape mind-picture in mind-picture"
      roman: "uthro fanwos mi fanwos"
-     tengwar: ""
+     tengwar: "\uE008\uE04C\uE020\uE02E\uE04A \uE009\uE010\uE040\uE015\uE025\uE04A \uE011\uE02E\uE044 \uE009\uE010\uE040\uE015\uE025\uE04A"
    elements:
      - form: "uthro"
        headword: "uthra-"
@@ -809,7 +809,7 @@ translations:
    sjn:
      literal: "make-run fast"
      roman: "northo lim"
-     tengwar: ""
+     tengwar: "\uE010\uE020\uE04A\uE008\uE02E\uE04A \uE022\uE011\uE044"
    elements:
      - form: "northo"
        headword: "nor-"
@@ -837,7 +837,7 @@ translations:
    sjn:
      literal: "mind-picture full"
      roman: "fanwos pant"
-     tengwar: ""
+     tengwar: "\uE009\uE010\uE040\uE015\uE025\uE04A \uE001\uE000\uE050\uE040"
    elements:
      - form: "fanwos"
        headword: "fanwos"
@@ -865,7 +865,7 @@ translations:
    sjn:
      literal: "tongue, language"
      roman: "lam"
-     tengwar: ""
+     tengwar: "\uE022\uE011\uE040"
    elements:
      - form: "lam"
        headword: "lam"
@@ -886,7 +886,7 @@ translations:
    sjn:
      literal: "freshest, ever-new"
      roman: "cîrwain"
-     tengwar: ""
+     tengwar: "\uE003\uE02C\uE044\uE020\uE015\uE016\uE040\uE010"
    elements:
      - form: "cîr"
        headword: "cîr"
@@ -914,7 +914,7 @@ translations:
    sjn:
      literal: "play cyclically"
      roman: "osnortho"
-     tengwar: ""
+     tengwar: "\uE025\uE04A\uE010\uE020\uE04A\uE008\uE02E\uE04A"
    elements:
      - form: "osnortho"
        headword: "osnortha-"
@@ -964,7 +964,7 @@ translations:
    sjn:
      literal: "language without count"
      roman: "lam arnoediad"
-     tengwar: ""
+     tengwar: "\uE022\uE011\uE040 \uE020\uE040\uE010\uE004\uE046\uE02E\uE044\uE004\uE040"
    elements:
      - form: "lam"
        headword: "lam"
@@ -992,7 +992,7 @@ translations:
    sjn:
      literal: "silence"
      roman: "dîn"
-     tengwar: ""
+     tengwar: "\uE004\uE02C\uE044\uE010"
    elements:
      - form: "dîn"
        headword: "dîn"
@@ -1011,7 +1011,7 @@ translations:
    sjn:
      literal: "not important / not worthy"
      roman: "úvall"
-     tengwar: ""
+     tengwar: "\uE02C\uE04C\uE00D\uE022\uE040\uE051"
    elements:
      - form: "ú"
        headword: "ú-"
@@ -1043,7 +1043,7 @@ translations:
    sjn:
      literal: "nothing"
      roman: "unt"
-     tengwar: ""
+     tengwar: "\uE000\uE050\uE04C"
    elements:
      - form: "unt"
        headword: "unt"
@@ -1063,7 +1063,7 @@ translations:
    sjn:
      literal: "active"
      roman: "carweg"
-     tengwar: ""
+     tengwar: "\uE003\uE020\uE040\uE015\uE007\uE046"
    elements:
      - form: "carweg"
        headword: "carweg"
@@ -1082,7 +1082,7 @@ translations:
    sjn:
      literal: "old"
      roman: "iaur"
-     tengwar: ""
+     tengwar: "\uE02A\uE015\uE040\uE014"
    elements:
      - form: "iaur"
        headword: "iaur"
@@ -1102,7 +1102,7 @@ translations:
    sjn:
      literal: "halt"
      roman: "daro"
-     tengwar: ""
+     tengwar: "\uE004\uE020\uE040\uE02E\uE04A"
    elements:
      - form: "daro"
        headword: "dar-"
@@ -1124,7 +1124,7 @@ translations:
    sjn:
      literal: "mind-picture in mind-picture"
      roman: "fanwos mi fanwos"
-     tengwar: ""
+     tengwar: "\uE009\uE010\uE040\uE015\uE025\uE04A \uE011\uE02E\uE044 \uE009\uE010\uE040\uE015\uE025\uE04A"
    elements:
      - form: "fanwos"
        headword: "fanwos"
@@ -1159,7 +1159,7 @@ translations:
    sjn:
      literal: "make-run"
      roman: "northo"
-     tengwar: ""
+     tengwar: "\uE010\uE020\uE04A\uE008\uE02E\uE04A"
    elements:
      - form: "northo"
        headword: "nor-"
@@ -1182,7 +1182,7 @@ translations:
    sjn:
      literal: "swift"
      roman: "lint"
-     tengwar: ""
+     tengwar: "\uE022\uE000\uE050\uE044"
    elements:
      - form: "lint"
        headword: "lint"
@@ -1204,7 +1204,7 @@ translations:
    sjn:
      literal: "brilliance"
      roman: "aglar"
-     tengwar: ""
+     tengwar: "\uE007\uE040\uE022\uE014\uE040"
    elements:
      - form: "aglar"
        headword: "aglar"
@@ -1224,7 +1224,7 @@ translations:
    sjn:
      literal: "center"
      roman: "ened"
-     tengwar: ""
+     tengwar: "\uE010\uE046\uE004\uE046"
    elements:
      - form: "ened"
        headword: "ened"
@@ -1243,7 +1243,7 @@ translations:
    sjn:
      literal: "make-run again"
      roman: "adnortho"
-     tengwar: ""
+     tengwar: "\uE004\uE040\uE010\uE020\uE04A\uE008\uE02E\uE04A"
    elements:
      - form: "ad-"
        headword: "ad-"
@@ -1272,7 +1272,7 @@ translations:
    sjn:
      literal: "value, preciousness"
      roman: "meiras"
-     tengwar: ""
+     tengwar: "\uE011\uE016\uE046\uE020\uE025\uE040"
    elements:
      - form: "meiras"
        headword: "meiras"
@@ -1296,7 +1296,7 @@ translations:
    sjn:
      literal: "play back"
      roman: "northo dan"
-     tengwar: ""
+     tengwar: "\uE010\uE020\uE04A\uE008\uE02E\uE04A \uE004\uE010\uE040"
    elements:
      - form: "northo"
        headword: "nor-"
@@ -1326,7 +1326,7 @@ translations:
    sjn:
      literal: "time, occasion"
      roman: "lû"
-     tengwar: ""
+     tengwar: "\uE022\uE02C\uE04C"
    elements:
      - form: "lû"
        headword: "lû"
@@ -1346,7 +1346,7 @@ translations:
    sjn:
      literal: "leap across break for money"
      roman: "cabo thar hastië an mirian"
-     tengwar: ""
+     tengwar: "\uE003\uE005\uE040\uE02E\uE04A \uE008\uE014\uE040 \uE028\uE025\uE040\uE000\uE02E\uE044\uE02E\uE046 \uE010\uE040 \uE011\uE020\uE044\uE02E\uE044\uE010\uE040"
    elements:
      - form: "cabo"
        headword: "cab-"
@@ -1396,7 +1396,7 @@ translations:
    sjn:
      literal: "leap to next"
      roman: "cabo abor"
-     tengwar: ""
+     tengwar: "\uE003\uE005\uE040\uE02E\uE04A \uE005\uE040\uE014\uE04A"
    elements:
      - form: "cabo"
        headword: "cab-"
@@ -1427,7 +1427,7 @@ translations:
    sjn:
      literal: "leap behind"
      roman: "cabo adel"
-     tengwar: ""
+     tengwar: "\uE003\uE005\uE040\uE02E\uE04A \uE004\uE040\uE022\uE046"
    elements:
      - form: "cabo"
        headword: "cab-"
@@ -1455,7 +1455,7 @@ translations:
    sjn:
      literal: "leap to freshest"
      roman: "cabo na cîrwain"
-     tengwar: ""
+     tengwar: "\uE003\uE005\uE040\uE02E\uE04A \uE010\uE02E\uE040 \uE003\uE02C\uE044\uE020\uE015\uE016\uE040\uE010"
    elements:
      - form: "cabo"
        headword: "cab-"
@@ -1491,7 +1491,7 @@ translations:
    sjn:
      literal: "interrogate counting"
      roman: "cetho nediad"
-     tengwar: ""
+     tengwar: "\uE003\uE008\uE046\uE02E\uE04A \uE010\uE004\uE046\uE02E\uE044\uE004\uE040"
    elements:
      - form: "cetho"
        headword: "ceth-"
@@ -1521,7 +1521,7 @@ translations:
    sjn:
      literal: "like this"
      roman: "sui sen"
-     tengwar: ""
+     tengwar: "\uE024\uE016\uE04C \uE024\uE010\uE046"
    elements:
      - form: "sui"
        headword: "sui"
@@ -1549,7 +1549,7 @@ translations:
    sjn:
      literal: "words written firm"
      roman: "pith teithennin taug"
-     tengwar: ""
+     tengwar: "\uE001\uE008\uE044 \uE000\uE016\uE046\uE008\uE010\uE050\uE046\uE010\uE044 \uE000\uE015\uE040\uE007"
    elements:
      - form: "pith"
        headword: "peth"
@@ -1586,7 +1586,7 @@ translations:
    sjn:
      literal: "land of written-words"
      roman: "dor pith teithennin"
-     tengwar: ""
+     tengwar: "\uE004\uE014\uE04A \uE001\uE008\uE044 \uE000\uE016\uE046\uE008\uE010\uE050\uE046\uE010\uE044"
    elements:
      - form: "dor"
        headword: "dor"
@@ -1627,7 +1627,7 @@ translations:
    sjn:
      literal: "largeness of written-words"
      roman: "daered pith teithennin"
-     tengwar: ""
+     tengwar: "\uE004\uE02A\uE040\uE020\uE004\uE046 \uE001\uE008\uE044 \uE000\uE016\uE046\uE008\uE010\uE050\uE046\uE010\uE044"
    elements:
      - form: "daered"
        headword: "daer"
@@ -1666,7 +1666,7 @@ translations:
    sjn:
      literal: "surround"
      roman: "ostao"
-     tengwar: ""
+     tengwar: "\uE025\uE04A\uE000\uE02E\uE040\uE02E\uE04A"
    elements:
      - form: "ostao"
        headword: "osta-"
@@ -1686,7 +1686,7 @@ translations:
    sjn:
      literal: "double-seeing"
      roman: "athirad"
-     tengwar: ""
+     tengwar: "\uE008\uE040\uE020\uE044\uE004\uE040"
    elements:
      - form: "ath-"
        headword: "at-"
@@ -1717,7 +1717,7 @@ translations:
    sjn:
      literal: "up center"
      roman: "am ened"
-     tengwar: ""
+     tengwar: "\uE011\uE040 \uE010\uE046\uE004\uE046"
    elements:
      - form: "am"
        headword: "am"
@@ -1742,7 +1742,7 @@ translations:
    sjn:
      literal: "up left-side"
      roman: "am harvo"
-     tengwar: ""
+     tengwar: "\uE011\uE040 \uE028\uE020\uE040\uE00D\uE02E\uE04A"
    elements:
      - form: "am"
        headword: "am"
@@ -1767,7 +1767,7 @@ translations:
    sjn:
      literal: "up right-side"
      roman: "am forvo"
-     tengwar: ""
+     tengwar: "\uE011\uE040 \uE009\uE020\uE04A\uE00D\uE02E\uE04A"
    elements:
      - form: "am"
        headword: "am"
@@ -1792,7 +1792,7 @@ translations:
    sjn:
      literal: "not known"
      roman: "úhinnen"
-     tengwar: ""
+     tengwar: "\uE02C\uE04C\uE028\uE010\uE050\uE044\uE010\uE046"
    elements:
      - form: "ú"
        headword: "ú-"
@@ -1826,7 +1826,7 @@ translations:
    sjn:
      literal: "noise/sound"
      roman: "lhôn"
-     tengwar: ""
+     tengwar: "\uE023\uE02C\uE04A\uE010"
    elements:
      - form: "lhôn"
        headword: "lhôn"
@@ -1846,7 +1846,7 @@ translations:
    sjn:
      literal: "not known"
      roman: "úhinnen"
-     tengwar: ""
+     tengwar: "\uE02C\uE04C\uE028\uE010\uE050\uE044\uE010\uE046"
    elements:
      - form: "ú"
        headword: "ú-"
@@ -1880,7 +1880,7 @@ translations:
    sjn:
      literal: "chief"
      roman: "main"
-     tengwar: ""
+     tengwar: "\uE011\uE016\uE040\uE010"
    elements:
      - form: "main"
        headword: "main"
@@ -1898,7 +1898,7 @@ translations:
    sjn:
      literal: "tongue-sign"
      roman: "lam taith"
-     tengwar: ""
+     tengwar: "\uE022\uE011\uE040 \uE000\uE016\uE040\uE008"
    elements:
      - form: "lam"
        headword: "lam"
@@ -1928,7 +1928,7 @@ translations:
    sjn:
      literal: "kind of mind-picture"
      roman: "noss fanwos"
-     tengwar: ""
+     tengwar: "\uE010\uE027\uE04A \uE009\uE010\uE040\uE015\uE025\uE04A"
    elements:
      - form: "noss"
        headword: "noss"
@@ -1956,7 +1956,7 @@ translations:
    sjn:
      literal: "loud(ness)"
      roman: "brui"
-     tengwar: ""
+     tengwar: "\uE005\uE020\uE016\uE04C"
    elements:
      - form: "brui"
        headword: "brui"
