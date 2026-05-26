@@ -3,6 +3,8 @@
 Maintenance workspace for the Sindarin (Elvish) translation of the
 Shaka Player UI.
 
+See also [github.com/joeyparrish/elvish-translation-tools](https://github.com/joeyparrish/elvish-translation-tools).
+
 ## Files
 
 - `source.json` -- the English source strings that need translating.
