@@ -227,7 +227,8 @@ translations:
    status: attested
    history:
      - date: 2026-05-26
-       note: "New entry: drift from upstream source.json."
+       note: New entry
+
  - key: AUTO_GENERATED
    english: "Auto generated"
    sjn:
@@ -254,7 +255,8 @@ translations:
    status: defensible-neo-sindarin
    history:
      - date: 2026-05-26
-       note: "New entry: drift from upstream."
+       note: New entry
+
  - key: AUTO_QUALITY
    english: "Auto"
    sjn:
@@ -318,7 +320,8 @@ translations:
    status: attested-components
    history:
      - date: 2026-05-26
-       note: "New entry from upstream drift."
+       note: New entry
+
  - key: BOTTOM_LEFT
    english: "Bottom left"
    sjn:
@@ -343,7 +346,8 @@ translations:
    status: attested-components
    history:
      - date: 2026-05-26
-       note: "New entry from upstream drift."
+       note: New entry
+
  - key: BOTTOM_RIGHT
    english: "Bottom right"
    sjn:
@@ -368,7 +372,8 @@ translations:
    status: attested-components
    history:
      - date: 2026-05-26
-       note: "New entry from upstream drift."
+       note: New entry
+
  - key: BUFFERING
    english: "Buffering"
    sjn:
@@ -387,7 +392,8 @@ translations:
    status: attested-components
    history:
      - date: 2026-05-26
-       note: "New entry from upstream drift."
+       note: New entry
+
  - key: CAPTIONS
    english: "Captions"
    sjn:
@@ -458,7 +464,8 @@ translations:
    status: attested
    history:
      - date: 2026-05-26
-       note: "New entry from upstream drift."
+       note: New entry
+
  - key: CENTER_LEFT
    english: "Center left"
    sjn:
@@ -483,7 +490,8 @@ translations:
    status: attested
    history:
      - date: 2026-05-26
-       note: "New entry from upstream drift."
+       note: New entry
+
  - key: CENTER_RIGHT
    english: "Center right"
    sjn:
@@ -508,7 +516,8 @@ translations:
    status: attested
    history:
      - date: 2026-05-26
-       note: "New entry from upstream drift."
+       note: New entry
+
  - key: CHAPTERS
    english: "Chapters"
    sjn:
@@ -559,7 +568,8 @@ translations:
    status: attested
    history:
      - date: 2026-05-26
-       note: "New entry from upstream drift."
+       note: New entry
+
  - key: DEFAULT
    english: "Default"
    sjn:
@@ -581,7 +591,8 @@ translations:
    concerns: "Semantic stretch: minui is 'first' (ordinal); used metaphorically for 'default'."
    history:
      - date: 2026-05-26
-       note: "New entry from upstream drift."
+       note: New entry
+
  - key: DOWNLOAD_VIDEO_FRAME
    english: "Save video frame"
    sjn:
@@ -1084,7 +1095,8 @@ translations:
    status: attested
    history:
      - date: 2026-05-26
-       note: "New entry from upstream drift."
+       note: New entry
+
  - key: PAUSE
    english: "Pause"
    sjn:
@@ -1409,7 +1421,8 @@ translations:
      -- contrast SKIP_PREVIOUS which uses 'adel' for 'behind'.
    history:
      - date: 2026-05-26
-       note: "New entry from upstream drift."
+       note: New entry
+
  - key: SKIP_PREVIOUS
    english: "Previous"
    sjn:
@@ -1437,7 +1450,8 @@ translations:
    status: attested-components
    history:
      - date: 2026-05-26
-       note: "New entry from upstream drift."
+       note: New entry
+
  - key: SKIP_TO_LIVE
    english: "Skip ahead to live"
    sjn:
@@ -1531,7 +1545,8 @@ translations:
    status: attested
    history:
      - date: 2026-05-26
-       note: "New entry from upstream drift."
+       note: New entry
+
  - key: SUBTITLE_FORCED
    english: "Forced"
    sjn:
@@ -1609,7 +1624,8 @@ translations:
    status: attested-components
    history:
      - date: 2026-05-26
-       note: "New entry from upstream drift. Uses 'dor' (land) metaphorically for 'position'."
+       note: New entry
+
  - key: SUBTITLE_SIZE
    english: "Subtitle size"
    sjn:
@@ -1648,7 +1664,8 @@ translations:
    concerns: "'daered' is a coined abstract noun from 'daer' (large)."
    history:
      - date: 2026-05-26
-       note: "New entry from upstream drift."
+       note: New entry
+
  - key: SURROUND
    english: "Surround"
    sjn:
@@ -1724,7 +1741,8 @@ translations:
    status: attested
    history:
      - date: 2026-05-26
-       note: "New entry from upstream drift."
+       note: New entry
+
  - key: TOP_LEFT
    english: "Top left"
    sjn:
@@ -1749,7 +1767,8 @@ translations:
    status: attested
    history:
      - date: 2026-05-26
-       note: "New entry from upstream drift."
+       note: New entry
+
  - key: TOP_RIGHT
    english: "Top right"
    sjn:
@@ -1774,7 +1793,8 @@ translations:
    status: attested
    history:
      - date: 2026-05-26
-       note: "New entry from upstream drift."
+       note: New entry
+
  - key: UNDETERMINED_LANGUAGE
    english: "Undetermined"
    sjn:
@@ -1880,7 +1900,8 @@ translations:
    status: attested
    history:
      - date: 2026-05-26
-       note: "New entry from upstream drift."
+       note: New entry
+
  - key: VIDEO_SIGN
    english: "Sign language"
    sjn:
@@ -1910,7 +1931,8 @@ translations:
    status: attested-components
    history:
      - date: 2026-05-26
-       note: "New entry from upstream drift."
+       note: New entry
+
  - key: VIDEO_TYPE
    english: "Video type"
    sjn:
@@ -1938,7 +1960,8 @@ translations:
    status: attested-components
    history:
      - date: 2026-05-26
-       note: "New entry from upstream drift."
+       note: New entry
+
  - key: VOLUME
    english: "Volume"
    sjn:
