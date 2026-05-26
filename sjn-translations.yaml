@@ -55,6 +55,58 @@ translations:
      roman: "menelnortho"
      tengwar: ""
 
+ - key: AUDIO_DESCRIPTION
+   english: "Audio description"
+   sjn:
+     literal: "voice-tidings"
+     roman: "siniath glim"
+     tengwar: ""
+   elements:
+     - form: "siniath"
+       headword: "siniath"
+       headword-meaning: "tidings, news, history"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations: []
+       rationale: "Established in this translation (AD_STATISTICS) for the 'news/information' sense."
+     - form: "glim"
+       headword: "glim"
+       headword-meaning: "voice"
+       attestation: attested
+       source: "PE17/097"
+       derivations: []
+       rationale: "Attested Sindarin word for 'voice'; here represents audio narration."
+   status: attested
+   history:
+     - date: 2026-05-26
+       note: "New entry: drift from upstream source.json."
+ - key: AUTO_GENERATED
+   english: "Auto generated"
+   sjn:
+     literal: "auto generated"
+     roman: "cammo enias"
+     tengwar: ""
+   elements:
+     - form: "cammo"
+       headword: "cam-"
+       headword-meaning: "to fit, suit, adapt"
+       attestation: attested
+       source: "VT44/14; VT47/20-21"
+       derivations:
+         - "imperative -o: cam- -> cammo (with mm from nasal-infixed past stem)"
+       rationale: "Established in this translation for 'auto' (AUTO_QUALITY)."
+     - form: "enias"
+       headword: "enia-"
+       headword-meaning: "to be born, be generated, result"
+       attestation: neo-sindarin
+       source: "Eldamo:ns (Sami Paldanius, based on GL/61)"
+       derivations:
+         - "gerund -s (or -as): enia- -> enias"
+       rationale: "Neo-Sindarin verb for 'be generated'; gerund form for 'generated (thing)'."
+   status: defensible-neo-sindarin
+   history:
+     - date: 2026-05-26
+       note: "New entry: drift from upstream."
  - key: AUTO_QUALITY
    english: "Auto"
    sjn:
@@ -69,6 +121,100 @@ translations:
      roman: "dan"
      tengwar: ""
 
+ - key: BOTTOM_CENTER
+   english: "Bottom center"
+   sjn:
+     literal: "down center"
+     roman: "dad ened"
+     tengwar: ""
+   elements:
+     - form: "dad"
+       headword: "dad"
+       headword-meaning: "down"
+       attestation: noldorin
+       source: "Ety/DAT"
+       derivations: []
+       rationale: "Noldorin-attested adverb 'down'; used as directional adjective for bottom position. No Sindarin-period direct attestation."
+     - form: "ened"
+       headword: "ened"
+       headword-meaning: "middle, center"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations: []
+       rationale: "Established in this translation for 'center' (RECENTER_VR)."
+   status: attested-components
+   history:
+     - date: 2026-05-26
+       note: "New entry from upstream drift."
+ - key: BOTTOM_LEFT
+   english: "Bottom left"
+   sjn:
+     literal: "down left-side"
+     roman: "dad harvo"
+     tengwar: ""
+   elements:
+     - form: "dad"
+       headword: "dad"
+       headword-meaning: "down"
+       attestation: noldorin
+       source: "Ety/DAT"
+       derivations: []
+       rationale: "Directional adjective for bottom; Noldorin-attested."
+     - form: "harvo"
+       headword: "harvo"
+       headword-meaning: "left hand, left side"
+       attestation: attested
+       source: "PE23/136"
+       derivations: []
+       rationale: "Attested Sindarin noun used here for the 'left' position."
+   status: attested-components
+   history:
+     - date: 2026-05-26
+       note: "New entry from upstream drift."
+ - key: BOTTOM_RIGHT
+   english: "Bottom right"
+   sjn:
+     literal: "down right-side"
+     roman: "dad forvo"
+     tengwar: ""
+   elements:
+     - form: "dad"
+       headword: "dad"
+       headword-meaning: "down"
+       attestation: noldorin
+       source: "Ety/DAT"
+       derivations: []
+       rationale: "Directional adjective for bottom."
+     - form: "forvo"
+       headword: "forvo"
+       headword-meaning: "right hand, right side"
+       attestation: attested
+       source: "VT47/06"
+       derivations: []
+       rationale: "Attested Sindarin noun for 'right side'."
+   status: attested-components
+   history:
+     - date: 2026-05-26
+       note: "New entry from upstream drift."
+ - key: BUFFERING
+   english: "Buffering"
+   sjn:
+     literal: "wait!"
+     roman: "dartho"
+     tengwar: ""
+   elements:
+     - form: "dartho"
+       headword: "dartha-"
+       headword-meaning: "to wait, stay, remain, last, endure"
+       attestation: noldorin
+       source: "Ety/DAR"
+       derivations:
+         - "imperative -o: dartha- -> dartho"
+       rationale: "Imperative of 'to wait'; communicates 'currently waiting/loading' state. Noldorin-attested form."
+   status: attested-components
+   history:
+     - date: 2026-05-26
+       note: "New entry from upstream drift."
  - key: CAPTIONS
    english: "Captions"
    sjn:
@@ -83,6 +229,74 @@ translations:
      roman: "hanto"
      tengwar: ""
 
+ - key: CENTER
+   english: "Center"
+   sjn:
+     literal: "middle"
+     roman: "ened"
+     tengwar: ""
+   elements:
+     - form: "ened"
+       headword: "ened"
+       headword-meaning: "middle, center"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations: []
+       rationale: "Established in this translation (RECENTER_VR)."
+   status: attested
+   history:
+     - date: 2026-05-26
+       note: "New entry from upstream drift."
+ - key: CENTER_LEFT
+   english: "Center left"
+   sjn:
+     literal: "middle left-side"
+     roman: "ened harvo"
+     tengwar: ""
+   elements:
+     - form: "ened"
+       headword: "ened"
+       headword-meaning: "middle, center"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations: []
+       rationale: "See CENTER."
+     - form: "harvo"
+       headword: "harvo"
+       headword-meaning: "left side"
+       attestation: attested
+       source: "PE23/136"
+       derivations: []
+       rationale: "See BOTTOM_LEFT."
+   status: attested
+   history:
+     - date: 2026-05-26
+       note: "New entry from upstream drift."
+ - key: CENTER_RIGHT
+   english: "Center right"
+   sjn:
+     literal: "middle right-side"
+     roman: "ened forvo"
+     tengwar: ""
+   elements:
+     - form: "ened"
+       headword: "ened"
+       headword-meaning: "middle, center"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations: []
+       rationale: "See CENTER."
+     - form: "forvo"
+       headword: "forvo"
+       headword-meaning: "right side"
+       attestation: attested
+       source: "VT47/06"
+       derivations: []
+       rationale: "See BOTTOM_RIGHT."
+   status: attested
+   history:
+     - date: 2026-05-26
+       note: "New entry from upstream drift."
  - key: CHAPTERS
    english: Chapters
    sjn:
@@ -90,6 +304,57 @@ translations:
      roman: "tylme"
      tengwar: ""
 
+ - key: COPY_VIDEO_FRAME
+   english: "Copy video frame"
+   sjn:
+     literal: "grasp mind-picture"
+     roman: "mabo fanwos"
+     tengwar: ""
+   elements:
+     - form: "mabo"
+       headword: "mab-"
+       headword-meaning: "to seize, grasp"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations:
+         - "imperative -o: mab- -> mabo"
+       rationale: |
+         Attested Sindarin verb for 'seize/grasp', here for the
+         'copy to clipboard' sense. Distinguishes from
+         DOWNLOAD_VIDEO_FRAME ('garo fanwos' = 'keep mind-picture').
+     - form: "fanwos"
+       headword: "fanwos"
+       headword-meaning: "mind-picture"
+       attestation: attested
+       source: "PE17/174"
+       derivations: []
+       rationale: "Established in this translation for 'picture/frame'."
+   status: attested
+   history:
+     - date: 2026-05-26
+       note: "New entry from upstream drift."
+ - key: DEFAULT
+   english: "Default"
+   sjn:
+     literal: "first"
+     roman: "minui"
+     tengwar: ""
+   elements:
+     - form: "minui"
+       headword: "minui"
+       headword-meaning: "first"
+       attestation: attested
+       source: "VT42/10"
+       derivations: []
+       rationale: |
+         Attested Sindarin ordinal 'first'; used here for 'default'
+         (the first/primary/standard choice). Sindarin has no direct
+         word for 'default' in the UI sense.
+   status: attested
+   concerns: "Semantic stretch: minui is 'first' (ordinal); used metaphorically for 'default'."
+   history:
+     - date: 2026-05-26
+       note: "New entry from upstream drift."
  - key: DOWNLOAD_VIDEO_FRAME
    english: Save video frame
    sjn:
@@ -374,6 +639,26 @@ translations:
      roman: "carweg"
      tengwar: ""
 
+ - key: ORIGINAL_VERSION
+   english: "Original version"
+   sjn:
+     literal: "old"
+     roman: "iaur"
+     tengwar: ""
+   elements:
+     - form: "iaur"
+       headword: "iaur"
+       headword-meaning: "old, original"
+       attestation: attested
+       source: "Eldamo:s (cf. Iant Iaur, Drúwaith Iaur)"
+       derivations: []
+       rationale: |
+         Common Sindarin adjective for 'old, original'. Frequently
+         used as a modifier in place names.
+   status: attested
+   history:
+     - date: 2026-05-26
+       note: "New entry from upstream drift."
  - key: PAUSE
    english: "Pause"
    sjn:
@@ -534,6 +819,65 @@ translations:
      roman: "cabo thar hastië an mirian"
      tengwar: "    "
 
+ - key: SKIP_NEXT
+   english: "Next"
+   sjn:
+     literal: "leap to next"
+     roman: "cabo abor"
+     tengwar: ""
+   elements:
+     - form: "cabo"
+       headword: "cab-"
+       headword-meaning: "to leap"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations:
+         - "imperative -o: cab- -> cabo"
+       rationale: "Established in this translation for skip-actions (SKIP_AD, SKIP_TO_LIVE)."
+     - form: "abor"
+       headword: "abor"
+       headword-meaning: "following, succeeding, close behind/next"
+       attestation: neo-sindarin
+       source: "Eldamo:ns (Paul Strack, based on GL/61)"
+       derivations: []
+       rationale: |
+         Neo-Sindarin adjective/adverb for 'next' or 'close behind'.
+         Used here for the 'next item' sense.
+   status: defensible-neo-sindarin
+   concerns: |
+     'abor' has overlapping senses ('next in time' vs 'behind in space')
+     -- contrast SKIP_PREVIOUS which uses 'adel' for 'behind'.
+   history:
+     - date: 2026-05-26
+       note: "New entry from upstream drift."
+ - key: SKIP_PREVIOUS
+   english: "Previous"
+   sjn:
+     literal: "leap behind"
+     roman: "cabo adel"
+     tengwar: ""
+   elements:
+     - form: "cabo"
+       headword: "cab-"
+       headword-meaning: "to leap"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations:
+         - "imperative -o: cab- -> cabo"
+       rationale: "Established in this translation for skip-actions."
+     - form: "adel"
+       headword: "adel"
+       headword-meaning: "behind, in rear (of)"
+       attestation: noldorin
+       source: "Ety/TELES"
+       derivations: []
+       rationale: |
+         Noldorin-attested preposition 'behind'; used here for 'previous
+         item' (the one before in a sequence).
+   status: attested-components
+   history:
+     - date: 2026-05-26
+       note: "New entry from upstream drift."
  - key: SKIP_TO_LIVE
    english: "Skip ahead to live"
    sjn:
@@ -571,6 +915,34 @@ translations:
      - date: 2026-05-26
        note: "Replaced 'neth' (Sindarin 'girl, sister') with attested 'nediad' (gerund of 'to count')."
 
+ - key: SUBTITLES_EXAMPLE
+   english: "Subtitles example"
+   sjn:
+     literal: "like this"
+     roman: "sui sen"
+     tengwar: ""
+   elements:
+     - form: "sui"
+       headword: "sui"
+       headword-meaning: "as, like"
+       attestation: attested
+       source: "VT44/27"
+       derivations: []
+       rationale: "Attested Sindarin preposition 'as, like'."
+     - form: "sen"
+       headword: "sen"
+       headword-meaning: "this"
+       attestation: attested
+       source: "LotR/0305"
+       derivations: []
+       rationale: |
+         Attested Sindarin demonstrative 'this'. Combined with 'sui'
+         gives 'like this' -- the subtitle preview literally shows
+         what subtitles will look like.
+   status: attested
+   history:
+     - date: 2026-05-26
+       note: "New entry from upstream drift."
  - key: SUBTITLE_FORCED
    english: "Forced"
    sjn:
@@ -578,6 +950,86 @@ translations:
      roman: "pith teithiel taug"
      tengwar: "  "
 
+ - key: SUBTITLE_POSITION
+   english: "Subtitle position"
+   sjn:
+     literal: "land of written-words"
+     roman: "dor pith teithennin"
+     tengwar: ""
+   elements:
+     - form: "dor"
+       headword: "dor"
+       headword-meaning: "land, country, region"
+       attestation: attested
+       source: "Eldamo:s (cf. Mordor, Doriath, many place-names)"
+       derivations: []
+       rationale: |
+         'Land' used metaphorically for 'position/location' -- Sindarin
+         has no attested word for 'position' in the UI sense.
+     - form: "pith"
+       headword: "peth"
+       headword-meaning: "word (plural: words)"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations:
+         - "plural i-affection: peth -> pith"
+       rationale: "Established in this translation for captions (CAPTIONS, SUBTITLE_FORCED)."
+     - form: "teithennin"
+       headword: "teitha-"
+       headword-meaning: "to write, draw, inscribe"
+       attestation: attested-components
+       source: "LotR/0305"
+       derivations:
+         - "past participle: teitha- -> teithen (singular)"
+         - "plural agreement with pith: teithen -> teithennin"
+       rationale: |
+         Past participle 'written', agreeing in number with 'pith'
+         (the words). Replaces the original translator's 'teithiel'
+         which used Quenya-style participle ending.
+   composition: "dor + noun-phrase 'pith teithennin' (head noun + adjective with plural agreement)."
+   status: attested-components
+   history:
+     - date: 2026-05-26
+       note: "New entry from upstream drift. Uses 'dor' (land) metaphorically for 'position'."
+ - key: SUBTITLE_SIZE
+   english: "Subtitle size"
+   sjn:
+     literal: "largeness of written-words"
+     roman: "daered pith teithennin"
+     tengwar: ""
+   elements:
+     - form: "daered"
+       headword: "daer"
+       headword-meaning: "great, large"
+       attestation: attested
+       source: "UT/264"
+       derivations:
+         - "abstract noun -ed: daer -> daered ('largeness, size')"
+       rationale: |
+         'Size' has no direct Sindarin attestation; deriving 'largeness'
+         from attested 'daer' (great/large) via abstract-noun -ed.
+     - form: "pith"
+       headword: "peth"
+       headword-meaning: "word (plural)"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations:
+         - "plural i-affection: peth -> pith"
+       rationale: "See SUBTITLE_POSITION."
+     - form: "teithennin"
+       headword: "teitha-"
+       headword-meaning: "to write"
+       attestation: attested-components
+       source: "LotR/0305"
+       derivations:
+         - "past participle plural: teitha- -> teithennin"
+       rationale: "See SUBTITLE_POSITION."
+   composition: "Abstract noun + noun-phrase 'pith teithennin'."
+   status: coinage
+   concerns: "'daered' is a coined abstract noun from 'daer' (large)."
+   history:
+     - date: 2026-05-26
+       note: "New entry from upstream drift."
  - key: SURROUND
    english: Surround
    sjn:
@@ -592,6 +1044,81 @@ translations:
      roman: "at-tírad"
      tengwar: ""
 
+ - key: TOP_CENTER
+   english: "Top center"
+   sjn:
+     literal: "up center"
+     roman: "am ened"
+     tengwar: ""
+   elements:
+     - form: "am"
+       headword: "am"
+       headword-meaning: "up"
+       attestation: attested
+       source: "MR/320 (in compound amdir 'hope, looking up')"
+       derivations: []
+       rationale: "Attested Sindarin adverb/prefix 'up'."
+     - form: "ened"
+       headword: "ened"
+       headword-meaning: "middle, center"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations: []
+       rationale: "See CENTER."
+   status: attested
+   history:
+     - date: 2026-05-26
+       note: "New entry from upstream drift."
+ - key: TOP_LEFT
+   english: "Top left"
+   sjn:
+     literal: "up left-side"
+     roman: "am harvo"
+     tengwar: ""
+   elements:
+     - form: "am"
+       headword: "am"
+       headword-meaning: "up"
+       attestation: attested
+       source: "MR/320"
+       derivations: []
+       rationale: "Attested 'up'."
+     - form: "harvo"
+       headword: "harvo"
+       headword-meaning: "left side"
+       attestation: attested
+       source: "PE23/136"
+       derivations: []
+       rationale: "Attested 'left side'."
+   status: attested
+   history:
+     - date: 2026-05-26
+       note: "New entry from upstream drift."
+ - key: TOP_RIGHT
+   english: "Top right"
+   sjn:
+     literal: "up right-side"
+     roman: "am forvo"
+     tengwar: ""
+   elements:
+     - form: "am"
+       headword: "am"
+       headword-meaning: "up"
+       attestation: attested
+       source: "MR/320"
+       derivations: []
+       rationale: "Attested 'up'."
+     - form: "forvo"
+       headword: "forvo"
+       headword-meaning: "right side"
+       attestation: attested
+       source: "VT47/06"
+       derivations: []
+       rationale: "Attested 'right side'."
+   status: attested
+   history:
+     - date: 2026-05-26
+       note: "New entry from upstream drift."
  - key: UNDETERMINED_LANGUAGE
    english: "Undetermined"
    sjn:
@@ -667,6 +1194,82 @@ translations:
      - date: 2026-05-26
        note: "Same fix as UNDETERMINED_LANGUAGE: la -> ú-, s->h lenition -> úhinnen."
 
+ - key: VIDEO_MAIN
+   english: "Main"
+   sjn:
+     literal: "chief"
+     roman: "main"
+     tengwar: ""
+   elements:
+     - form: "main"
+       headword: "main"
+       headword-meaning: "prime, chief, pre-eminent"
+       attestation: attested
+       source: "VT42/25"
+       derivations: []
+       rationale: "Attested Sindarin adjective; direct semantic match for 'main'."
+   status: attested
+   history:
+     - date: 2026-05-26
+       note: "New entry from upstream drift."
+ - key: VIDEO_SIGN
+   english: "Sign language"
+   sjn:
+     literal: "tongue-sign"
+     roman: "lam taith"
+     tengwar: ""
+   elements:
+     - form: "lam"
+       headword: "lam"
+       headword-meaning: "tongue, language"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations: []
+       rationale: |
+         Attested Sindarin word for 'language' (formerly used as
+         lambë (Quenya) in this translation -- now LANGUAGE uses 'lam').
+     - form: "taith"
+       headword: "taith"
+       headword-meaning: "sign, symbol, mark"
+       attestation: attested
+       source: "PE17/043"
+       derivations: []
+       rationale: |
+         Attested Sindarin noun 'sign'. The noun-noun direct compound
+         'lam taith' follows attested patterns like 'Iant Iaur'.
+   composition: "Direct noun-noun compound (head + modifier)."
+   status: attested-components
+   history:
+     - date: 2026-05-26
+       note: "New entry from upstream drift."
+ - key: VIDEO_TYPE
+   english: "Video type"
+   sjn:
+     literal: "kind of mind-picture"
+     roman: "noss fanwos"
+     tengwar: ""
+   elements:
+     - form: "noss"
+       headword: "noss"
+       headword-meaning: "kin, family, kind, sort"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations: []
+       rationale: |
+         Attested Sindarin 'kin/family/kind'; used here for the 'type'
+         sense (kind of video).
+     - form: "fanwos"
+       headword: "fanwos"
+       headword-meaning: "mind-picture"
+       attestation: attested
+       source: "PE17/174"
+       derivations: []
+       rationale: "Established for 'picture/video'."
+   composition: "Noun-noun compound: kind + picture = 'video type'."
+   status: attested-components
+   history:
+     - date: 2026-05-26
+       note: "New entry from upstream drift."
  - key: VOLUME
    english: "Volume"
    sjn:
