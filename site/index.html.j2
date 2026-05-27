@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shaka Player Sindarin Translations</title>
+  <style>
+    @font-face {
+      font-family: TengwarTelcontar;
+      src: url('TengwarTelcontar.woff2') format('woff2');
+    }
+
+    body {
+      font-family: system-ui, sans-serif;
+      max-width: 1400px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+      color: #222;
+    }
+
+    h1 {
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 0.5rem 0.75rem;
+      border-bottom: 1px solid #ddd;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f0f0f0;
+      font-weight: 600;
+      position: sticky;
+      top: 0;
+    }
+
+    tr:nth-child(even) td {
+      background: #fafafa;
+    }
+
+    .col-tengwar {
+      font-family: TengwarTelcontar;
+      font-size: 1.2em;
+    }
+
+    .more-info {
+      font-size: 0.8rem;
+      padding: 0.25rem 0.6rem;
+      cursor: pointer;
+      border: 1px solid #bbb;
+      border-radius: 3px;
+      background: #fff;
+      white-space: nowrap;
+    }
+
+    .more-info:hover {
+      background: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Shaka Player Sindarin Translations</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>English</th>
+        <th>Literal</th>
+        <th>Romanized</th>
+        <th>Tengwar</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in translations %}
+      <tr>
+        <td>{{ item.key }}</td>
+        <td>{{ item.english }}</td>
+        <td>{{ item.sjn.literal }}</td>
+        <td>{{ item.sjn.roman }}</td>
+        <td class="col-tengwar">{{ item.sjn.tengwar }}</td>
+        <td><button class="more-info" data-key="{{ item.key }}">More info</button></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</body>
+</html>
