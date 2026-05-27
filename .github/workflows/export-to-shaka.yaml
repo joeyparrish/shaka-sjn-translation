@@ -4,8 +4,10 @@ name: Export translations to shaka-player
 # against the upstream if none is open.  Does not require write access to
 # TARGET_REPO itself.
 #
-# Requires a repo secret SHAKA_PLAYER_TOKEN: a PAT with `repo` scope
-# (sufficient to fork TARGET_REPO and open a PR against it).
+# Requires a repo secret SHAKA_PLAYER_TOKEN: a classic PAT with `public_repo`
+# scope, sufficient to fork TARGET_REPO, push to the fork, and open a PR.
+# Fine-grained PATs do not work here; they return 403 when forking repos
+# outside their account scope, even for public repos.
 
 on:
   push:
