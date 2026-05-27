@@ -69,13 +69,13 @@ permissions:
 ### Jobs
 
 **build**
-1. `actions/checkout@v4`
+1. `actions/checkout@v6`
 2. `pip install pyyaml jinja2`
 3. `python scripts/generate_html.py`
-4. `actions/upload-pages-artifact@v3` with `path: site`
+4. `actions/upload-pages-artifact@v5` with `path: site`
 
 **deploy** (depends on build)
-1. `actions/deploy-pages@v4`
+1. `actions/deploy-pages@v5`
 
 The Pages source in repository settings is set to "GitHub Actions" (already
 configured by the user).
