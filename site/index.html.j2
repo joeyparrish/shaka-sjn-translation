@@ -256,6 +256,32 @@
     .source-meta a:hover {
       color: #222;
     }
+
+    .translation-coverage {
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: -1rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .coverage-bar {
+      display: inline-block;
+      width: 120px;
+      height: 8px;
+      background: #e0e0e0;
+      border-radius: 4px;
+      overflow: hidden;
+      vertical-align: middle;
+    }
+
+    .coverage-fill {
+      height: 100%;
+      background: #4caf50;
+      border-radius: 4px;
+    }
   </style>
 </head>
 <body>
@@ -263,6 +289,10 @@
   {% if source_meta %}
   <p class="source-meta">Source strings: last updated {{ source_meta.date[:10] }} &middot; <a href="https://github.com/shaka-project/shaka-player/commit/{{ source_meta.sha }}" target="_blank" rel="noopener">{{ source_meta.sha[:7] }}</a></p>
   {% endif %}
+  <p class="translation-coverage">
+    <span class="coverage-bar"><span class="coverage-fill" style="width: {{ translation_stats.pct }}%"></span></span>
+    {{ translation_stats.pct }}% translated ({{ translation_stats.translated }}&thinsp;/&thinsp;{{ translation_stats.total }} strings)
+  </p>
   <table>
     <thead>
       <tr>
