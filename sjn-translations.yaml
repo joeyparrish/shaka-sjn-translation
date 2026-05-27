@@ -92,7 +92,7 @@ translations:
        derivations: []
        rationale: "Attested Sindarin word for a unit of money."
    status: coinage
-   concerns: "Placeholder substitutions [AD_ON] and [B] are preserved verbatim; UI runtime fills them in."
+   concerns: "Placeholder substitutions [AD_ON] and [NUM_ADS] are preserved verbatim; UI runtime fills them in."
    history:
      - date: 2020-03-26
        note: "Initial translation."

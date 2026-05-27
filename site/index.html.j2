@@ -66,6 +66,180 @@
     .more-info:hover {
       color: #222;
     }
+
+    /* ── Modal ── */
+
+    dialog {
+      border: none;
+      border-radius: 8px;
+      padding: 0;
+      max-width: 680px;
+      width: calc(100% - 2rem);
+      max-height: 85vh;
+      overflow-y: auto;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    }
+
+    dialog::backdrop {
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    .dialog-inner {
+      padding: 1.5rem;
+    }
+
+    .dialog-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 0.75rem;
+    }
+
+    .dialog-title {
+      font-size: 1.25rem;
+      margin: 0 0 0.2rem;
+    }
+
+    .dialog-key {
+      font-size: 0.8rem;
+      color: #999;
+      font-family: monospace;
+    }
+
+    .dialog-close {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      line-height: 1;
+      cursor: pointer;
+      color: #999;
+      padding: 0 0.25rem;
+      flex-shrink: 0;
+    }
+
+    .dialog-close:hover {
+      color: #222;
+    }
+
+    .dialog-translation {
+      display: flex;
+      gap: 1rem;
+      align-items: baseline;
+      flex-wrap: wrap;
+      margin-bottom: 1.25rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #eee;
+    }
+
+    .dialog-roman {
+      color: #444;
+      font-style: italic;
+    }
+
+    .dialog-tengwar {
+      font-family: system-ui, sans-serif, TengwarTelcontar;
+      font-size: 1.4em;
+    }
+
+    .dialog-elements {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .element-card {
+      background: #f8f8f8;
+      border-radius: 4px;
+      padding: 0.75rem;
+      font-size: 0.875rem;
+    }
+
+    .element-form {
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 0.15rem;
+    }
+
+    .element-headword {
+      color: #555;
+      margin-bottom: 0.4rem;
+    }
+
+    .element-meta {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 0.35rem;
+    }
+
+    .badge {
+      font-size: 0.7rem;
+      padding: 0.1rem 0.4rem;
+      border-radius: 3px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .badge-attested { background: #d4edda; color: #155724; }
+    .badge-coined   { background: #fff3cd; color: #856404; }
+    .badge-other    { background: #e2e3e5; color: #383d41; }
+
+    .element-source {
+      font-size: 0.8rem;
+      color: #888;
+      font-family: monospace;
+    }
+
+    .element-derivations {
+      margin: 0.25rem 0 0.25rem 1.2rem;
+      padding: 0;
+      color: #555;
+    }
+
+    .element-rationale {
+      color: #444;
+      margin-top: 0.25rem;
+    }
+
+    .dialog-footer {
+      padding-top: 1rem;
+      border-top: 1px solid #eee;
+      font-size: 0.875rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .dialog-status {
+      color: #555;
+    }
+
+    .dialog-concerns {
+      color: #7a5c00;
+      background: #fffbe6;
+      border-left: 3px solid #f0c800;
+      padding: 0.4rem 0.65rem;
+      border-radius: 0 3px 3px 0;
+    }
+
+    .dialog-history {
+      font-size: 0.8rem;
+      color: #777;
+    }
+
+    .history-entry {
+      display: flex;
+      gap: 1rem;
+      margin-top: 0.2rem;
+    }
+
+    .history-date {
+      font-family: monospace;
+      white-space: nowrap;
+    }
   </style>
 </head>
 <body>
@@ -94,5 +268,108 @@
       {% endfor %}
     </tbody>
   </table>
+
+  <dialog id="info-dialog">
+    <div class="dialog-inner">
+      <div class="dialog-header">
+        <div>
+          <h2 class="dialog-title"></h2>
+          <div class="dialog-key"></div>
+        </div>
+        <button class="dialog-close" aria-label="Close">×</button>
+      </div>
+      <div class="dialog-translation">
+        <span class="dialog-roman"></span>
+        <span class="dialog-tengwar"></span>
+      </div>
+      <div class="dialog-elements"></div>
+      <div class="dialog-footer">
+        <div class="dialog-status"></div>
+        <div class="dialog-concerns"></div>
+        <div class="dialog-history"></div>
+      </div>
+    </div>
+  </dialog>
+
+  <script type="application/json" id="translations-data">
+  {{ translations_json | safe }}
+  </script>
+
+  <script>
+    const data = JSON.parse(document.getElementById('translations-data').textContent);
+    const byKey = Object.fromEntries(data.map(t => [t.key, t]));
+    const dialog = document.getElementById('info-dialog');
+
+    function esc(str) {
+      const el = document.createElement('span');
+      el.textContent = String(str);
+      return el.innerHTML;
+    }
+
+    function renderModal(t) {
+      dialog.querySelector('.dialog-title').textContent = t.english;
+      dialog.querySelector('.dialog-key').textContent = t.key;
+      dialog.querySelector('.dialog-roman').textContent = t.sjn.roman;
+      dialog.querySelector('.dialog-tengwar').textContent = t.sjn.tengwar;
+
+      const elementsEl = dialog.querySelector('.dialog-elements');
+      elementsEl.innerHTML = (t.elements || []).map(el => {
+        const badgeClass = el.attestation === 'attested' ? 'badge-attested'
+                         : el.attestation === 'coined'   ? 'badge-coined'
+                         : 'badge-other';
+        const derivations = (el.derivations || []).length
+          ? `<ul class="element-derivations">${el.derivations.map(d => `<li>${esc(d)}</li>`).join('')}</ul>`
+          : '';
+        return `<div class="element-card">
+          <div class="element-form">${esc(el.form)}</div>
+          <div class="element-headword">${esc(el.headword)} — ${esc(el['headword-meaning'])}</div>
+          <div class="element-meta">
+            <span class="badge ${badgeClass}">${esc(el.attestation)}</span>
+            <span class="element-source">${esc(el.source)}</span>
+          </div>
+          ${derivations}
+          <div class="element-rationale">${esc(el.rationale)}</div>
+        </div>`;
+      }).join('');
+
+      const statusEl = dialog.querySelector('.dialog-status');
+      statusEl.innerHTML = t.status ? `<strong>Status:</strong> ${esc(t.status)}` : '';
+      statusEl.hidden = !t.status;
+
+      const concernsEl = dialog.querySelector('.dialog-concerns');
+      concernsEl.textContent = t.concerns || '';
+      concernsEl.hidden = !t.concerns;
+
+      const historyEl = dialog.querySelector('.dialog-history');
+      if (t.history && t.history.length) {
+        historyEl.innerHTML = '<strong>History</strong>'
+          + t.history.map(h =>
+              `<div class="history-entry">
+                <span class="history-date">${esc(h.date)}</span>
+                <span>${esc(h.note)}</span>
+              </div>`
+            ).join('');
+        historyEl.hidden = false;
+      } else {
+        historyEl.hidden = true;
+      }
+    }
+
+    document.querySelectorAll('.more-info').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const t = byKey[btn.dataset.key];
+        if (t) {
+          renderModal(t);
+          dialog.showModal();
+        }
+      });
+    });
+
+    dialog.querySelector('.dialog-close').addEventListener('click', () => dialog.close());
+
+    dialog.addEventListener('click', e => {
+      if (e.target === dialog) dialog.close();
+    });
+  </script>
 </body>
 </html>
