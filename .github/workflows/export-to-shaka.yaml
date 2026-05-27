@@ -37,10 +37,22 @@ jobs:
           GH_TOKEN: ${{ secrets.SHAKA_PLAYER_TOKEN }}
         run: gh repo clone "$TARGET_REPO" target
 
+      - name: Check for changes
+        id: check
+        run: |
+          if diff -q sjn.json target/ui/locales/sjn.json > /dev/null 2>&1; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No changes — skipping PR."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Copy locale file
+        if: steps.check.outputs.changed == 'true'
         run: cp sjn.json target/ui/locales/sjn.json
 
       - name: Commit and push
+        if: steps.check.outputs.changed == 'true'
         working-directory: target
         env:
           GH_TOKEN: ${{ secrets.SHAKA_PLAYER_TOKEN }}
@@ -58,6 +70,7 @@ jobs:
           git push --force origin "$BRANCH"
 
       - name: Open PR if none exists
+        if: steps.check.outputs.changed == 'true'
         working-directory: target
         env:
           GH_TOKEN: ${{ secrets.SHAKA_PLAYER_TOKEN }}
