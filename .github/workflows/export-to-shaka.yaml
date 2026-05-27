@@ -15,6 +15,10 @@ on:
   push:
     branches: [main]
 
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
 env:
   TARGET_REPO: joeyparrish/shaka-player
   BRANCH: sjn-translations
