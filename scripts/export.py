@@ -30,14 +30,24 @@ escapes transparently at load time.
 
 import json
 import os
+import sys
 import yaml
 
 base_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+scripts_path = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, scripts_path)
+import stats as stats_module
+
 source_path = os.path.join(base_path, "sjn-translations.yaml")
+source_json_path = os.path.join(base_path, "source.json")
 destination_path = os.path.join(base_path, "sjn.json")
+stats_path = os.path.join(base_path, "translation-stats.json")
 
 with open(source_path) as f:
   source = yaml.safe_load(f)
+
+with open(source_json_path, encoding="utf-8") as f:
+  source_json = json.load(f)
 
 destination = {}
 
@@ -54,3 +64,7 @@ with open(destination_path, "w") as f:
   # for reviewability. Set to False if you ever need the literal-byte
   # form (e.g. piping into a font-aware preview).
   f.write(json.dumps(destination, ensure_ascii=True, indent=2) + '\n')
+
+translation_stats = stats_module.compute(source, source_json)
+with open(stats_path, "w") as f:
+  f.write(json.dumps(translation_stats) + '\n')

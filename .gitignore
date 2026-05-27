@@ -2,8 +2,7 @@
 *.sw*
 *~
 
-# Generated preview page.
+# Generated files.
 site/index.html
-
-# Generated Shaka json file.
 sjn.json
+translation-stats.json

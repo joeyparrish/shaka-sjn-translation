@@ -2,10 +2,13 @@
 import datetime
 import json
 import os
+import sys
 import yaml
 from jinja2 import Environment, FileSystemLoader
 
 base_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import stats as stats_module
 source_path = os.path.join(base_path, "sjn-translations.yaml")
 source_json_path = os.path.join(base_path, "source.json")
 meta_path = os.path.join(base_path, "source-meta.json")
@@ -23,15 +26,7 @@ if os.path.exists(meta_path):
     with open(meta_path, encoding="utf-8") as f:
         source_meta = json.load(f)
 
-source_keys = set(source_json.keys())
-total = len(source_keys)
-translated = sum(
-    1 for t in source["translations"]
-    if t.get("key") in source_keys and t.get("sjn", {}).get("tengwar")
-)
-# Round down so we don't count 99.5% as complete.
-translation_pct = ((100 * translated) // total) if total else 0
-translation_stats = {"translated": translated, "total": total, "pct": translation_pct}
+translation_stats = stats_module.compute(source, source_json)
 
 def _serialize(obj):
     if isinstance(obj, datetime.date):
