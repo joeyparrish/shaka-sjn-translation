@@ -240,18 +240,10 @@ translations:
  - key: AUTO_GENERATED
    english: "Auto generated"
    sjn:
-     literal: "auto generated"
-     roman: "cammo enias"
-     tengwar: "\uE003\uE011\uE050\uE040\uE02E\uE04A \uE010\uE046\uE02E\uE044\uE025\uE040"
+     literal: "generated"
+     roman: "enias"
+     tengwar: "\uE010\uE046\uE02E\uE044\uE025\uE040"
    elements:
-     - form: "cammo"
-       headword: "cam-"
-       headword-meaning: "to fit, suit, adapt"
-       attestation: attested
-       source: "VT44/14; VT47/20-21"
-       derivations:
-         - "imperative -o: cam- -> cammo (with mm from nasal-infixed past stem)"
-       rationale: "Established in this translation for 'auto' (AUTO_QUALITY)."
      - form: "enias"
        headword: "enia-"
        headword-meaning: "to be born, be generated, result"
@@ -264,6 +256,8 @@ translations:
    history:
      - date: 2026-05-26
        note: New entry
+     - date: 2026-05-26
+       note: "Adjusted from 'cammo enias', with 'cammo' meaning 'adapt'.  'Generated' is better alone."
 
  - key: AUTO_QUALITY
    english: "Auto"
@@ -533,24 +527,26 @@ translations:
  - key: CHAPTERS
    english: "Chapters"
    sjn:
-     literal: "events (?)"
-     roman: "tylme"
-     tengwar: ""
+     literal: "pages"
+     roman: "pailt"
+     tengwar: "\uE001\uE016\uE040\uE022\uE000"
    elements:
-     - form: "tylme"
-       headword: "tylme"
-       headword-meaning: "(intended: events/sections)"
-       attestation: coined
-       source: "coined:this-file"
-       derivations: []
-       rationale: "Unparseable: not attested in Sindarin or Noldorin under this form. Original translator's intent for 'tylme' as 'events' could not be decomposed into attested elements."
-   status: needs-revision
-   concerns: "Cannot derive 'tylme' from attested Sindarin. Candidate replacements: 'pith' (tales) or coin from a verb of telling. Needs user input."
+     - form: "pailt"
+       headword: "palt"
+       headword-meaning: "wide flat leaf; page of book"
+       attestation: neo-sindarin
+       source: "Eldamo:ns (Paul Strack, reformulated from Gnomish, GL/63)"
+       derivations:
+         - "plural i-affection: palt -> pailt (single-syllable a -> ai)"
+       rationale: "Neo-Sindarin reformulation of Gnomish 'palt' (page of book). Pluralized to 'pages' as the closest Sindarin proxy for 'chapters' (a chapter being a section of pages)."
+   status: defensible-neo-sindarin
    history:
      - date: 2022-01-15
        note: "Initial as tylme."
      - date: 2026-05-26
        note: "Flagged for revision: form is unparseable."
+     - date: 2026-05-26
+       note: "Retranslated as 'pailt' (pages, plural of palt 'page of book')."
 
  - key: COPY_VIDEO_FRAME
    english: "Copy video frame"
@@ -957,24 +953,34 @@ translations:
  - key: MORE_SETTINGS
    english: "More settings"
    sjn:
-     literal: "(intended: more+choices)"
-     roman: "galainc"
-     tengwar: ""
+     literal: "more choices"
+     roman: "am cilith"
+     tengwar: "\uE011\uE040 \uE003\uE022\uE044\uE008\uE044"
    elements:
-     - form: "galainc"
-       headword: "galainc"
-       headword-meaning: "(intended: more choices?)"
-       attestation: coined
-       source: "coined:this-file"
+     - form: "am"
+       headword: "am"
+       headword-meaning: "more"
+       attestation: neo-sindarin
+       source: "Eldamo:ns (Fayanzār)"
        derivations: []
-       rationale: "Unparseable: cannot decompose into attested Sindarin elements. Original translator's intent unclear."
-   status: needs-revision
-   concerns: "Cannot derive 'galainc' from attested Sindarin. Likely needs replacement; possible candidates: 'cilth amben' (paths more) or similar. Needs user input."
+       rationale: "Neo-Sindarin neologism extending the attested Sindarin prefix 'am-' (up) to the adverbial sense 'more'. No mutation triggered on the following noun."
+     - form: "cilith"
+       headword: "cilith"
+       headword-meaning: "choice, choosing, selection"
+       attestation: neo-sindarin
+       source: "Eldamo:ns (Elaran, GL/52)"
+       derivations: []
+       rationale: "Neo-Sindarin abstract noun for 'choice' (with the -ith collective/selection-style ending). Captures 'settings' as 'choices'."
+   composition: "Adverb 'more' + collective noun 'choice/selection'. No mutation between elements ('am' is not in the documented lenition trigger list)."
+   status: defensible-neo-sindarin
+   concerns: "Both elements are Neo-Sindarin neologisms (Fayanzār and Elaran respectively); the construction stacks two fan-invented words. Consider replacing if a closer attested form is found."
    history:
      - date: 2018-11-03
-       note: "Initial translation."
+       note: "Initial translation as 'galainc'."
      - date: 2026-05-26
        note: "Flagged for revision: form is unparseable."
+     - date: 2026-05-26
+       note: "Retranslated as 'am cilith' (more choices) using two Neo-Sindarin neologisms."
 
  - key: MULTIPLE_LANGUAGES
    english: "Multiple languages"
@@ -1060,24 +1066,34 @@ translations:
  - key: "OFF"
    english: "Off"
    sjn:
-     literal: "nothing"
-     roman: "unt"
-     tengwar: "\uE000\uE050\uE04C"
+     literal: "not active"
+     roman: "úgarweg"
+     tengwar: "\uE02C\uE04C\uE007\uE020\uE040\uE015\uE007\uE046"
    elements:
-     - form: "unt"
-       headword: "unt"
-       headword-meaning: "nothing"
-       attestation: gnomish
-       source: "Eldamo:g"
+     - form: "ú"
+       headword: "ú-"
+       headword-meaning: "no, not, negative; impossible"
+       attestation: attested
+       source: "LotR/1061"
        derivations: []
-       rationale: "Gnomish revival used as 'off' (deliberate older-stage borrowing)."
-   status: attested-components
-   concerns: "'unt' is Gnomish (Tolkien's earliest stage), not attested Sindarin."
+       rationale: "Attested Sindarin negation prefix; triggers soft mutation."
+     - form: "garweg"
+       headword: "carweg"
+       headword-meaning: "active, busy"
+       attestation: attested
+       source: "PE17/144"
+       derivations:
+         - "soft mutation after ú-: c -> g: carweg -> garweg"
+       rationale: "Attested Sindarin adjective 'active'. Initial c lenites to g after the negative prefix ú- (same mutation pattern as úvall and úhinnen)."
+   composition: "Negative prefix + adjective; the prefix triggers soft mutation of the adjective's initial c."
+   status: defensible-neo-sindarin
    history:
      - date: 2018-11-03
-       note: "Initial translation."
+       note: "Initial translation as 'unt' (Gnomish 'nothing')."
      - date: 2026-05-26
        note: "Audit pass: documented as Gnomish revival."
+     - date: 2026-05-26
+       note: "Retranslated as 'úgarweg' ('not active') -- ú- + carweg with soft mutation c->g."
 
  - key: "ON"
    english: "On"
@@ -1163,7 +1179,7 @@ translations:
        attestation: attested
        source: "PE22/165"
        derivations: []
-       rationale: "Attested Sindarin preposition 'in'. Replaces Gnomish 'bir'."
+       rationale: "Attested Sindarin preposition 'in'."
      - form: "fanwos"
        headword: "fanwos"
        headword-meaning: "mind-picture"
@@ -1206,24 +1222,32 @@ translations:
  - key: PLAYBACK_RATE
    english: "Playback speed"
    sjn:
-     literal: "swift"
-     roman: "lint"
-     tengwar: "\uE022\uE000\uE050\uE044"
+     literal: "swift(-ness)"
+     roman: "i lim"
+     tengwar: "\uE02E\uE044 \uE022\uE011\uE044"
    elements:
-     - form: "lint"
-       headword: "lint"
-       headword-meaning: "quick, agile, nimble, light"
-       attestation: gnomish
-       source: "GL/54"
+     - form: "i"
+       headword: "i"
+       headword-meaning: "the (article)"
+       attestation: attested
+       source: "AotM/062.5206"
        derivations: []
-       rationale: "Gnomish-attested adjective used as a noun for 'speed/swiftness'. Replaces original 'lintië' which was Quenya. No directly attested Sindarin noun for 'speed'; Gnomish revival is the closest grounding."
-   status: defensible-neo-sindarin
-   concerns: "'lint' attested only in Gnomish; used here as fallback since Sindarin has no attested noun for 'speed'. Could coin an abstract noun if preferred."
+       rationale: "Adding an article ('the speed') is the sound way to make an adjective a noun."
+     - form: "lim"
+       headword: "lim"
+       headword-meaning: "quick, swift"
+       attestation: attested
+       source: "LotR/0213 (also used in FAST_FORWARD's 'northo lim')"
+       derivations: []
+       rationale: "Attested Sindarin adjective 'swift'; substantivized into 'speed' by the preceding definite article. 'l' is unaffected by the soft mutation 'i' would otherwise trigger, so the form is 'i lim' as written."
+   status: attested-components
    history:
      - date: 2022-01-15
        note: "Initial as lintië (Quenya)."
      - date: 2026-05-26
        note: "Replaced with Gnomish-attested lint (Sindarin has no direct equivalent)."
+     - date: 2026-05-26
+       note: "Replaced with 'i lim' ('the swift', in the sense of 'the swiftness' or 'speed')."
 
  - key: QUALITY
    english: "Quality"
@@ -1240,10 +1264,11 @@ translations:
        derivations: []
        rationale: "Attested Sindarin; metaphorical use for video 'quality' = brilliance/clarity of the image."
    status: attested
-   concerns: "Semantic stretch: aglar literally 'glory/splendor', used metaphorically for image quality."
    history:
      - date: 2026-05-26
        note: "Audit pass."
+     - date: 2026-05-26
+       note: "Concerns over semantic stretch rejected.  This is a good enough metaphor from a medieval language."
 
  - key: RECENTER_VR
    english: "Recenter"
@@ -1341,7 +1366,7 @@ translations:
        attestation: attested
        source: "LotR/0299"
        derivations: []
-       rationale: "Attested Sindarin preposition meaning 'back/against/again'. Replaces Gnomish 'abont'."
+       rationale: "Attested Sindarin preposition meaning 'back/against/again'."
    status: attested-components
    history:
      - date: 2018-11-03
@@ -1352,24 +1377,26 @@ translations:
  - key: SEEK
    english: "Seek"
    sjn:
-     literal: "time, occasion"
-     roman: "lû"
-     tengwar: "\uE022\uE02C\uE04C"
+     literal: "seek"
+     roman: "cesto"
+     tengwar: "\uE003\uE025\uE046\uE000\uE02E\uE04A"
    elements:
-     - form: "lû"
-       headword: "lû"
-       headword-meaning: "time, occasion"
-       attestation: attested
-       source: "Eldamo:s"
-       derivations: []
-       rationale: "Attested Sindarin; used metaphorically here (seek = find a time/position in the video)."
-   status: attested
-   concerns: "Semantic stretch: 'lû' is 'time/occasion'. Overlaps with AD_DURATION which also uses lû."
+     - form: "cesto"
+       headword: "cesta-"
+       headword-meaning: "to seek, search for, look for"
+       attestation: neo-sindarin
+       source: "Eldamo:ns (Fiona Jallings, FJNS)"
+       derivations:
+         - "imperative -o: cesta- -> cesto"
+       rationale: "Neo-Sindarin verb for 'to seek'; imperative form. Direct semantic match for the UI's seek action (find a position in the video)."
+   status: defensible-neo-sindarin
    history:
      - date: 2018-11-03
-       note: "Initial translation."
+       note: "Initial translation as 'lû' (time)."
      - date: 2026-05-26
        note: "Audit pass."
+     - date: 2026-05-26
+       note: "Retranslated as 'cesto' (seek)."
 
  - key: SKIP_AD
    english: "Skip Ad"
@@ -1448,19 +1475,18 @@ translations:
          Neo-Sindarin adjective/adverb for 'next' or 'close behind'.
          Used here for the 'next item' sense.
    status: defensible-neo-sindarin
-   concerns: |
-     'abor' has overlapping senses ('next in time' vs 'behind in space')
-     -- contrast SKIP_PREVIOUS which uses 'adel' for 'behind'.
    history:
      - date: 2026-05-26
        note: New entry
+     - date: 2026-05-26
+       note: "Concerns about 'abor' vs 'adel' rejected."
 
  - key: SKIP_PREVIOUS
    english: "Previous"
    sjn:
-     literal: "leap behind"
-     roman: "cabo adel"
-     tengwar: "\uE003\uE005\uE040\uE02E\uE04A \uE004\uE040\uE022\uE046"
+     literal: "leap back"
+     roman: "cabo dan"
+     tengwar: "\uE003\uE005\uE040\uE02E\uE04A \uE004\uE010\uE040"
    elements:
      - form: "cabo"
        headword: "cab-"
@@ -1470,19 +1496,19 @@ translations:
        derivations:
          - "imperative -o: cab- -> cabo"
        rationale: "Established in this translation for skip-actions."
-     - form: "adel"
-       headword: "adel"
-       headword-meaning: "behind, in rear (of)"
-       attestation: noldorin
-       source: "Ety/TELES"
+     - form: "dan"
+       headword: "dan"
+       headword-meaning: "back to, back again, against"
+       attestation: attested
+       source: "LotR/0299"
        derivations: []
-       rationale: |
-         Noldorin-attested preposition 'behind'; used here for 'previous
-         item' (the one before in a sequence).
+       rationale: "Attested Sindarin preposition."
    status: attested-components
    history:
      - date: 2026-05-26
        note: New entry
+     - date: 2026-05-26
+       note: "Replaced 'adel' with 'dan'."
 
  - key: SKIP_TO_LIVE
    english: "Skip ahead to live"
@@ -1870,13 +1896,13 @@ translations:
    elements:
      - form: "lhôn"
        headword: "lhôn"
-       headword-meaning: "sound, noise"
+       headword-meaning: "noise, sound"
        attestation: attested-components
        source: "Eldamo:s"
        derivations: []
-       rationale: "Attested Sindarin form; sense for 'sound' is plausible but not strongly attested."
+       rationale: "Attested Sindarin form for noise; sense for 'sound' is plausible but not strongly attested."
    status: attested-components
-   concerns: "The specific 'sound/noise' sense is loosely attested. Alternative: lamath (echo, sound)."
+   concerns: "The specific 'sound' sense is loosely attested. Alternative: lamath (echoing voices) rejected."
    history:
      - date: 2018-11-03
        note: "Initial translation."
