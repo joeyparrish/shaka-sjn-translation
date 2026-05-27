@@ -56,6 +56,8 @@ translations:
    status: coinage
    concerns: "Multi-part compound; relies on the 'hastië an mirian' signature coinage for 'ad'."
    history:
+     - date: 2020-03-26
+       note: "Initial translation."
      - date: 2026-05-26
        note: "Audit pass: backfilled schema; kept original vocabulary."
 
@@ -92,6 +94,8 @@ translations:
    status: coinage
    concerns: "Placeholder substitutions [AD_ON] and [B] are preserved verbatim; UI runtime fills them in."
    history:
+     - date: 2020-03-26
+       note: "Initial translation."
      - date: 2026-05-26
        note: "Audit pass: backfilled schema."
 
@@ -170,6 +174,8 @@ translations:
    status: coinage
    concerns: "Placeholder [AD_TIME] preserved verbatim."
    history:
+     - date: 2020-03-26
+       note: "Initial translation."
      - date: 2026-05-26
        note: "Audit pass."
 
@@ -200,6 +206,8 @@ translations:
    status: coinage
    concerns: "Coined compound; literal reading is 'sky-play'. Captures the 'play via wireless / through the air' metaphor."
    history:
+     - date: 2022-03-17
+       note: "Initial translation."
      - date: 2026-05-26
        note: "Audit pass: backfilled schema."
 
@@ -274,6 +282,8 @@ translations:
        rationale: "Attested Sindarin verb 'to fit/adapt'. Imperative used metaphorically for 'auto' (automatically adapts)."
    status: defensible-neo-sindarin
    history:
+     - date: 2018-11-03
+       note: "Initial translation."
      - date: 2026-05-26
        note: "Audit pass: defensible Neo-Sindarin construction; backfilled schema."
 
@@ -293,6 +303,8 @@ translations:
        rationale: "Attested Sindarin preposition."
    status: attested
    history:
+     - date: 2018-11-03
+       note: "Initial translation."
      - date: 2026-05-26
        note: "Audit pass."
 
@@ -420,8 +432,8 @@ translations:
        rationale: "Past participle with proper Sindarin plural agreement; replaces original 'teithiel' which used Quenya-style ending."
    status: attested-components
    history:
-     - date: 2022-01-15
-       note: "Initial as pith teithiel."
+     - date: 2018-11-03
+       note: "Initial translation."
      - date: 2026-05-26
        note: "Replaced teithiel (Quenya-style past participle) with teithennin (Sindarin plural past participle)."
 
@@ -442,10 +454,10 @@ translations:
        rationale: "Attested Sindarin verb 'to hurl'; imperative form. Replaces original 'hanto' which was an unattested past-stem-style imperative."
    status: attested-components
    history:
-     - date: 2022-01-15
-       note: "Initial as hanto."
+     - date: 2018-11-03
+       note: "Initial translation."
      - date: 2026-05-26
-       note: "Corrected to the regular imperative form hado."
+       note: "Corrected 'hanto' to the regular imperative form 'hado'."
 
  - key: CENTER
    english: "Center"
@@ -689,7 +701,7 @@ translations:
        rationale: "Second occurrence."
    status: attested
    history:
-     - date: 2022-01-15
+     - date: 2019-04-02
        note: "Initial 'minno fanwos bir fanwos'."
      - date: 2026-05-26
        note: "Replaced 'bir' with attested 'mi'."
@@ -725,6 +737,8 @@ translations:
        rationale: "Attested Sindarin adjective 'full'. Replaces original 'panta' which was Quenya."
    status: attested-components
    history:
+     - date: 2018-11-03
+       note: "Initial translation."
      - date: 2022-01-15
        note: "Initial as uthro fanwos panta."
      - date: 2026-05-26
@@ -828,6 +842,8 @@ translations:
        rationale: "Attested Sindarin adjective; used adverbially."
    status: attested-components
    history:
+     - date: 2018-11-03
+       note: "Initial translation."
      - date: 2026-05-26
        note: "Audit pass."
 
@@ -854,8 +870,8 @@ translations:
        rationale: "Attested Sindarin adjective; replaces original 'panta' (Quenya)."
    status: attested-components
    history:
-     - date: 2022-01-15
-       note: "Initial as fanwos panta."
+     - date: 2018-11-03
+       note: "Initial translation."
      - date: 2026-05-26
        note: "Replaced panta (Quenya) with attested Sindarin pant."
 
@@ -875,10 +891,10 @@ translations:
        rationale: "Attested Sindarin word for 'language'. Replaces original 'lambë' which was Quenya."
    status: attested
    history:
-     - date: 2022-01-15
-       note: "Initial as lambë (Quenya)."
+     - date: 2018-11-03
+       note: "Initial translation."
      - date: 2026-05-26
-       note: "Replaced with attested Sindarin lam."
+       note: "Replaced 'lambë' with attested Sindarin lam."
 
  - key: LIVE
    english: "Live"
@@ -905,6 +921,8 @@ translations:
    composition: "Two synonyms compounded for emphasis. The g- of gwain lenites to silence inside the compound, giving cîr-wain."
    status: attested-components
    history:
+     - date: 2018-11-03
+       note: "Initial translation."
      - date: 2026-05-26
        note: "Audit pass: well-formed compound from attested elements."
 
@@ -953,8 +971,8 @@ translations:
    status: needs-revision
    concerns: "Cannot derive 'galainc' from attested Sindarin. Likely needs replacement; possible candidates: 'cilth amben' (paths more) or similar. Needs user input."
    history:
-     - date: 2022-01-15
-       note: "Initial as galainc."
+     - date: 2018-11-03
+       note: "Initial translation."
      - date: 2026-05-26
        note: "Flagged for revision: form is unparseable."
 
@@ -981,8 +999,8 @@ translations:
        rationale: "Attested Sindarin for 'countless/innumerable'."
    status: attested
    history:
-     - date: 2022-01-15
-       note: "Initial as lambë arnoediad."
+     - date: 2019-04-02
+       note: "Initial as 'lambë arnoediad'."
      - date: 2026-05-26
        note: "Replaced lambë (Quenya) with lam (attested Sindarin)."
 
@@ -1002,6 +1020,8 @@ translations:
        rationale: "Attested Sindarin noun."
    status: attested
    history:
+     - date: 2018-11-03
+       note: "Initial translation."
      - date: 2026-05-26
        note: "Audit pass."
 
@@ -1032,10 +1052,10 @@ translations:
    composition: "Negative prefix + adjective; the prefix triggers soft mutation of the adjective's initial b."
    status: defensible-neo-sindarin
    history:
-     - date: 2022-01-15
-       note: "Initial 'la bâl' (Quenya negation + Gnomish word)."
+     - date: 2018-11-03
+       note: "Initial translation."
      - date: 2026-05-26
-       note: "Replaced with Sindarin construction: ú- (attested) + ball (Neo-Sindarin reformulation, Eldamo:ns by Elaran) with soft mutation b->v -> úvall. Original bâl now deprecated."
+       note: "Replaced 'la bâl' with Sindarin construction: ú- (attested) + ball (Neo-Sindarin reformulation, Eldamo:ns by Elaran) with soft mutation b->v -> úvall. Original bâl now deprecated."
 
  - key: "OFF"
    english: "Off"
@@ -1054,6 +1074,8 @@ translations:
    status: attested-components
    concerns: "'unt' is Gnomish (Tolkien's earliest stage), not attested Sindarin."
    history:
+     - date: 2018-11-03
+       note: "Initial translation."
      - date: 2026-05-26
        note: "Audit pass: documented as Gnomish revival."
 
@@ -1073,6 +1095,8 @@ translations:
        rationale: "Attested Sindarin adjective; direct semantic match."
    status: attested
    history:
+     - date: 2018-11-03
+       note: "Initial translation."
      - date: 2026-05-26
        note: "Audit pass: attested form."
 
@@ -1114,8 +1138,8 @@ translations:
        rationale: "Attested in-canon imperative for 'halt!'."
    status: attested
    history:
-     - date: 2022-01-15
-       note: "Initial translation as 'hasto'."
+     - date: 2018-11-03
+       note: "Initial translation."
      - date: 2026-05-26
        note: "Replaced 'hasto' (Noldorin 'hack through', root SYAD) with attested Sindarin 'daro'."
 
@@ -1174,6 +1198,8 @@ translations:
    status: defensible-neo-sindarin
    concerns: "Causative -tha- is Neo-Sindarin extension from Quenya; not strictly attested in Sindarin."
    history:
+     - date: 2018-11-03
+       note: "Initial translation."
      - date: 2026-05-26
        note: "Audit pass."
 
@@ -1264,6 +1290,8 @@ translations:
    composition: "Prefix ad- + verb northo (already established for PLAY)."
    status: defensible-neo-sindarin
    history:
+     - date: 2022-03-17
+       note: "Initial translation."
      - date: 2026-05-26
        note: "Audit pass."
 
@@ -1286,8 +1314,8 @@ translations:
          or 'preciousness' of the image).
    status: defensible-neo-sindarin
    history:
-     - date: 2022-01-15
-       note: "Initial 'meiras'."
+     - date: 2018-11-03
+       note: "Initial translation."
      - date: 2026-05-26
        note: "Documenting as deliberate Neo-Sindarin neologism (Paul Strack); confirmed not deprecated in Eldamo."
 
@@ -1316,8 +1344,8 @@ translations:
        rationale: "Attested Sindarin preposition meaning 'back/against/again'. Replaces Gnomish 'abont'."
    status: attested-components
    history:
-     - date: 2022-01-15
-       note: "Initial 'northo abont'."
+     - date: 2018-11-03
+       note: "Initial translation."
      - date: 2026-05-26
        note: "Replaced 'abont' (Gnomish 'backwards') with attested Sindarin 'dan' (back/against)."
 
@@ -1338,6 +1366,8 @@ translations:
    status: attested
    concerns: "Semantic stretch: 'lû' is 'time/occasion'. Overlaps with AD_DURATION which also uses lû."
    history:
+     - date: 2018-11-03
+       note: "Initial translation."
      - date: 2026-05-26
        note: "Audit pass."
 
@@ -1388,6 +1418,8 @@ translations:
        rationale: "Attested Sindarin word for a unit of money."
    status: coinage
    history:
+     - date: 2020-03-26
+       note: "Initial translation."
      - date: 2026-05-26
        note: "Audit pass."
 
@@ -1513,7 +1545,7 @@ translations:
        rationale: "Attested Sindarin gerund 'counting'; replaces 'neth' which means 'girl, sister' in Sindarin."
    status: attested-components
    history:
-     - date: 2022-01-15
+     - date: 2022-03-17
        note: "Initial 'cetho neth'."
      - date: 2026-05-26
        note: "Replaced 'neth' (Sindarin 'girl, sister') with attested 'nediad' (gerund of 'to count')."
@@ -1579,8 +1611,8 @@ translations:
        rationale: "Attested Sindarin adjective."
    status: attested-components
    history:
-     - date: 2022-01-15
-       note: "Initial as pith teithiel taug."
+     - date: 2022-03-17
+       note: "Initial as 'pith teithiel taug'."
      - date: 2026-05-26
        note: "Updated teithiel to teithennin (proper Sindarin plural past participle)."
 
@@ -1824,7 +1856,7 @@ translations:
      natural counterpart in Sindarin; UNDETERMINED_LANGUAGE and UNRECOGNIZED_LANGUAGE
      both translate to 'úhinnen'. The two keys produce the same Tengwar by design.
    history:
-     - date: 2022-01-15
+     - date: 2018-11-03
        note: "Initial 'la sinnen' (Quenya negation + Neo-Sindarin word)."
      - date: 2026-05-26
        note: "Replaced Quenya 'la' with attested Sindarin 'ú-', applying soft mutation s->h -> úhinnen."
@@ -1846,6 +1878,8 @@ translations:
    status: attested-components
    concerns: "The specific 'sound/noise' sense is loosely attested. Alternative: lamath (echo, sound)."
    history:
+     - date: 2018-11-03
+       note: "Initial translation."
      - date: 2026-05-26
        note: "Audit pass."
 
@@ -1878,8 +1912,8 @@ translations:
      natural distinction between 'undetermined' (not yet decided) and
      'unrecognized' (cannot identify). Both render as 'úhinnen'.
    history:
-     - date: 2022-01-15
-       note: "Initial 'la sinnen'."
+     - date: 2018-11-03
+       note: "Initial 'la sinnen' (Quenya negation + Neo-Sindarin word)."
      - date: 2026-05-26
        note: "Same fix as UNDETERMINED_LANGUAGE: la -> ú-, s->h lenition -> úhinnen."
 
@@ -1978,5 +2012,7 @@ translations:
        rationale: "Attested Sindarin adjective; used here as a noun for 'volume'."
    status: attested
    history:
+     - date: 2018-11-03
+       note: "Initial translation."
      - date: 2026-05-26
        note: "Audit pass."
