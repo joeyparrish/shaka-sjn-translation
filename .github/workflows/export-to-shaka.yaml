@@ -59,7 +59,7 @@ jobs:
           SOURCE_DATE: ${{ steps.meta.outputs.date }}
           SOURCE_SHA: ${{ steps.meta.outputs.sha }}
         run: |
-          git config user.email "shaka-translation-bot@users.noreply.github.com"
+          git config user.email "278545291+shaka-translation-bot@users.noreply.github.com"
           git config user.name "Shaka Translation Bot"
           git fetch upstream main
           git checkout -B "$BRANCH" upstream/main
