@@ -84,7 +84,7 @@ jobs:
           GH_TOKEN: ${{ secrets.SHAKA_PLAYER_TOKEN }}
         run: |
           FORK_OWNER=$(gh api user --jq .login)
-          PR_NUMBER=$(gh pr list --repo "$TARGET_REPO" --head "$FORK_OWNER:$BRANCH" --state open --json number --jq '.[0].number // empty')
+          PR_NUMBER=$(gh pr list --repo "$TARGET_REPO" --head "$BRANCH" --author "$FORK_OWNER" --state open --json number --jq '.[0].number // empty')
           if [ -n "$PR_NUMBER" ]; then
             echo "PR #$PR_NUMBER already open — updating description."
             gh pr edit "$PR_NUMBER" --repo "$TARGET_REPO" --body "$(git log -1 --format='%b')"
