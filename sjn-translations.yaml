@@ -262,24 +262,26 @@ translations:
  - key: AUTO_QUALITY
    english: "Auto"
    sjn:
-     literal: "adapt/make fit"
-     roman: "cammo"
-     tengwar: "\uE003\uE011\uE050\uE040\uE02E\uE04A"
+     literal: "adapted/fitted"
+     roman: "camen"
+     tengwar: "\uE003\uE011\uE040\uE010\uE046"
    elements:
-     - form: "cammo"
+     - form: "camen"
        headword: "cam-"
        headword-meaning: "to fit, suit, be agreeable, adapt"
        attestation: attested
        source: "VT44/14; VT47/20-21"
        derivations:
-         - "imperative -o with nasal-infixed past form: cam- -> cammo"
-       rationale: "Attested Sindarin verb 'to fit/adapt'. Imperative used metaphorically for 'auto' (automatically adapts)."
+         - "past participle -en: cam- -> camen (fitted, adapted)"
+       rationale: "Attested Sindarin verb 'to fit/adapt'. Past participle 'adapted/fitted' suits the UI sense of 'auto' (the quality setting that has been adapted to what fits)."
    status: defensible-neo-sindarin
    history:
      - date: 2018-11-03
        note: "Initial translation."
      - date: 2026-05-26
        note: "Audit pass: defensible Neo-Sindarin construction; backfilled schema."
+     - date: 2026-05-27
+       note: "Changed cammo (non-standard imperative hybrid) to camen (past participle 'adapted') for the auto/self-fitting sense."
 
  - key: BACK
    english: "Back"
@@ -1728,21 +1730,23 @@ translations:
    english: "Surround"
    sjn:
      literal: "surround"
-     roman: "ostao"
-     tengwar: "\uE025\uE04A\uE000\uE02E\uE040\uE02E\uE04A"
+     roman: "osto"
+     tengwar: "\uE025\uE04A\uE000\uE02E\uE04A"
    elements:
-     - form: "ostao"
+     - form: "osto"
        headword: "osta-"
        headword-meaning: "to surround with walls, build up, fortify"
        attestation: neo-sindarin
        source: "Eldamo:ns (revived from Gnomish osta-)"
        derivations:
-         - "imperative -o: osta- -> ostao"
+         - "imperative -o: osta- -> osto (-a- stem drops final -a before -o)"
        rationale: "Neo-Sindarin verb (carried over from Gnomish osta-, GL/63); imperative form."
    status: defensible-neo-sindarin
    history:
      - date: 2026-05-26
        note: "Audit pass: defensible Neo-Sindarin construction."
+     - date: 2026-05-27
+       note: "Corrected imperative form ostao -> osto (-a- stems drop final -a before imperative -o)."
 
  - key: TOGGLE_STEREOSCOPIC
    english: "Toggle stereoscopic"
