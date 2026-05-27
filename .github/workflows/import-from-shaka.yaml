@@ -1,0 +1,51 @@
+name: Import source strings from shaka-player
+
+# Runs weekly, fetches the latest source.json and source-meta.json from the
+# shaka-player upstream, and commits them if they differ from the current copy.
+#
+# Commits made by GITHUB_TOKEN do not trigger other workflows (GitHub loop
+# prevention), so we explicitly dispatch pages.yaml after a successful import
+# to keep the published translation table current.
+
+on:
+  schedule:
+    - cron: '0 9 * * 1'  # Weekly, Monday 09:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Import source.json
+        run: python scripts/import.py
+
+      - name: Commit if changed
+        id: commit
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add source.json source-meta.json
+          if git diff --cached --quiet; then
+            echo "No changes — skipping commit."
+            echo "committed=false" >> "$GITHUB_OUTPUT"
+          else
+            SHA=$(jq -r .sha source-meta.json)
+            DATE=$(jq -r '.date | .[0:10]' source-meta.json)
+            git commit \
+              -m "Import source strings from shaka-player" \
+              -m "Source strings last updated ${DATE} (upstream commit ${SHA})."
+            git push
+            echo "committed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Trigger pages deployment
+        if: steps.commit.outputs.committed == 'true'
+        run: gh workflow run pages.yaml
+        env:
+          GH_TOKEN: ${{ github.token }}
