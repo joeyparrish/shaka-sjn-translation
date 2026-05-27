@@ -23,10 +23,11 @@ if os.path.exists(meta_path):
     with open(meta_path, encoding="utf-8") as f:
         source_meta = json.load(f)
 
-total = len(source_json)
+source_keys = set(source_json.keys())
+total = len(source_keys)
 translated = sum(
     1 for t in source["translations"]
-    if t.get("sjn", {}).get("tengwar")
+    if t.get("key") in source_keys and t.get("sjn", {}).get("tengwar")
 )
 translation_pct = round(100 * translated / total) if total else 0
 translation_stats = {"translated": translated, "total": total, "pct": translation_pct}
