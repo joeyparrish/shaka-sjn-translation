@@ -7,11 +7,17 @@ from jinja2 import Environment, FileSystemLoader
 
 base_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 source_path = os.path.join(base_path, "sjn-translations.yaml")
+meta_path = os.path.join(base_path, "source-meta.json")
 template_dir = os.path.join(base_path, "site")
 output_path = os.path.join(base_path, "site", "index.html")
 
 with open(source_path) as f:
     source = yaml.safe_load(f)
+
+source_meta = None
+if os.path.exists(meta_path):
+    with open(meta_path, encoding="utf-8") as f:
+        source_meta = json.load(f)
 
 def _serialize(obj):
     if isinstance(obj, datetime.date):
@@ -28,6 +34,7 @@ template = env.get_template("index.html.j2")
 html = template.render(
     translations=source["translations"],
     translations_json=translations_json,
+    source_meta=source_meta,
 )
 
 with open(output_path, "w") as f:

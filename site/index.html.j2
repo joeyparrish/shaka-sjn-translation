@@ -240,10 +240,29 @@
       font-family: monospace;
       white-space: nowrap;
     }
+
+    .source-meta {
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: -1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .source-meta a {
+      color: #888;
+      font-family: monospace;
+    }
+
+    .source-meta a:hover {
+      color: #222;
+    }
   </style>
 </head>
 <body>
   <h1>Shaka Player Sindarin Translations</h1>
+  {% if source_meta %}
+  <p class="source-meta">Source strings: last updated {{ source_meta.date[:10] }} &middot; <a href="https://github.com/shaka-project/shaka-player/commit/{{ source_meta.sha }}" target="_blank" rel="noopener">{{ source_meta.sha[:7] }}</a></p>
+  {% endif %}
   <table>
     <thead>
       <tr>
