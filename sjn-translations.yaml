@@ -1960,7 +1960,7 @@ translations:
        attestation: attested
        source: "VT42/25"
        derivations: []
-       rationale: "Attested Sindarin adjective; direct semantic match for 'main'."
+       rationale: "Attested Sindarin adjective; direct semantic match for 'main'. Coincidental cognate between Sindarin and English."
    status: attested
    history:
      - date: 2026-05-26
