@@ -1,3 +1,5 @@
 # Editor swap files.
 *.sw*
 *~
+
+site/index.html
