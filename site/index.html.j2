@@ -280,8 +280,12 @@
     .coverage-fill {
       display: block;
       height: 100%;
-      background: #4caf50;
+      background: #ffa519; /* orange: warning */
       border-radius: 4px;
+    }
+
+    .coverage-fill.coverage-pct-100 {
+      background: #4caf50; /* green: all done */
     }
   </style>
 </head>
@@ -291,7 +295,7 @@
   <p class="source-meta">Source strings: last updated {{ source_meta.date[:10] }} &middot; <a href="https://github.com/shaka-project/shaka-player/commit/{{ source_meta.sha }}" target="_blank" rel="noopener">{{ source_meta.sha[:7] }}</a></p>
   {% endif %}
   <p class="translation-coverage">
-    <span class="coverage-bar"><span class="coverage-fill" style="width: {{ translation_stats.pct }}%"></span></span>
+    <span class="coverage-bar"><span class="coverage-fill coverage-pct-{{ translation_stats.pct }}" style="width: {{ translation_stats.pct }}%"></span></span>
     {{ translation_stats.pct }}% translated ({{ translation_stats.translated }}&thinsp;/&thinsp;{{ translation_stats.total }} strings)
   </p>
   <table>

@@ -29,7 +29,8 @@ translated = sum(
     1 for t in source["translations"]
     if t.get("key") in source_keys and t.get("sjn", {}).get("tengwar")
 )
-translation_pct = round(100 * translated / total) if total else 0
+# Round down so we don't count 99.5% as complete.
+translation_pct = ((100 * translated) // total) if total else 0
 translation_stats = {"translated": translated, "total": total, "pct": translation_pct}
 
 def _serialize(obj):
