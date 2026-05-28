@@ -20,7 +20,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  TARGET_REPO: joeyparrish/shaka-player
+  TARGET_REPO: shaka-project/shaka-player
   BRANCH: sjn-translations
 
 jobs:
