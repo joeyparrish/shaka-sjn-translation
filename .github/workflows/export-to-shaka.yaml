@@ -83,7 +83,8 @@ jobs:
             -m "Generated from https://github.com/joeyparrish/shaka-sjn-translation." \
             -m "Translations made with Claude Code and https://github.com/joeyparrish/elvish-translation-tools." \
             -m "Source strings last updated ${SOURCE_DATE} (Shaka Player commit ${SOURCE_SHA})." \
-            -m "Translation status: ${TRANSLATED}/${TOTAL} strings translated."
+            -m "Translation status: ${TRANSLATED}/${TOTAL} strings translated." \
+            -m "Preview: https://joeyparrish.github.io/shaka-sjn-translation/"
           git push --force origin HEAD:"$BRANCH"
 
           # Create/update PR
