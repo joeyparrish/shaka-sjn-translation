@@ -8,10 +8,7 @@ Maintenance workspace for the [Sindarin][] (Elvish) translation of the
 
 ## Status
 
-The sjn locale was been dropped from [Shaka Player][]'s main branch as of
-[PR #10082][] because it was unmaintained. This workspace was created to bring
-it back up to date, restore it to maintainable shape with new tools, and then
-re-introduce it upstream.  Upstreamed in [PR #10148][].
+Upstreamed to [Shaka Player][]!
 
 
 ## Files
@@ -67,6 +64,14 @@ To produce escape-encoded Tengwar, use
 `elvish-translation-tools/scripts/transliterate.py` (escape is the default
 output). To preview the Tengwar in a font-aware terminal, pipe through
 `elvish-translation-tools/scripts/preview.py`.
+
+
+## History
+
+The sjn locale was dropped from [Shaka Player][]'s main branch in [PR #10082][]
+because it was unmaintained. This workspace was created to bring it back up to
+date, restore it to maintainable shape with new tools, and then re-introduce it
+upstream.  It was upstreamed again in [PR #10148][].
 
 
 [Eldamo]: https://eldamo.org/
