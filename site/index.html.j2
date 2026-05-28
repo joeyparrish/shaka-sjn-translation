@@ -32,6 +32,7 @@
       gap: 0.6rem;
     }
 
+    .shaka-link,
     .github-link {
       font-size: 0.9rem;
       color: #888;
@@ -42,14 +43,19 @@
       font-weight: normal;
     }
 
+    .shaka-link:hover,
     .github-link:hover {
       color: #222;
     }
 
+    .shaka-link:not(:hover) path,
+    .github-link:not(:hover) path {
+      fill: #888;
+    }
+
+    .shaka-link svg,
     .github-link svg {
-      width: 1.1em;
       height: 1.1em;
-      fill: currentColor;
     }
 
     table {
@@ -319,9 +325,13 @@
 </head>
 <body>
   <h1>Shaka Player Sindarin Translations
-    <a class="github-link" href="https://github.com/joeyparrish/shaka-sjn-translation" target="_blank" rel="noopener">
-      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+    <a class="github-link" target="_blank" rel="noopener" href="https://github.com/joeyparrish/shaka-sjn-translation">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="#222" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
       GitHub
+    </a>
+    <a class="shaka-link" target="_blank" rel="noopener" href="https://shaka-project.github.io/shaka-player/demo/#uilang=sjn;assetBase64=eyJuYW1lIjoiQW5nZWwgT25lIChtdWx0aWNvZGVjLCBtdWx0aWxpbmd1YWwpIiwic2hvcnROYW1lIjoiQW5nZWwgT25lIiwiaWNvblVyaSI6Imh0dHBzOi8vc3RvcmFnZS5nb29nbGVhcGlzLmNvbS9zaGFrYS1hc3NldC1pY29ucy9hbmdlbF9vbmUucG5nIiwibWFuaWZlc3RVcmkiOiJodHRwczovL3N0b3JhZ2UuZ29vZ2xlYXBpcy5jb20vc2hha2EtZGVtby1hc3NldHMvYW5nZWwtb25lL2Rhc2gubXBkIiwic291cmNlIjoiU2hha2EiLCJmb2N1cyI6ZmFsc2UsImRpc2FibGVkIjpmYWxzZSwiZXh0cmFUZXh0IjpbXSwiZXh0cmFUaHVtYm5haWwiOltdLCJleHRyYUNoYXB0ZXIiOltdLCJjZXJ0aWZpY2F0ZVVyaSI6bnVsbCwiZGVzY3JpcHRpb24iOiJBIGNsaXAgZnJvbSBhIGNsYXNzaWMgU3RhciBUcmVrIFRORyBlcGlzb2RlLCBwcmVzZW50ZWQgaW4gTVBFRy1EQVNILiIsImlzRmVhdHVyZWQiOnRydWUsImRybSI6WyJObyBEUk0gcHJvdGVjdGlvbiJdLCJmZWF0dXJlcyI6WyJEQVNIIiwiRG93bmxvYWRhYmxlIiwiTVA0IiwiTXVsdGlwbGUgbGFuZ3VhZ2VzIiwiU3VidGl0bGVzIiwiVk9EIiwiV2ViTSJdLCJsaWNlbnNlU2VydmVycyI6eyJfX3R5cGVfXyI6Im1hcCJ9LCJvZmZsaW5lTGljZW5zZVNlcnZlcnMiOnsiX190eXBlX18iOiJtYXAifSwibGljZW5zZVJlcXVlc3RIZWFkZXJzIjp7Il9fdHlwZV9fIjoibWFwIn0sInJlcXVlc3RGaWx0ZXIiOm51bGwsInJlc3BvbnNlRmlsdGVyIjpudWxsLCJjbGVhcktleXMiOnsiX190eXBlX18iOiJtYXAifSwiZXh0cmFDb25maWciOm51bGwsImV4dHJhVWlDb25maWciOm51bGwsImFkVGFnVXJpIjpudWxsLCJpbWFWaWRlb0lkIjpudWxsLCJpbWFBc3NldEtleSI6bnVsbCwiaW1hQ29udGVudFNyY0lkIjpudWxsLCJpbWFNYW5pZmVzdFR5cGUiOm51bGwsIm1lZGlhVGFpbG9yVXJsIjpudWxsLCJtZWRpYVRhaWxvckFkc1BhcmFtcyI6bnVsbCwidXNlSU1BIjp0cnVlLCJtaW1lVHlwZSI6bnVsbCwiaXNQbGF5bGlzdCI6ZmFsc2V9">
+      <svg viewBox="6 7 276 157"><path fill="#5294d6" d="M138.204 114.786l12.318 18.968c.059.095.122.189.183.283 6.869 10.576 23.547 12.144 36.35 3.83L252.57 95.32c12.819-8.324 18.153-24.187 11.285-34.764-6.886-10.603-23.205-12.3-36.318-3.783l-48.452 31.465L162.02 99.32z"/><path fill="#5294d6" d="M25.157 77.809c-7.34-11.302-6.772-25.493 1.577-30.915 8.37-5.436 21.354-.415 28.863 11.147l37.555 57.83c7.518 11.577 6.824 25.48-1.546 30.916-8.35 5.423-21.544.169-28.893-11.148z"/><path fill="#3db94b" d="M142.185 50.874c-6.192-9.535-4.329-22.406 4.395-28.072 8.746-5.68 21.076-2.337 27.41 7.418l31.685 48.789c6.343 9.767 4.381 22.39-4.365 28.07-8.724 5.666-21.24 2.132-27.44-7.415z"/><path fill="#fbbc09" d="M110.191 71.652c-6.192-9.535-4.329-22.407 4.395-28.072 8.746-5.68 21.076-2.338 27.41 7.417l31.685 48.79c6.343 9.767 4.381 22.39-4.365 28.07-8.724 5.665-21.24 2.132-27.44-7.416z"/><path fill="#ef3232" d="M78.197 92.43c-6.192-9.536-4.33-22.408 4.395-28.073 8.746-5.68 21.076-2.337 27.41 7.417l31.684 48.79c6.343 9.767 4.382 22.39-4.364 28.07-8.724 5.665-21.24 2.132-27.441-7.416z"/></svg>
+      Shaka
     </a>
   </h1>
   {% if source_meta %}
