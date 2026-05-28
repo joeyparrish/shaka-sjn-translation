@@ -1,8 +1,11 @@
-# Editor swap files.
+# Python
+__pycache__
+
+# Editor swap files
 *.sw*
 *~
 
-# Generated files.
+# Generated files
 site/index.html
 sjn.json
 translation-stats.json
