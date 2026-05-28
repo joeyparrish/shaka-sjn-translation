@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+# Shaka Player Sindarin (Elvish) Translations
+# Copyright 2026 Joey Parrish
+# SPDX-License-Identifier: Apache-2.0
+
 import datetime
 import json
 import os

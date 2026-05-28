@@ -1,3 +1,7 @@
+# Shaka Player Sindarin (Elvish) Translations
+# Copyright 2026 Joey Parrish
+# SPDX-License-Identifier: Apache-2.0
+
 def compute(source, source_json):
     source_keys = set(source_json.keys())
     total = len(source_keys)
