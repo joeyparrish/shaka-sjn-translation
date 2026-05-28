@@ -11,7 +11,7 @@ Maintenance workspace for the [Sindarin][] (Elvish) translation of the
 The sjn locale was been dropped from [Shaka Player][]'s main branch as of
 [PR #10082][] because it was unmaintained. This workspace was created to bring
 it back up to date, restore it to maintainable shape with new tools, and then
-re-introduce it upstream.
+re-introduce it upstream.  Upstreamed in [PR #10148][].
 
 
 ## Files
@@ -69,8 +69,9 @@ output). To preview the Tengwar in a font-aware terminal, pipe through
 `elvish-translation-tools/scripts/preview.py`.
 
 
-[Sindarin]: https://en.wikipedia.org/wiki/Sindarin
-[Shaka Player]: https://github.com/shaka-project/shaka-player
+[Eldamo]: https://eldamo.org/
 [elvish-translation-tools]: https://github.com/joeyparrish/elvish-translation-tools
 [PR #10082]: https://github.com/shaka-project/shaka-player/pull/10082
-[Eldamo]: https://eldamo.org/
+[PR #10148]: https://github.com/shaka-project/shaka-player/pull/10148
+[Shaka Player]: https://github.com/shaka-project/shaka-player
+[Sindarin]: https://en.wikipedia.org/wiki/Sindarin
