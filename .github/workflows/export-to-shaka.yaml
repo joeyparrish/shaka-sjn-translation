@@ -6,6 +6,10 @@ name: Export translations to shaka-player
 #
 # Requires a repo secret SHAKA_PLAYER_TOKEN: a classic PAT with these scopes:
 #   public_repo  - fork TARGET_REPO, push to the fork, open/edit a PR
+#   workflow     - required because the branch is based on upstream/main, whose
+#                  .github/workflows/* files land in the fork when it lags
+#                  upstream; GitHub rejects a push/merge that touches workflow
+#                  files without this scope
 #   read:user    - read the authenticated user's login
 #   read:org     - required by gh's internal GraphQL queries for PR operations
 # Fine-grained PATs do not work here; they return 403 when forking repos
@@ -63,18 +67,15 @@ jobs:
           git config user.email "278545291+shaka-translation-bot@users.noreply.github.com"
           git config user.name "Shaka Translation Bot"
 
-          # Sync the fork's main with upstream via the merge-upstream API.
-          # Without this the fork lags upstream, and the branch push below has to
-          # carry upstream's own commits -- including any .github/workflows/*
-          # changes -- which GitHub rejects unless the PAT has the 'workflow'
-          # scope.  Syncing server-side keeps the pushed delta to just our locale
-          # commit, so no 'workflow' scope is needed.  Add --force if the fork's
-          # main ever diverges and can't fast-forward (the bot never commits
-          # there, so it should not).
           FORK_OWNER=$(gh api user --jq .login)
-          gh repo sync "$FORK_OWNER/${TARGET_REPO#*/}" --source "$TARGET_REPO" --branch main
 
-          # Start with upstream/main
+          # Start with upstream/main.  The branch is based on current
+          # upstream/main, which includes upstream's .github/workflows/* files;
+          # when the fork lags upstream, the push below carries those workflow
+          # commits into the fork, and GitHub rejects that unless the token has
+          # the 'workflow' scope.  There is no scope-free path (both git push and
+          # the merge-upstream API enforce this), so SHAKA_PLAYER_TOKEN must
+          # include 'workflow'.  See the required-scopes note at the top.
           git fetch upstream main
           git checkout -B "$BRANCH" upstream/main
 
