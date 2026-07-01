@@ -87,6 +87,10 @@
       font-size: 1.5em;
     }
 
+    tr.untranslated td {
+      color: #999;
+    }
+
     .more-info {
       font-size: 1.5rem;
       line-height: 1;
@@ -354,13 +358,20 @@
     </thead>
     <tbody>
       {% for item in translations %}
-      <tr>
+      <tr{% if not item.sjn %} class="untranslated"{% endif %}>
         <td>{{ item.key }}</td>
         <td>{{ item.english }}</td>
+        {% if item.sjn %}
         <td>{{ item.sjn.literal }}</td>
         <td>{{ item.sjn.roman }}</td>
         <td class="col-tengwar">{{ item.sjn.tengwar }}</td>
         <td><button class="more-info" data-key="{{ item.key }}">ⓘ</button></td>
+        {% else %}
+        <td></td>
+        <td></td>
+        <td class="col-tengwar"></td>
+        <td></td>
+        {% endif %}
       </tr>
       {% endfor %}
     </tbody>

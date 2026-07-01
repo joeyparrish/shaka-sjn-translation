@@ -32,6 +32,14 @@ if os.path.exists(meta_path):
 
 translation_stats = stats_module.compute(source, source_json)
 
+# Build the table rows in source-string order, filling in a translation where
+# one exists and a bare placeholder (key + English only) where it does not.
+by_key = {t["key"]: t for t in source["translations"]}
+rows = [
+    by_key.get(key, {"key": key, "english": value["message"]})
+    for key, value in source_json.items()
+]
+
 def _serialize(obj):
     if isinstance(obj, datetime.date):
         return obj.isoformat()
@@ -45,7 +53,7 @@ env = Environment(loader=FileSystemLoader(template_dir))
 template = env.get_template("index.html.j2")
 
 html = template.render(
-    translations=source["translations"],
+    translations=rows,
     translations_json=translations_json,
     source_meta=source_meta,
     translation_stats=translation_stats,
