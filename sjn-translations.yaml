@@ -259,6 +259,48 @@ translations:
      - date: 2026-05-26
        note: "Adjusted from 'cammo enias', with 'cammo' meaning 'adapt'.  'Generated' is better alone."
 
+ - key: MACHINE_GENERATED
+   english: "Generated"
+   sjn:
+     literal: "generated"
+     roman: "enias"
+     tengwar: "\uE010\uE046\uE02E\uE044\uE025\uE040"
+   elements:
+     - form: "enias"
+       headword: "enia-"
+       headword-meaning: "to be born, be generated, result"
+       attestation: neo-sindarin
+       source: "Eldamo:ns (Sami Paldanius, based on GL/61)"
+       derivations:
+         - "gerund -s (or -as): enia- -> enias"
+       rationale: "Neo-Sindarin verb for 'be generated'; gerund form for 'generated (thing)'."
+   status: defensible-neo-sindarin
+   concerns: "Reuses the AUTO_GENERATED term 'enias'; both are suffixes appended to a track's language name (e.g. 'English enias')."
+   history:
+     - date: 2026-07-01
+       note: "New entry; reuses AUTO_GENERATED / 'enias' for the 'Generated' track suffix."
+
+ - key: MACHINE_TRANSLATED
+   english: "Translated"
+   sjn:
+     literal: "translated"
+     roman: "nevias"
+     tengwar: "\uE010\uE00D\uE046\uE02E\uE044\uE025\uE040"
+   elements:
+     - form: "nevias"
+       headword: "nevia-"
+       headword-meaning: "to translate (into your own language), localize, bring close"
+       attestation: neo-sindarin
+       source: "Eldamo:ns (Fiona Jallings, FJNS)"
+       derivations:
+         - "gerund/abstract -s: nevia- -> nevias (parallel to enia- -> enias)"
+       rationale: "Neo-Sindarin verb for 'translate into one's own language / localize'; -s form for 'translated (thing)', mirroring the 'enias' derivation used for 'generated'."
+   status: defensible-neo-sindarin
+   concerns: "The -s abstract on 'nevia-' is a project-internal derivation mirroring 'enias'; the standard gerund would be 'neviad'. Alternative verb 'tharchol-' (Elaran, lit. 'carry-across') gives a more literal 'translate between languages' sense."
+   history:
+     - date: 2026-07-01
+       note: "New entry; coined 'nevias' from Neo-Sindarin nevia- to parallel 'enias'."
+
  - key: AUTO_QUALITY
    english: "Auto"
    sjn:
