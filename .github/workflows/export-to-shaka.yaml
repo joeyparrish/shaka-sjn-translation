@@ -63,6 +63,17 @@ jobs:
           git config user.email "278545291+shaka-translation-bot@users.noreply.github.com"
           git config user.name "Shaka Translation Bot"
 
+          # Sync the fork's main with upstream via the merge-upstream API.
+          # Without this the fork lags upstream, and the branch push below has to
+          # carry upstream's own commits -- including any .github/workflows/*
+          # changes -- which GitHub rejects unless the PAT has the 'workflow'
+          # scope.  Syncing server-side keeps the pushed delta to just our locale
+          # commit, so no 'workflow' scope is needed.  Add --force if the fork's
+          # main ever diverges and can't fast-forward (the bot never commits
+          # there, so it should not).
+          FORK_OWNER=$(gh api user --jq .login)
+          gh repo sync "$FORK_OWNER/${TARGET_REPO#*/}" --source "$TARGET_REPO" --branch main
+
           # Start with upstream/main
           git fetch upstream main
           git checkout -B "$BRANCH" upstream/main
@@ -88,7 +99,6 @@ jobs:
           git push --force origin HEAD:"$BRANCH"
 
           # Create/update PR
-          FORK_OWNER=$(gh api user --jq .login)
           PR_NUMBER=$(gh pr list --repo "$TARGET_REPO" --head "$BRANCH" --author "$FORK_OWNER" --state open --json number --jq '.[0].number // empty')
           if [ -n "$PR_NUMBER" ]; then
             echo "PR #$PR_NUMBER already open — updating description."
