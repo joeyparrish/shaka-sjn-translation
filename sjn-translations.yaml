@@ -304,6 +304,44 @@ translations:
      - date: 2026-05-26
        note: "Audit pass."
 
+ - key: BLACK
+   english: "Black"
+   sjn:
+     literal: "black"
+     roman: "morn"
+     tengwar: "\uE011\uE020\uE04A\uE010"
+   elements:
+     - form: "morn"
+       headword: "morn"
+       headword-meaning: "black, dark; night"
+       attestation: attested
+       source: "Let/382.4311"
+       derivations: []
+       rationale: "Attested Sindarin noun/adj."
+   status: attested
+   history:
+     - date: 2026-10-11
+       note: Newly added
+
+ - key: BLUE
+   english: "Blue"
+   sjn:
+     literal: "blue"
+     roman: "luin"
+     tengwar: "\uE022\uE016\uE04C\uE010"
+   elements:
+     - form: "luin"
+       headword: "luin"
+       headword-meaning: "blue"
+       attestation: attested
+       source: "Let/448.1013"
+       derivations: []
+       rationale: "Attested Sindarin adj."
+   status: attested
+   history:
+     - date: 2026-10-11
+       note: Newly added
+
  - key: BOTTOM_CENTER
    english: "Bottom center"
    sjn:
@@ -579,6 +617,25 @@ translations:
    history:
      - date: 2026-05-26
        note: New entry
+
+ - key: CYAN
+   english: "Cyan"
+   sjn:
+     literal: "(pale) blue"
+     roman: "elu"
+     tengwar: "\uE022\uE046\uE02E\uE04C"
+   elements:
+     - form: "elu"
+       headword: "elu"
+       headword-meaning: "(pale) blue"
+       attestation: neo-sindarin
+       source: "mark=^, Ety/ƷEL.027"
+       derivations: []
+       rationale: "Neo-sindarin for pale blue, closest we have to cyan in any dictionary"
+   status: defensible-neo-sindarin
+   history:
+     - date: 2026-10-11
+       note: Newly added
 
  - key: DEFAULT
    english: "Default"
@@ -873,6 +930,25 @@ translations:
      - date: 2026-05-26
        note: "Replaced panta (Quenya) with attested Sindarin pant."
 
+ - key: GREEN
+   english: "Green"
+   sjn:
+     literal: "green"
+     roman: "calen"
+     tengwar: "\uE003\uE022\uE040\uE010\uE046"
+   elements:
+     - form: "calen"
+       headword: "calen"
+       headword-meaning: "green; fresh, vigorous"
+       attestation: attested
+       source: "Let/282.2606"
+       derivations: []
+       rationale: "Attested Sindarin adj."
+   status: attested
+   history:
+     - date: 2026-10-11
+       note: Newly added
+
  - key: LANGUAGE
    english: "Language"
    sjn:
@@ -993,6 +1069,25 @@ translations:
    history:
      - date: 2026-07-01
        note: "New entry; coined 'nevias' from Neo-Sindarin nevia- to parallel 'enias'."
+
+ - key: MAGENTA
+   english: "Magenta"
+   sjn:
+     literal: "red-blue"
+     roman: "caralluin"
+     tengwar: "\uE003\uE020\uE040\uE022\uE040\uE051\uE016\uE04C\uE010"
+   elements:
+     - form: "caralluin"
+       headword: "caralluin"
+       headword-meaning: "red-blue"
+       attestation: attested
+       source: "mark=-, VT48/30.1605"
+       derivations: []
+       rationale: "Attested Sindarin adj."
+   status: attested
+   history:
+     - date: 2026-10-11
+       note: Newly added
 
  - key: MORE_SETTINGS
    english: "More settings"
@@ -1332,6 +1427,25 @@ translations:
    history:
      - date: 2026-05-26
        note: "Audit pass."
+
+ - key: RED
+   english: "Red"
+   sjn:
+     literal: "red"
+     roman: "caran"
+     tengwar: "\uE003\uE020\uE040\uE010\uE040"
+   elements:
+     - form: "caran"
+       headword: "caran"
+       headword-meaning: "red"
+       attestation: attested
+       source: "PE17/036.0106"
+       derivations: []
+       rationale: "Attested Sindarin adj."
+   status: attested
+   history:
+     - date: 2026-10-11
+       note: Newly added
 
  - key: REPLAY
    english: "Replay"
@@ -2088,3 +2202,50 @@ translations:
        note: "Initial translation."
      - date: 2026-05-26
        note: "Audit pass."
+
+ - key: WHITE
+   english: "White"
+   sjn:
+     literal: "white"
+     roman: "nim"
+     tengwar: "\uE010\uE011\uE044"
+   elements:
+     - form: "nim"
+       headword: "nim"
+       headword-meaning: "white"
+       attestation: attested
+       source: "PE17/019.3002"
+       derivations: []
+       rationale: "Attested Sindarin adj."
+   status: attested
+   history:
+     - date: 2026-10-11
+       note: Newly added
+
+ - key: YELLOW
+   english: "Yellow"
+   sjn:
+     literal: "yellow"
+     roman: "mal"
+     tengwar: "\uE011\uE022\uE040"
+   elements:
+     - form: "mal"
+       headword: "Malduin"
+       headword-meaning: "yellow river"
+       attestation: attested
+       source: "SA/duin.008"
+       derivations:
+         - "Dropped duin, meaning river, to recover mal, meaning yellow."
+       rationale: "Attested Sindarin place name, yellow + river."
+     - form: "duin"
+       headword: "duin"
+       headword-meaning: "river"
+       attestation: attested
+       source: "LotR/1138.2010"
+       derivations:
+         - "Used above to justify the recovery of mal (yellow) from malduin (yellow river)."
+       rationale: "Root word for river, appears in many river names."
+   status: defensible-neo-sindarin
+   history:
+     - date: 2026-10-11
+       note: Newly added
