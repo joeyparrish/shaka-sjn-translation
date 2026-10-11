@@ -304,6 +304,74 @@ translations:
      - date: 2026-05-26
        note: "Audit pass."
 
+ - key: BACKGROUND_COLOR
+   english: "Background color"
+   sjn:
+     literal: "color of the surroundings"
+     roman: "crui en osgaef"
+     tengwar: "\uE003\uE020\uE016\uE04C \uE010\uE046 \uE025\uE04A\uE007\uE02A\uE040\uE00D"
+   elements:
+     - form: "crui"
+       headword: "crui"
+       headword-meaning: "colour"
+       attestation: neo-sindarin
+       source: "GL/27.4101"
+       derivations: []
+       rationale: "Neo-sindarin for colour; acceptable even if Tolkien used British spellings"
+     - form: "en"
+       headword: "en"
+       headword-meaning: "of the"
+       attestation: sindarin
+       source: "Let/448.3510"
+       derivations: []
+       rationale: "The background is a definite one, so 'color (of) background' is weaker than 'color of-the background'"
+     - form: "osgaef"
+       headword: "osgaef"
+       headword-meaning: "surroundings, milieu, environs, neighbourhood"
+       attestation: neo-sindarin
+       source: "mark=!, by Sami Paldanius"
+       derivations: []
+       rationale: "Milieu is the nearest we get to background"
+   status: defensible-neo-sindarin
+   history:
+     - date: 2026-10-11
+       note: Newly added
+
+ - key: BACKGROUND_OPACITY
+   english: "Background opacity"
+   sjn:
+     literal: "muddiness of the surroundings"
+     roman: "medhrenas en osgaef"
+     tengwar: "\uE011\uE00C\uE046\uE020\uE010\uE046\uE025\uE040 \uE010\uE046 \uE025\uE04A\uE007\uE02A\uE040\uE00D"
+   elements:
+     - form: "medhrenas"
+       headword: "madhren"
+       headword-meaning: "muddy"
+       attestation: neo-sindarin
+       source: "mark=!, GL/74.4301"
+       derivations:
+         - "-as suffixation for abstract nouns: madhren => madhrenas"
+         - "i-affection that goes with suffixation: madhrenas => medhrenas"
+       rationale: "Muddiness, as opposed to clarity, is an analog for opacity, with liquid as a metaphor"
+     - form: "en"
+       headword: "en"
+       headword-meaning: "of the"
+       attestation: sindarin
+       source: "Let/448.3510"
+       derivations: []
+       rationale: "The background is a definite one, so 'opacity (of) background' is weaker than 'opacity of-the background'"
+     - form: "osgaef"
+       headword: "osgaef"
+       headword-meaning: "surroundings, milieu, environs, neighbourhood"
+       attestation: neo-sindarin
+       source: "mark=!, by Sami Paldanius"
+       derivations: []
+       rationale: "Milieu is the nearest we get to background"
+   status: defensible-neo-sindarin
+   history:
+     - date: 2026-10-11
+       note: Newly added
+
  - key: BLACK
    english: "Black"
    sjn:
@@ -901,6 +969,28 @@ translations:
        note: "Initial translation."
      - date: 2026-05-26
        note: "Audit pass."
+
+ - key: FONT_COLOR
+   english: "Font color"
+   sjn:
+     literal: "color (of) face"
+     roman: "crui thîr"
+     tengwar: "\uE003\uE020\uE016\uE04C \uE008\uE02C\uE044\uE014"
+   elements:
+     - form: "crui"
+       headword: "crui"
+       headword-meaning: "colour"
+       attestation: neo-sindarin
+       source: "GL/27.4101"
+       derivations: []
+       rationale: "Neo-sindarin for colour; acceptable even if Tolkien used British spellings"
+     - form: "thîr"
+       headword: "thîr"
+       headword-meaning: "face"
+       attestation: attested
+       source: "VT41/10.3206"
+       derivations: []
+       rationale: "Face as a replacement for font, since it is the face or appearance of text"
 
  - key: FULL_SCREEN
    english: "Full screen"
@@ -1762,6 +1852,192 @@ translations:
    history:
      - date: 2026-05-26
        note: New entry
+
+ - key: SUBTITLE_BACKGROUND_COLOR
+   english: "Subtitle background color"
+   sjn:
+     literal: "color of the surroundings (of) words written"
+     roman: "crui en osgaef pith teithennin"
+     tengwar: "\uE003\uE020\uE016\uE04C \uE010\uE046 \uE025\uE04A\uE007\uE02A\uE040\uE00D \uE001\uE008\uE044 \uE000\uE016\uE046\uE008\uE010\uE050\uE046\uE010\uE044"
+   elements:
+     - form: "crui"
+       headword: "crui"
+       headword-meaning: "colour"
+       attestation: neo-sindarin
+       source: "GL/27.4101"
+       derivations: []
+       rationale: "Neo-sindarin for colour; acceptable even if Tolkien used British spellings"
+     - form: "en"
+       headword: "en"
+       headword-meaning: "of the"
+       attestation: sindarin
+       source: "Let/448.3510"
+       derivations: []
+       rationale: "The background is a definite one, so 'color (of) background' is weaker than 'color of-the background'"
+     - form: "osgaef"
+       headword: "osgaef"
+       headword-meaning: "surroundings, milieu, environs, neighbourhood"
+       attestation: neo-sindarin
+       source: "mark=!, by Sami Paldanius"
+       derivations: []
+       rationale: "Milieu is the nearest we get to background"
+     - form: "pith"
+       headword: "peth"
+       headword-meaning: "word (plural)"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations:
+         - "plural i-affection"
+       rationale: "See CAPTIONS."
+     - form: "teithennin"
+       headword: "teitha-"
+       headword-meaning: "to write (past participle plural)"
+       attestation: attested-components
+       source: "LotR/0305"
+       derivations:
+         - "past participle plural agreement"
+       rationale: "See CAPTIONS."
+   status: defensible-neo-sindarin
+   history:
+     - date: 2026-10-11
+       note: Newly added
+
+ - key: SUBTITLE_BACKGROUND_OPACITY
+   english: "Subtitle background opacity"
+   sjn:
+     literal: "muddiness of the surroundings (of) words written"
+     roman: "medhrenas en osgaef pith teithennin"
+     tengwar: "\uE011\uE00C\uE046\uE020\uE010\uE046\uE025\uE040 \uE010\uE046 \uE025\uE04A\uE007\uE02A\uE040\uE00D"
+   elements:
+     - form: "medhrenas"
+       headword: "madhren"
+       headword-meaning: "muddy"
+       attestation: neo-sindarin
+       source: "mark=!, GL/74.4301"
+       derivations:
+         - "-as suffixation for abstract nouns: madhren => madhrenas"
+         - "i-affection that goes with suffixation: madhrenas => medhrenas"
+       rationale: "Muddiness, as opposed to clarity, is an analog for opacity, with liquid as a metaphor"
+     - form: "en"
+       headword: "en"
+       headword-meaning: "of the"
+       attestation: sindarin
+       source: "Let/448.3510"
+       derivations: []
+       rationale: "The background is a definite one, so 'opacity (of) background' is weaker than 'opacity of-the background'"
+     - form: "osgaef"
+       headword: "osgaef"
+       headword-meaning: "surroundings, milieu, environs, neighbourhood"
+       attestation: neo-sindarin
+       source: "mark=!, by Sami Paldanius"
+       derivations: []
+       rationale: "Milieu is the nearest we get to background"
+     - form: "pith"
+       headword: "peth"
+       headword-meaning: "word (plural)"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations:
+         - "plural i-affection"
+       rationale: "See CAPTIONS."
+     - form: "teithennin"
+       headword: "teitha-"
+       headword-meaning: "to write (past participle plural)"
+       attestation: attested-components
+       source: "LotR/0305"
+       derivations:
+         - "past participle plural agreement"
+       rationale: "See CAPTIONS."
+   status: defensible-neo-sindarin
+   history:
+     - date: 2026-10-11
+       note: Newly added
+
+ - key: SUBTITLE_FONT_COLOR
+   english: "Subtitle font color"
+   sjn:
+     literal: "color (of) face (of) words written"
+     roman: "crui thîr pith teithennin"
+     tengwar: "\uE003\uE020\uE016\uE04C \uE008\uE02C\uE044\uE014 \uE001\uE008\uE044 \uE000\uE016\uE046\uE008\uE010\uE050\uE046\uE010\uE044"
+   elements:
+     - form: "crui"
+       headword: "crui"
+       headword-meaning: "colour"
+       attestation: neo-sindarin
+       source: "GL/27.4101"
+       derivations: []
+       rationale: "Neo-sindarin for colour; acceptable even if Tolkien used British spellings"
+     - form: "thîr"
+       headword: "thîr"
+       headword-meaning: "face"
+       attestation: attested
+       source: "VT41/10.3206"
+       derivations: []
+       rationale: "Face as a replacement for font, since it is the face or appearance of text"
+     - form: "pith"
+       headword: "peth"
+       headword-meaning: "word (plural)"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations:
+         - "plural i-affection"
+       rationale: "See CAPTIONS."
+     - form: "teithennin"
+       headword: "teitha-"
+       headword-meaning: "to write (past participle plural)"
+       attestation: attested-components
+       source: "LotR/0305"
+       derivations:
+         - "past participle plural agreement"
+       rationale: "See CAPTIONS."
+   status: defensible-neo-sindarin
+   history:
+     - date: 2026-10-11
+       note: Newly added
+
+ - key: SUBTITLE_FONT_OPACITY
+   english: "Subtitle font opacity"
+   sjn:
+     literal: "muddiness (of) face (of) words written"
+     roman: "medhrenas thîr pith teithennin"
+     tengwar: "\uE011\uE00C\uE046\uE020\uE010\uE046\uE025\uE040 \uE008\uE02C\uE044\uE014 \uE001\uE008\uE044 \uE000\uE016\uE046\uE008\uE010\uE050\uE046\uE010\uE044"
+   elements:
+     - form: "medhrenas"
+       headword: "madhren"
+       headword-meaning: "muddy"
+       attestation: neo-sindarin
+       source: "mark=!, GL/74.4301"
+       derivations:
+         - "-as suffixation for abstract nouns: madhren => madhrenas"
+         - "i-affection that goes with suffixation: madhrenas => medhrenas"
+       rationale: "Muddiness, as opposed to clarity, is an analog for opacity, with liquid as a metaphor"
+     - form: "thîr"
+       headword: "thîr"
+       headword-meaning: "face"
+       attestation: attested
+       source: "VT41/10.3206"
+       derivations: []
+       rationale: "Face as a replacement for font, since it is the face or appearance of text"
+     - form: "pith"
+       headword: "peth"
+       headword-meaning: "word (plural)"
+       attestation: attested
+       source: "Eldamo:s"
+       derivations:
+         - "plural i-affection"
+       rationale: "See CAPTIONS."
+     - form: "teithennin"
+       headword: "teitha-"
+       headword-meaning: "to write (past participle plural)"
+       attestation: attested-components
+       source: "LotR/0305"
+       derivations:
+         - "past participle plural agreement"
+       rationale: "See CAPTIONS."
+   status: defensible-neo-sindarin
+   history:
+     - date: 2026-10-11
+       note: Newly added
 
  - key: SUBTITLE_FORCED
    english: "Forced"
